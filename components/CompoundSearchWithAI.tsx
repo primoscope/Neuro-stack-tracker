@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
-import { Search, Sparkles, Loader2, AlertCircle } from 'lucide-react';
+import { Search, Sparkles, Loader2, AlertCircle, Camera } from 'lucide-react';
 import { searchCompounds } from '@/lib/compound-library';
 import { CompoundDetail as CompoundDetailType } from '@/lib/compound-types';
 import { GeminiSearchResult } from '@/lib/gemini-search';
@@ -126,6 +126,11 @@ export default function CompoundSearchWithAI({
     }
   }
 
+  function handleCameraClick() {
+    // Placeholder for future label scanning integration
+    alert('Snap & Verify: Label scanning coming soon! This feature will allow you to scan supplement labels with your camera.');
+  }
+
   return (
     <>
       <div ref={searchRef} className="relative w-full">
@@ -137,8 +142,16 @@ export default function CompoundSearchWithAI({
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => query && setShowResults(true)}
             placeholder={placeholder}
-            className="w-full pl-10 pr-10 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full pl-10 pr-20 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
+          {/* Camera Icon for Snap & Verify */}
+          <button
+            onClick={handleCameraClick}
+            className="absolute right-12 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-purple-400 transition-colors"
+            title="Snap & Verify (Coming Soon)"
+          >
+            <Camera className="h-5 w-5" />
+          </button>
           {isAiSearching && (
             <Loader2 className="absolute right-3 top-1/2 transform -translate-y-1/2 text-blue-400 h-5 w-5 animate-spin" />
           )}
