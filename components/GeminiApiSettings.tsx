@@ -6,31 +6,31 @@ import { type GeminiModel } from '@/lib/gemini-search';
 
 const GEMINI_MODELS = [
   {
-    id: 'gemini-exp-1206' as GeminiModel,
-    name: 'Gemini 3.0 (Experimental)',
-    description: 'Most advanced model, best reasoning, multimodal',
-    icon: Brain,
+    id: 'gemini-2.0-flash' as GeminiModel,
+    name: 'Gemini 2.0 Flash',
+    description: 'Fast, capable, and stable - recommended for most users',
+    icon: Zap,
     recommended: true,
   },
   {
-    id: 'gemini-2.0-flash-exp' as GeminiModel,
-    name: 'Gemini 2.0 Flash',
-    description: 'Fast and capable, best balance',
-    icon: Zap,
-    recommended: false,
-  },
-  {
-    id: 'gemini-1.5-pro' as GeminiModel,
-    name: 'Gemini 1.5 Pro',
-    description: 'Detailed analysis, proven reliability',
+    id: 'gemini-2.5-pro' as GeminiModel,
+    name: 'Gemini 2.5 Pro',
+    description: 'Latest model with enhanced capabilities',
     icon: Brain,
     recommended: false,
   },
   {
-    id: 'gemini-1.5-flash' as GeminiModel,
-    name: 'Gemini 1.5 Flash',
-    description: 'Fast and efficient, good for quick searches',
+    id: 'gemini-2.5-flash' as GeminiModel,
+    name: 'Gemini 2.5 Flash',
+    description: 'Latest fast model with improved performance',
     icon: Cpu,
+    recommended: false,
+  },
+  {
+    id: 'gemini-2.0-flash-exp' as GeminiModel,
+    name: 'Gemini 2.0 Flash (Experimental)',
+    description: 'Experimental version with latest features',
+    icon: Sparkles,
     recommended: false,
   },
 ];
@@ -41,7 +41,7 @@ export default function GeminiApiSettings() {
   const [isConfigured, setIsConfigured] = useState(false);
   const [isTesting, setIsTesting] = useState(false);
   const [testResult, setTestResult] = useState<'success' | 'error' | null>(null);
-  const [selectedModel, setSelectedModel] = useState<GeminiModel>('gemini-2.0-flash-exp');
+  const [selectedModel, setSelectedModel] = useState<GeminiModel>('gemini-2.0-flash');
 
   useEffect(() => {
     // Check if API key is already configured in environment
@@ -56,7 +56,7 @@ export default function GeminiApiSettings() {
     if (storedModel) {
       setSelectedModel(storedModel as GeminiModel);
     } else {
-      setSelectedModel('gemini-exp-1206'); // Default to Gemini 3.0
+      setSelectedModel('gemini-2.0-flash'); // Default to Gemini 2.0 Flash
     }
   }, []);
 
