@@ -43,8 +43,9 @@ export interface PharmacokineticCurvePoint {
 function estimateKa(onsetMinutes: number): number {
   if (onsetMinutes <= 0) return 2.0; // Fast absorption default
   const onsetHours = onsetMinutes / 60;
-  // Assume onset represents time to ~50% absorption
-  return Math.log(2) / onsetHours;
+  // Onset typically represents time to initial noticeable effects (~10-20% of peak)
+  // Use a factor of 3 to reach ~50% absorption by onset time for more accurate modeling
+  return (3 * Math.log(2)) / onsetHours;
 }
 
 /**
@@ -101,6 +102,9 @@ export function calculateConcentration(
   const maxConcentration = 
     F * dose * (ka / (ka - ke)) * 
     (Math.exp(-ke * peakTime) - Math.exp(-ka * peakTime));
+  
+  // Handle edge case where maxConcentration is zero or very small
+  if (maxConcentration < 1e-10) return 0;
   
   const normalized = concentration / maxConcentration;
   
@@ -271,4 +275,35 @@ export function formatTime(hour: number): string {
   const period = h >= 12 ? 'PM' : 'AM';
   const displayHour = h === 0 ? 12 : h > 12 ? h - 12 : h;
   return `${displayHour}:${m.toString().padStart(2, '0')} ${period}`;
+}
+
+/**
+ * Parse a pharmacokinetic string like "1-2h / 3-4h / 6-8h" into structured data
+ * Exported for use in UI components that need to display pharmacokinetic data
+ * 
+ * @param pkString Pharmacokinetic string (e.g., "1-2h / 3-4h / 6-8h")
+ * @returns Parsed onset, peak, and duration in minutes
+ */
+export function parsePharmacokineticString(pkString: string): {
+  onsetMinutes: number;
+  peakMinutes: number;
+  durationMinutes: number;
+} {
+  const parts = pkString.split('/').map(s => s.trim());
+  
+  const parseTime = (timeStr: string): number => {
+    const match = timeStr.match(/(\d+)(?:-(\d+))?\s*(min|hr|hour)/i);
+    if (!match) return 0;
+    
+    const value = match[2] ? (parseInt(match[1]) + parseInt(match[2])) / 2 : parseInt(match[1]);
+    const unit = match[3].toLowerCase();
+    
+    return unit.startsWith('hr') ? value * 60 : value;
+  };
+
+  return {
+    onsetMinutes: parts[0] ? parseTime(parts[0]) : 30,
+    peakMinutes: parts[1] ? parseTime(parts[1]) : 120,
+    durationMinutes: parts[2] ? parseTime(parts[2]) : 360,
+  };
 }

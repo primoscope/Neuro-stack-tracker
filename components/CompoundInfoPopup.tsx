@@ -4,8 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { X, Clock, Zap, Shield, AlertCircle, Info } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { CompoundDetail } from '@/lib/compound-types';
-import { generatePharmacokineticCurve, formatTime, type PharmacokineticParameters } from '@/lib/pharmacokinetics';
-import { parsePharmacokineticString } from './NeuroCurveVisualization';
+import { generatePharmacokineticCurve, formatTime, parsePharmacokineticString, type PharmacokineticParameters } from '@/lib/pharmacokinetics';
 
 interface CompoundInfoPopupProps {
   compound: CompoundDetail;
