@@ -6762,5 +6762,110 @@
     "categoryTags": [
       "Antipsychotic - Second Generation"
     ]
+  },
+  {
+    "id": "lithium-orotate",
+    "name": "Lithium orotate",
+    "aliases": [
+      "Lithium 2,6-dioxo-1,2,3,6-tetrahydropyrimidine-4-carboxylate"
+    ],
+    "effectType": "Mood stabilizer/Neuroprotectant",
+    "primaryEffects": "Mood stabilization, neuroprotection, promotes neurogenesis, cognitive support, stress resilience, potential longevity benefits",
+    "mechanism": "Inhibits glycogen synthase kinase-3β (GSK-3β), upregulates BDNF and IGF-1, stimulates hippocampal neurogenesis, modulates glutamate (keeps levels stable), protects neurons from glutamate-induced NMDA excitotoxicity, promotes cytoprotective B-cell activity, reduces neurological deficits, orotate form may have higher bioavailability than carbonate, low-dose (5-20mg vs 900-1800mg carbonate)",
+    "mechanisticTags": [
+      "GSK-3 (inhibitor), BDNF (upregulator), Neuroprotective"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "Onset: Gradual (days-weeks); Peak: Sustained with use; Duration: 24 hrs (long half-life)"
+    },
+    "recreational": "No - mood stabilization/neuroprotective supplement",
+    "dependenceTolerance": "Low",
+    "daytimeNighttime": "Either/As needed",
+    "interactions": {
+      "voxra": "LOW-MEDIUM: No major interaction - LOW-MEDIUM risk. Lithium (GSK-3β inhibitor). No direct monoamine reuptake. Both used for mood disorders. Orotate form is low-dose vs prescription lithium carbonate. Monitor mood effects. Generally safe at supplement doses.",
+      "ssri": "LOW-MEDIUM: No major interaction - LOW-MEDIUM risk. Lithium augmentation of SSRIs is established practice for treatment-resistant depression. Low-dose orotate form safer than prescription lithium. Monitor for lithium side effects (tremor, GI upset), though rare at supplement doses. Serotonin syndrome risk is low."
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Mood stabilization, neuroprotection, promotes neurogenesis, cognitive support, stress resilience, potential longevity benefits"
+    },
+    "efficacyScore": 25,
+    "safetyScore": 7,
+    "categoryTags": [
+      "Mood stabilizer/Neuroprotectant",
+      "GSK-3 (inhibitor), BDNF (upregulator), Neuroprotective"
+    ]
+  },
+  {
+    "id": "magnesium-l-threonate",
+    "name": "Magnesium L-threonate",
+    "aliases": [
+      "MgT, Magtein, Magnesium L-3-threonate"
+    ],
+    "effectType": "Nootropic/Neuroprotective magnesium",
+    "primaryEffects": "Memory enhancement, cognitive improvement, learning enhancement, neuroprotection, reverses cognitive aging (9 years in human study), increases synaptic density and plasticity",
+    "mechanism": "Unique magnesium form crossing BBB efficiently (developed at MIT), elevates brain/CSF magnesium 7-15%, threonate from vitamin C metabolism, increases synaptic density and plasticity, enhances NMDA receptor function, increases BDNF, reduces neuroinflammation (inhibits NF-κB, reduces TNF-α/IL-1β/IL-6), strengthens BBB integrity, L-threonic acid naturally occurs in brain/plasma/foods",
+    "mechanisticTags": [
+      "NMDA (modulator), BDNF (upregulator), Synaptic Plasticity (enhancer)"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "Onset: Gradual (weeks); Peak: Sustained with use; Duration: Sustained with use"
+    },
+    "recreational": "No - cognitive enhancement/neuroprotective supplement",
+    "dependenceTolerance": "Low",
+    "daytimeNighttime": "Either/As needed",
+    "interactions": {
+      "voxra": "LOW: No major interaction - LOW risk. Magnesium L-threonate provides magnesium supplementation. No monoamine effects. Safe combination.",
+      "ssri": "LOW: No major interaction - LOW risk. Magnesium supplementation. Safe with SSRIs."
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Memory enhancement, cognitive improvement, learning enhancement, neuroprotection, reverses cognitive aging (9 years in human study), increases synaptic density and plasticity"
+    },
+    "efficacyScore": 15,
+    "safetyScore": 7,
+    "categoryTags": [
+      "Nootropic/Neuroprotective magnesium",
+      "NMDA (modulator), BDNF (upregulator), Synaptic Plasticity (enhancer)",
+      "Nootropic",
+      "NMDA"
+    ]
+  },
+  {
+    "id": "methylene-blue",
+    "name": "Methylene blue",
+    "aliases": [
+      "MB, methylthioninium chloride"
+    ],
+    "effectType": "Nootropic/Mitochondrial enhancer",
+    "primaryEffects": "Memory enhancement, mood improvement, neuroprotection, anti-aging, increased mental energy",
+    "mechanism": "Mitochondrial electron transport chain enhancer, MAO inhibitor, acetylcholinesterase inhibitor, increases serotonin/norepinephrine/dopamine, powerful antioxidant, nitric oxide synthase inhibitor",
+    "mechanisticTags": [
+      "MAO-A (inhibitor), AChE (inhibitor), Mitochondrial Enhancer"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "Onset: 30-60 min; Peak: 2 hrs; Duration: >20 hrs"
+    },
+    "recreational": "No - nootropic/neuroprotective use only",
+    "dependenceTolerance": "Low",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "LOW-MEDIUM: Yes - LOW-MEDIUM risk. MAO inhibitor (weak) and acetylcholinesterase inhibitor. Voxra is NDRI. MAO inhibition is mild at nootropic doses (<2mg), but at higher doses (>5mg) poses serotonin syndrome risk with any serotonergic agent. At low doses generally safe with Voxra.",
+      "ssri": "MEDIUM-HIGH: Yes - MEDIUM-HIGH risk. Methylene blue is MAO inhibitor. Combined with SSRI poses serotonin syndrome risk, especially at doses >5mg. FDA warning exists. At very low nootropic doses (<1mg) risk is minimal, but caution advised. Monitor for confusion, agitation, hypertermia, tremor."
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Memory enhancement, mood improvement, neuroprotection, anti-aging, increased mental energy"
+    },
+    "efficacyScore": 15,
+    "safetyScore": 7,
+    "categoryTags": [
+      "Nootropic/Mitochondrial enhancer",
+      "MAO-A (inhibitor), AChE (inhibitor), Mitochondrial Enhancer",
+      "Nootropic"
+    ]
   }
 ]

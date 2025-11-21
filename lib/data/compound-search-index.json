@@ -3666,5 +3666,69 @@
     "categoryTags": [
       "Antipsychotic - Second Generation"
     ]
+  },
+  {
+    "id": "lithium-orotate",
+    "name": "Lithium orotate",
+    "aliases": [
+      "Lithium 2,6-dioxo-1,2,3,6-tetrahydropyrimidine-4-carboxylate"
+    ],
+    "searchTerms": [
+      "lithium orotate",
+      "lithium",
+      "orotate",
+      "lithium 2 6 dioxo 1 2 3 6 tetrahydropyrimidine 4 carboxylate",
+      "dioxo",
+      "tetrahydropyrimidine",
+      "carboxylate"
+    ],
+    "effectType": "Mood stabilizer/Neuroprotectant",
+    "categoryTags": [
+      "Mood stabilizer/Neuroprotectant",
+      "GSK-3 (inhibitor), BDNF (upregulator), Neuroprotective"
+    ]
+  },
+  {
+    "id": "magnesium-l-threonate",
+    "name": "Magnesium L-threonate",
+    "aliases": [
+      "MgT, Magtein, Magnesium L-3-threonate"
+    ],
+    "searchTerms": [
+      "magnesium l threonate",
+      "magnesium",
+      "threonate",
+      "mgt magtein magnesium l 3 threonate",
+      "mgt",
+      "magtein"
+    ],
+    "effectType": "Nootropic/Neuroprotective magnesium",
+    "categoryTags": [
+      "Nootropic/Neuroprotective magnesium",
+      "NMDA (modulator), BDNF (upregulator), Synaptic Plasticity (enhancer)",
+      "Nootropic",
+      "NMDA"
+    ]
+  },
+  {
+    "id": "methylene-blue",
+    "name": "Methylene blue",
+    "aliases": [
+      "MB, methylthioninium chloride"
+    ],
+    "searchTerms": [
+      "methylene blue",
+      "methylene",
+      "blue",
+      "mb methylthioninium chloride",
+      "methylthioninium",
+      "chloride"
+    ],
+    "effectType": "Nootropic/Mitochondrial enhancer",
+    "categoryTags": [
+      "Nootropic/Mitochondrial enhancer",
+      "MAO-A (inhibitor), AChE (inhibitor), Mitochondrial Enhancer",
+      "Nootropic"
+    ]
   }
 ]
