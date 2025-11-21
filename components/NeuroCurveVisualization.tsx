@@ -3,6 +3,15 @@
 import { useMemo } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Area, AreaChart, ReferenceLine } from 'recharts';
 import { Clock, TrendingUp, AlertTriangle } from 'lucide-react';
+import {
+  generatePharmacokineticCurve,
+  calculateAggregateEffect,
+  identifyOverloadPeriods,
+  identifyCrashPeriods,
+  formatTime,
+  type PharmacokineticParameters,
+  type PharmacokineticCurvePoint,
+} from '@/lib/pharmacokinetics';
 
 interface CompoundPharmacokinetics {
   name: string;
@@ -20,106 +29,90 @@ interface NeuroCurveProps {
 
 /**
  * Neuro-Curve Visualization - Pharmacokinetics 2.0
- * Maps compound effects on a 24-hour timeline, showing overlapping peaks
+ * Maps compound effects on a 24-hour timeline using bi-exponential absorption-elimination model
  */
 export default function NeuroCurveVisualization({ compounds, onPeakOverload }: NeuroCurveProps) {
-  // Generate timeline data points (every 30 minutes)
-  const timelineData = useMemo(() => {
-    const dataPoints: any[] = [];
-    const hoursInDay = 24;
-    const intervalsPerHour = 2; // Every 30 minutes
-    const totalIntervals = hoursInDay * intervalsPerHour;
+  // Generate pharmacokinetic curves for each compound using advanced math
+  const compoundCurves = useMemo(() => {
+    return compounds.map(compound => {
+      const params: PharmacokineticParameters = {
+        onsetMinutes: compound.onsetMinutes,
+        peakMinutes: compound.peakMinutes,
+        durationMinutes: compound.durationMinutes,
+        doseTime: compound.doseTime,
+      };
+      return {
+        name: compound.name,
+        color: compound.color,
+        curve: generatePharmacokineticCurve(params, 2), // 2 points per hour = every 30 min
+      };
+    });
+  }, [compounds]);
 
-    for (let i = 0; i < totalIntervals; i++) {
-      const hour = i / intervalsPerHour;
+  // Calculate aggregate effect curve
+  const aggregateCurve = useMemo(() => {
+    const curves = compoundCurves.map(c => c.curve);
+    return calculateAggregateEffect(curves);
+  }, [compoundCurves]);
+
+  // Generate timeline data for the chart
+  const timelineData = useMemo(() => {
+    if (compoundCurves.length === 0) return [];
+
+    const dataPoints: any[] = [];
+    const pointCount = compoundCurves[0].curve.length;
+
+    for (let i = 0; i < pointCount; i++) {
+      const time = compoundCurves[0].curve[i].time;
       const dataPoint: any = {
-        time: hour,
-        timeLabel: formatHour(hour),
-        aggregate: 0,
+        time,
+        timeLabel: formatTime(time),
+        aggregate: aggregateCurve[i]?.concentration || 0,
       };
 
-      // Calculate effect intensity for each compound at this time
-      compounds.forEach(compound => {
-        const effectIntensity = calculateEffectIntensity(hour, compound);
-        dataPoint[compound.name] = effectIntensity;
-        dataPoint.aggregate += effectIntensity;
+      // Add each compound's concentration
+      compoundCurves.forEach(({ name, curve }) => {
+        dataPoint[name] = curve[i]?.concentration || 0;
       });
 
       dataPoints.push(dataPoint);
     }
 
     return dataPoints;
-  }, [compounds]);
+  }, [compoundCurves, aggregateCurve]);
 
-  // Identify peak overload periods (aggregate > threshold)
+  // Identify peak overload periods using advanced detection
   const overloadPeriods = useMemo(() => {
-    const threshold = 2.5; // Aggregate effect threshold
-    const periods: Array<{ start: number; end: number; compounds: string[] }> = [];
+    const detectedPeriods = identifyOverloadPeriods(aggregateCurve, 2.5);
     
-    if (compounds.length === 0) return periods;
-
-    interface PeriodType { start: number; end: number; compounds: Set<string> }
-    let currentPeriod: PeriodType | null = null;
-
-    timelineData.forEach(point => {
-      if (point.aggregate > threshold) {
-        // Find which compounds are peaking
-        const peakingCompounds = compounds
-          .filter(c => point[c.name] > 0.6)
-          .map(c => c.name);
-
-        if (!currentPeriod) {
-          currentPeriod = {
-            start: point.time,
-            end: point.time,
-            compounds: new Set(peakingCompounds),
-          };
-        } else {
-          currentPeriod.end = point.time;
-          peakingCompounds.forEach(c => (currentPeriod as PeriodType).compounds.add(c));
-        }
-      } else if (currentPeriod) {
-        periods.push({
-          start: currentPeriod.start,
-          end: currentPeriod.end,
-          compounds: Array.from(currentPeriod.compounds),
-        });
-        currentPeriod = null;
-      }
-    });
-
-    // Push last period if exists
-    if (currentPeriod) {
-      const period = currentPeriod as PeriodType;
-      periods.push({
+    return detectedPeriods.map(period => {
+      // Find which compounds are contributing during this period
+      const peakingCompounds = compounds
+        .filter(compound => {
+          const compoundCurve = compoundCurves.find(c => c.name === compound.name);
+          if (!compoundCurve) return false;
+          
+          // Check if compound has significant effect during this period
+          const relevantPoints = compoundCurve.curve.filter(
+            point => point.time >= period.start && point.time <= period.end
+          );
+          return relevantPoints.some(point => point.concentration > 0.6);
+        })
+        .map(c => c.name);
+      
+      return {
         start: period.start,
         end: period.end,
-        compounds: Array.from(period.compounds),
-      });
-    }
+        compounds: peakingCompounds,
+        peak: period.peak,
+      };
+    });
+  }, [aggregateCurve, compounds, compoundCurves]);
 
-    return periods;
-  }, [timelineData, compounds]);
-
-  // Identify crash periods (aggregate drops significantly)
+  // Identify crash periods using advanced detection
   const crashPeriods = useMemo(() => {
-    const periods: Array<{ time: number; severity: number }> = [];
-    
-    for (let i = 1; i < timelineData.length; i++) {
-      const prev = timelineData[i - 1].aggregate;
-      const curr = timelineData[i].aggregate;
-      const drop = prev - curr;
-      
-      if (drop > 0.5 && prev > 1.5) {
-        periods.push({
-          time: timelineData[i].time,
-          severity: drop,
-        });
-      }
-    }
-
-    return periods;
-  }, [timelineData]);
+    return identifyCrashPeriods(aggregateCurve, 0.5);
+  }, [aggregateCurve]);
 
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {
@@ -296,43 +289,10 @@ export default function NeuroCurveVisualization({ compounds, onPeakOverload }: N
 }
 
 /**
- * Calculate effect intensity at a given time for a compound
- * Uses a bell curve approximation based on onset, peak, and duration
- */
-function calculateEffectIntensity(
-  currentHour: number,
-  compound: CompoundPharmacokinetics
-): number {
-  const doseHour = compound.doseTime;
-  const onsetHour = doseHour + compound.onsetMinutes / 60;
-  const peakHour = doseHour + compound.peakMinutes / 60;
-  const endHour = doseHour + compound.durationMinutes / 60;
-
-  // Before onset
-  if (currentHour < onsetHour || currentHour > endHour) {
-    return 0;
-  }
-
-  // Rising phase (onset to peak)
-  if (currentHour < peakHour) {
-    const progress = (currentHour - onsetHour) / (peakHour - onsetHour);
-    return progress; // Linear rise
-  }
-
-  // Falling phase (peak to end)
-  const progress = (currentHour - peakHour) / (endHour - peakHour);
-  return Math.max(0, 1 - Math.pow(progress, 1.5)); // Exponential decay
-}
-
-/**
- * Format hour as 12-hour time
+ * Format hour as 12-hour time (alias for formatTime from pharmacokinetics lib)
  */
 function formatHour(hour: number): string {
-  const h = Math.floor(hour);
-  const m = Math.floor((hour - h) * 60);
-  const period = h >= 12 ? 'PM' : 'AM';
-  const displayHour = h === 0 ? 12 : h > 12 ? h - 12 : h;
-  return `${displayHour}:${m.toString().padStart(2, '0')} ${period}`;
+  return formatTime(hour);
 }
 
 /**
