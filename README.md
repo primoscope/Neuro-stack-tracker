@@ -21,14 +21,26 @@ A production-ready, **offline-first** web application for tracking medications, 
 ### 📊 Advanced Visualization
 - **Trends Chart**: Overlay anxiety and functionality scores with daily dosages
 - **GitHub-Style Heatmap**: See your logging consistency at a glance
+- **Pharmacokinetic Timeline**: Visualize compound absorption, peak, and elimination curves
 - Interactive tooltips showing exact values
 - 30-day rolling view
 
-### 🤖 AI-Powered Analysis
-- Integrate with Google Gemini API
-- Analyze correlations: "Does Compound X reduce anxiety 2 hours later?"
+### 🤖 AI-Powered Intelligence (NEW!)
+- **Gemini 3.0 Integration**: Advanced conversational AI for stack optimization
+- **Smart Search**: Natural language queries - "best nootropic for focus"
+- **Stack Optimization (Bio-Sync)**: AI reorders your stack based on chronopharmacology
+- **Interaction Checking**: Automatic alerts for compound interactions
+- **Action Chips**: Clickable suggestions after every AI response
+- **Deep Research**: If compound not found locally, Gemini searches the internet
 - Pattern recognition across your entire history
 - Client-side processing - your data never leaves your browser
+
+### 🧬 Pharmacokinetic Engine ("The Neuro-Curve") (NEW!)
+- **Plasma Concentration Modeling**: Visualize how compounds stack in bloodstream over time
+- **Bi-exponential Model**: Realistic absorption and elimination curves
+- **Composite Load**: See aggregate effect of all compounds
+- **Overlap Detection**: Identify when multiple compounds peak simultaneously
+- **24-Hour Timeline**: Full day visualization with timing optimization
 
 ### 🔐 Privacy-First Design
 - **Zero backend** - all data in LocalStorage
@@ -76,16 +88,27 @@ npm run dev
 ### Data Management
 - **Export**: Download your entire history as JSON (Settings → Data Management)
 - **Import**: Restore from a backup file
-- **AI Analysis**: Configure Gemini API key to get trend insights
+- **AI Analysis**: Configure Gemini API key to unlock all AI features
+
+### AI Features Setup
+1. **Get API Key**: Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. **Set Environment Variable**: `NEXT_PUBLIC_GEMINI_API_KEY=your_key`
+3. **Access Features**: 
+   - Stack Timeline in Analytics
+   - Optimize Stack button
+   - Smart Search in Library
+   - AI Chat in Insights
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14+ (App Router, TypeScript)
+- **Framework**: Next.js 16+ (App Router, TypeScript, Edge Runtime)
+- **AI Engine**: Google Gemini 3.0 (gemini-exp-1206)
 - **Styling**: Tailwind CSS + Custom Shadcn UI Components
 - **State**: Zustand with LocalStorage persistence
 - **Charts**: Recharts + react-activity-calendar
 - **Icons**: Lucide React
 - **Deployment**: Vercel (zero-config)
+- **Data**: 215 curated compounds with pharmacokinetic profiles
 
 ## 🎨 Design Philosophy
 

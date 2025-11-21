@@ -115,6 +115,7 @@ Always include medical disclaimers when appropriate.`
 
 /**
  * Generate 3 relevant follow-up suggestions based on conversation
+ * These are actionable chips that users can click
  */
 async function generateFollowUpSuggestions(
   userMessage: string,
@@ -128,17 +129,21 @@ async function generateFollowUpSuggestions(
   try {
     const model = session.model || getSelectedModel();
     
-    const prompt = `Based on this conversation:
+    // Enhanced prompt for more actionable suggestions
+    const prompt = `Based on this conversation about a supplement/nootropic stack:
 User: "${userMessage}"
 Assistant: "${aiResponse}"
 
-Generate exactly 3 relevant follow-up questions the user might want to ask next. Make them:
-- Specific and actionable
-- Related to the conversation context
-- Helpful for optimizing their stack
-- Short (under 12 words each)
+Context: ${session.context}
 
-Return only the 3 questions, one per line, no numbering or bullets.`;
+Generate exactly 3 actionable follow-up prompts that the user can click. Make them:
+1. Specific and actionable (e.g., "Check interactions with SSRIs", "Add Alpha-GPC 300mg", "Why is choline important?")
+2. Directly related to what was just discussed
+3. Helpful for optimizing their stack or understanding better
+4. Very short (under 10 words each)
+5. Can be questions OR action commands
+
+Return ONLY the 3 suggestions, one per line, no numbering or bullets. Start action commands with verbs like "Add", "Check", "Show", "Explain".`;
 
     const response = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
@@ -148,7 +153,7 @@ Return only the 3 questions, one per line, no numbering or bullets.`;
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }],
           generationConfig: {
-            temperature: 0.8,
+            temperature: 0.9, // Higher temperature for more creative suggestions
             topK: 40,
             maxOutputTokens: 150,
           },
@@ -171,13 +176,23 @@ Return only the 3 questions, one per line, no numbering or bullets.`;
     const suggestions = text
       .split('\n')
       .filter((line: string) => line.trim().length > 0)
-      .map((line: string) => line.replace(/^[-*•]\s*/, '').trim())
+      .map((line: string) => line.replace(/^[-*•\d.)\s]+/, '').trim())
+      .filter((line: string) => line.length > 5 && line.length < 80) // Filter reasonable lengths
       .slice(0, 3);
 
-    return suggestions;
+    return suggestions.length > 0 ? suggestions : [
+      'Tell me more about this',
+      'Check for interactions',
+      'What else should I know?',
+    ];
   } catch (error) {
     console.error('Error generating suggestions:', error);
-    return [];
+    // Return fallback suggestions
+    return [
+      'Tell me more about this',
+      'Check for interactions',
+      'What else should I know?',
+    ];
   }
 }
 

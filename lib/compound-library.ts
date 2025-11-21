@@ -2,6 +2,13 @@ import { CompoundDetail, CompoundIndexEntry, CompoundFilters } from './compound-
 import compoundsData from './data/compounds.json';
 import searchIndexData from './data/compound-search-index.json';
 
+/**
+ * Normalize compound name to ID format
+ */
+export function normalizeCompoundName(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
+
 // Type assertion for imported JSON
 const compounds = compoundsData as CompoundDetail[];
 const searchIndex = searchIndexData as CompoundIndexEntry[];
