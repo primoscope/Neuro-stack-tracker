@@ -7,6 +7,7 @@ import { CompoundSearch } from "@/components/CompoundSearch";
 import CompoundSearchWithAI from "@/components/CompoundSearchWithAI";
 import { CompoundDetail } from "@/components/CompoundDetail";
 import { CompoundCard } from "@/components/CompoundCard";
+import CompoundInfoPopup from "@/components/CompoundInfoPopup";
 import { ArrowLeft, Filter, Grid, List } from "lucide-react";
 import Link from "next/link";
 import { CompoundDetail as CompoundDetailType } from "@/lib/compound-types";
@@ -253,11 +254,13 @@ export default function LibraryPage() {
       </main>
 
       {/* Compound Detail Modal */}
-      <CompoundDetail
-        compound={selectedCompound}
-        open={showDetail}
-        onOpenChange={setShowDetail}
-      />
+      {showDetail && selectedCompound && (
+        <CompoundInfoPopup
+          compound={selectedCompound}
+          onClose={() => setShowDetail(false)}
+          position="center"
+        />
+      )}
     </div>
   );
 }
