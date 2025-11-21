@@ -1,15 +1,19 @@
 /**
  * Gemini AI-powered compound search service
  * Uses Google's Gemini API to search for compound information using internet data
+ * Supports multiple Gemini models: 1.5 Pro, 1.5 Flash, and 2.0 Flash
  */
 
 import { CompoundDetail } from './compound-types';
+
+export type GeminiModel = 'gemini-1.5-pro' | 'gemini-1.5-flash' | 'gemini-2.0-flash-exp';
 
 export interface GeminiSearchOptions {
   query: string;
   includeInteractions?: boolean;
   includeMechanism?: boolean;
   includeDosage?: boolean;
+  model?: GeminiModel;
 }
 
 export interface GeminiSearchResult {
@@ -17,6 +21,26 @@ export interface GeminiSearchResult {
   source: 'gemini-api';
   confidence: number;
   references?: string[];
+}
+
+/**
+ * Get the selected Gemini model from localStorage or use default
+ */
+export function getSelectedModel(): GeminiModel {
+  if (typeof window !== 'undefined') {
+    const stored = localStorage.getItem('gemini_model');
+    if (stored && isValidModel(stored)) {
+      return stored as GeminiModel;
+    }
+  }
+  return 'gemini-2.0-flash-exp'; // Default to latest model
+}
+
+/**
+ * Validate if a string is a valid Gemini model
+ */
+function isValidModel(model: string): boolean {
+  return ['gemini-1.5-pro', 'gemini-1.5-flash', 'gemini-2.0-flash-exp'].includes(model);
 }
 
 /**
@@ -33,10 +57,11 @@ export async function searchCompoundWithGemini(
   }
 
   try {
+    const model = options.model || getSelectedModel();
     const prompt = buildSearchPrompt(options);
     
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
       {
         method: 'POST',
         headers: {

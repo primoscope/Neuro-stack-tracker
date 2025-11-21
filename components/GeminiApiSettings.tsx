@@ -1,7 +1,32 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { Sparkles, Check, X, Eye, EyeOff, ExternalLink } from 'lucide-react';
+import { Sparkles, Check, X, Eye, EyeOff, ExternalLink, Zap, Brain, Cpu } from 'lucide-react';
+import { type GeminiModel } from '@/lib/gemini-search';
+
+const GEMINI_MODELS = [
+  {
+    id: 'gemini-2.0-flash-exp' as GeminiModel,
+    name: 'Gemini 2.0 Flash',
+    description: 'Latest model, fastest responses, best balance',
+    icon: Zap,
+    recommended: true,
+  },
+  {
+    id: 'gemini-1.5-pro' as GeminiModel,
+    name: 'Gemini 1.5 Pro',
+    description: 'Most capable, detailed analysis, slower',
+    icon: Brain,
+    recommended: false,
+  },
+  {
+    id: 'gemini-1.5-flash' as GeminiModel,
+    name: 'Gemini 1.5 Flash',
+    description: 'Fast and efficient, good for quick searches',
+    icon: Cpu,
+    recommended: false,
+  },
+];
 
 export default function GeminiApiSettings() {
   const [apiKey, setApiKey] = useState('');
@@ -9,6 +34,7 @@ export default function GeminiApiSettings() {
   const [isConfigured, setIsConfigured] = useState(false);
   const [isTesting, setIsTesting] = useState(false);
   const [testResult, setTestResult] = useState<'success' | 'error' | null>(null);
+  const [selectedModel, setSelectedModel] = useState<GeminiModel>('gemini-2.0-flash-exp');
 
   useEffect(() => {
     // Check if API key is already configured in environment
@@ -17,17 +43,31 @@ export default function GeminiApiSettings() {
       setApiKey(storedKey);
       setIsConfigured(true);
     }
+    
+    // Load selected model
+    const storedModel = localStorage.getItem('gemini_model');
+    if (storedModel) {
+      setSelectedModel(storedModel as GeminiModel);
+    }
   }, []);
 
   function handleSaveKey() {
     if (apiKey.trim()) {
       localStorage.setItem('gemini_api_key', apiKey.trim());
+      localStorage.setItem('gemini_model', selectedModel);
       setIsConfigured(true);
       
       // Set as environment variable for the session
       if (typeof window !== 'undefined') {
         (window as any).NEXT_PUBLIC_GEMINI_API_KEY = apiKey.trim();
       }
+    }
+  }
+  
+  function handleModelChange(model: GeminiModel) {
+    setSelectedModel(model);
+    if (isConfigured) {
+      localStorage.setItem('gemini_model', model);
     }
   }
 
@@ -77,7 +117,54 @@ export default function GeminiApiSettings() {
         </div>
       </div>
 
-      <div className="space-y-3">
+      <div className="space-y-4">
+        {/* Model Selection */}
+        <div>
+          <label className="block text-sm font-medium text-gray-300 mb-3">
+            Select Gemini Model
+          </label>
+          <div className="grid gap-2">
+            {GEMINI_MODELS.map((model) => {
+              const Icon = model.icon;
+              const isSelected = selectedModel === model.id;
+              return (
+                <button
+                  key={model.id}
+                  onClick={() => handleModelChange(model.id)}
+                  className={`p-3 rounded-lg border-2 transition-all text-left ${
+                    isSelected
+                      ? 'border-purple-500 bg-purple-500/10'
+                      : 'border-gray-700 bg-gray-800/30 hover:border-gray-600'
+                  }`}
+                >
+                  <div className="flex items-start gap-3">
+                    <Icon className={`h-5 w-5 mt-0.5 ${isSelected ? 'text-purple-400' : 'text-gray-400'}`} />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className={`font-medium ${isSelected ? 'text-white' : 'text-gray-300'}`}>
+                          {model.name}
+                        </span>
+                        {model.recommended && (
+                          <span className="text-xs px-2 py-0.5 bg-green-500/20 text-green-400 rounded-full">
+                            Recommended
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-sm text-gray-400 mt-0.5">
+                        {model.description}
+                      </p>
+                    </div>
+                    {isSelected && (
+                      <Check className="h-5 w-5 text-purple-400 flex-shrink-0" />
+                    )}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+        
+        {/* API Key Input */}
         <div>
           <label className="block text-sm font-medium text-gray-300 mb-2">
             Google Gemini API Key
