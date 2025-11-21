@@ -24,11 +24,13 @@ A production-ready, **offline-first** web application for tracking medications, 
 - Interactive tooltips showing exact values
 - 30-day rolling view
 
-### 🤖 AI-Powered Analysis
-- Integrate with Google Gemini API
-- Analyze correlations: "Does Compound X reduce anxiety 2 hours later?"
-- Pattern recognition across your entire history
-- Client-side processing - your data never leaves your browser
+### 🤖 AI-Powered Analysis (Gemini 3.0)
+- **Instant Compound Intelligence**: Click any compound for AI-generated pharmacological insights
+- **Agentic Stack Builder**: Auto-optimize your stacks with AI recommendations
+- **Global Neuro-Navigator**: Route-aware AI assistant that provides contextual guidance
+- Pattern recognition and correlation analysis across your entire history
+- Safety-first design with medical disclaimers and interaction warnings
+- [Full AI Documentation](docs/ai-assistant.md)
 
 ### 🔐 Privacy-First Design
 - **Zero backend** - all data in LocalStorage
@@ -41,8 +43,9 @@ A production-ready, **offline-first** web application for tracking medications, 
 ### Deploy to Vercel (Recommended)
 1. Click the "Deploy with Vercel" button above
 2. Vercel will clone the repo and deploy automatically
-3. Visit your new app URL and set your 4-digit PIN
-4. Start tracking!
+3. **(Optional)** Add `NEXT_PUBLIC_GEMINI_API_KEY` environment variable for AI features
+4. Visit your new app URL and set your 4-digit PIN
+5. Start tracking!
 
 ### Local Development
 ```bash
@@ -53,11 +56,20 @@ cd Neuro-stack-tracker
 # Install dependencies
 npm install
 
+# (Optional) Enable AI features - create .env.local
+echo "NEXT_PUBLIC_GEMINI_API_KEY=your_key_here" >> .env.local
+
 # Run the development server
 npm run dev
 
 # Open http://localhost:3000
 ```
+
+### Enable AI Features (Optional)
+1. Get a free API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Add to environment: `NEXT_PUBLIC_GEMINI_API_KEY=your_key_here`
+3. AI features will automatically appear in the app
+4. See [AI Documentation](docs/ai-assistant.md) for details
 
 ## 📖 How to Use
 
