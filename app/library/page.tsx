@@ -58,42 +58,45 @@ export default function LibraryPage() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
-      {/* Header */}
-      <header className="border-b border-slate-800 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-30">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Link href="/">
-              <Button variant="outline" size="icon">
-                <ArrowLeft className="w-5 h-5" />
-              </Button>
-            </Link>
-            <div>
-              <h1 className="text-2xl font-bold">Compound Library</h1>
-              <p className="text-sm text-slate-400">
-                Browse {getAllCompounds().length} compounds
-              </p>
+      {/* Header - Mobile Optimized */}
+      <header className="border-b border-slate-800 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-30 safe-area-inset">
+        <div className="mx-auto px-3 sm:px-4 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2 sm:gap-4 min-w-0 flex-1">
+              <Link href="/">
+                <Button variant="outline" size="icon" className="touch-manipulation">
+                  <ArrowLeft className="w-5 h-5" />
+                </Button>
+              </Link>
+              <div className="min-w-0">
+                <h1 className="text-xl sm:text-2xl font-bold truncate">Compound Library</h1>
+                <p className="text-xs sm:text-sm text-slate-400">
+                  {getAllCompounds().length} compounds
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setShowFilters(!showFilters)}
-              className={showFilters ? "bg-slate-800" : ""}
-            >
-              <Filter className="w-5 h-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setViewMode(viewMode === "grid" ? "list" : "grid")}
-            >
-              {viewMode === "grid" ? (
-                <List className="w-5 h-5" />
-              ) : (
-                <Grid className="w-5 h-5" />
-              )}
-            </Button>
+            <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => setShowFilters(!showFilters)}
+                className={`touch-manipulation ${showFilters ? "bg-slate-800" : ""}`}
+              >
+                <Filter className="w-5 h-5" />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => setViewMode(viewMode === "grid" ? "list" : "grid")}
+                className="touch-manipulation hidden sm:flex"
+              >
+                {viewMode === "grid" ? (
+                  <List className="w-5 h-5" />
+                ) : (
+                  <Grid className="w-5 h-5" />
+                )}
+              </Button>
+            </div>
           </div>
         </div>
       </header>

@@ -257,7 +257,10 @@ function processCSV(csvPath) {
 
 // Main execution
 try {
-  const csvPath = path.join(__dirname, '..', 'data', 'nootropics-complete-1-BALANCED-EFFICACY.csv');
+  // Check for master compound database first, fallback to original
+  const masterCsvPath = path.join(__dirname, '..', 'data', 'compounds-master.csv');
+  const originalCsvPath = path.join(__dirname, '..', 'data', 'nootropics-complete-1-BALANCED-EFFICACY.csv');
+  const csvPath = fs.existsSync(masterCsvPath) ? masterCsvPath : originalCsvPath;
   const outputDir = path.join(__dirname, '..', 'lib', 'data');
   
   // Create output directory if it doesn't exist
