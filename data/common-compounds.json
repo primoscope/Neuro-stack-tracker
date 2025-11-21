@@ -1,0 +1,695 @@
+[
+  {
+    "id": "caffeine",
+    "name": "Caffeine",
+    "category": "stimulant",
+    "defaultDosage": "100-200 mg",
+    "notes": "Common stimulant; avoid use late in the day. Builds tolerance."
+  },
+  {
+    "id": "l-theanine",
+    "name": "L-Theanine",
+    "category": "anxiolytic",
+    "defaultDosage": "100-200 mg",
+    "notes": "Amino acid; synergizes well with caffeine. Promotes calm focus."
+  },
+  {
+    "id": "magnesium-glycinate",
+    "name": "Magnesium Glycinate",
+    "category": "mineral",
+    "defaultDosage": "200-400 mg",
+    "notes": "Highly bioavailable form of magnesium. Take before bed for better sleep."
+  },
+  {
+    "id": "ashwagandha",
+    "name": "Ashwagandha",
+    "category": "adaptogen",
+    "defaultDosage": "300-600 mg",
+    "notes": "Adaptogenic herb; reduces stress and anxiety. Take with food."
+  },
+  {
+    "id": "rhodiola-rosea",
+    "name": "Rhodiola Rosea",
+    "category": "adaptogen",
+    "defaultDosage": "200-600 mg",
+    "notes": "Adaptogen; improves energy and reduces fatigue. Best taken morning."
+  },
+  {
+    "id": "creatine",
+    "name": "Creatine Monohydrate",
+    "category": "ergogenic",
+    "defaultDosage": "5 g",
+    "notes": "Enhances physical and cognitive performance. Take daily for best results."
+  },
+  {
+    "id": "omega-3",
+    "name": "Omega-3 Fish Oil",
+    "category": "essential-fatty-acid",
+    "defaultDosage": "1000-2000 mg EPA+DHA",
+    "notes": "Anti-inflammatory; supports brain health. Take with meals."
+  },
+  {
+    "id": "melatonin",
+    "name": "Melatonin",
+    "category": "hormone",
+    "defaultDosage": "0.5-5 mg",
+    "notes": "Sleep hormone; take 30-60 min before bed. Start with low dose."
+  },
+  {
+    "id": "vitamin-d3",
+    "name": "Vitamin D3",
+    "category": "vitamin",
+    "defaultDosage": "1000-5000 IU",
+    "notes": "Essential vitamin; supports immune and bone health. Take with fat."
+  },
+  {
+    "id": "vitamin-b-complex",
+    "name": "B-Complex",
+    "category": "vitamin",
+    "defaultDosage": "1 tablet",
+    "notes": "Essential B vitamins; supports energy metabolism. Take morning."
+  },
+  {
+    "id": "alpha-gpc",
+    "name": "Alpha-GPC",
+    "category": "nootropic",
+    "defaultDosage": "300-600 mg",
+    "notes": "Choline source; enhances focus and memory. Can cause headaches."
+  },
+  {
+    "id": "bacopa-monnieri",
+    "name": "Bacopa Monnieri",
+    "category": "nootropic",
+    "defaultDosage": "300 mg",
+    "notes": "Memory enhancer; requires weeks for full effect. Take with food."
+  },
+  {
+    "id": "lions-mane",
+    "name": "Lion's Mane Mushroom",
+    "category": "nootropic",
+    "defaultDosage": "500-1000 mg",
+    "notes": "Neuroprotective mushroom; may enhance nerve growth."
+  },
+  {
+    "id": "cordyceps",
+    "name": "Cordyceps",
+    "category": "adaptogen",
+    "defaultDosage": "1000-3000 mg",
+    "notes": "Mushroom; improves energy and athletic performance."
+  },
+  {
+    "id": "coq10",
+    "name": "CoQ10",
+    "category": "antioxidant",
+    "defaultDosage": "100-200 mg",
+    "notes": "Cellular energy support; take with fat-containing meal."
+  },
+  {
+    "id": "nad-precursor",
+    "name": "NMN or NR (NAD+ Precursor)",
+    "category": "longevity",
+    "defaultDosage": "250-500 mg",
+    "notes": "Supports cellular energy and longevity. Morning preferred."
+  },
+  {
+    "id": "zinc",
+    "name": "Zinc",
+    "category": "mineral",
+    "defaultDosage": "15-30 mg",
+    "notes": "Essential mineral; supports immune function. Don't exceed 40mg/day."
+  },
+  {
+    "id": "probiotics",
+    "name": "Probiotics",
+    "category": "gut-health",
+    "defaultDosage": "10-50 billion CFU",
+    "notes": "Gut health support; take on empty stomach or with food per brand."
+  },
+  {
+    "id": "curcumin",
+    "name": "Curcumin (Turmeric)",
+    "category": "anti-inflammatory",
+    "defaultDosage": "500-1000 mg",
+    "notes": "Anti-inflammatory; take with black pepper for absorption."
+  },
+  {
+    "id": "glutathione",
+    "name": "Glutathione",
+    "category": "antioxidant",
+    "defaultDosage": "250-500 mg",
+    "notes": "Master antioxidant; liposomal form best for absorption."
+  },
+  {
+    "id": "taurine",
+    "name": "Taurine",
+    "category": "amino-acid",
+    "defaultDosage": "500-2000 mg",
+    "notes": "Amino acid; supports cardiovascular and neurological health."
+  },
+  {
+    "id": "glycine",
+    "name": "Glycine",
+    "category": "amino-acid",
+    "defaultDosage": "3-5 g",
+    "notes": "Amino acid; improves sleep quality. Take before bed."
+  },
+  {
+    "id": "phosphatidylserine",
+    "name": "Phosphatidylserine",
+    "category": "nootropic",
+    "defaultDosage": "100-300 mg",
+    "notes": "Phospholipid; supports cognitive function and reduces cortisol."
+  },
+  {
+    "id": "mucuna-pruriens",
+    "name": "Mucuna Pruriens",
+    "category": "dopaminergic",
+    "defaultDosage": "300-500 mg",
+    "notes": "Natural L-DOPA source; use cautiously, can affect dopamine."
+  },
+  {
+    "id": "5-htp",
+    "name": "5-HTP",
+    "category": "serotonergic",
+    "defaultDosage": "50-100 mg",
+    "notes": "Serotonin precursor; may improve mood and sleep. Evening use."
+  },
+  {
+    "id": "gaba",
+    "name": "GABA",
+    "category": "neurotransmitter",
+    "defaultDosage": "250-750 mg",
+    "notes": "Calming neurotransmitter; unclear if crosses blood-brain barrier."
+  },
+  {
+    "id": "cbd",
+    "name": "CBD Oil",
+    "category": "cannabinoid",
+    "defaultDosage": "10-50 mg",
+    "notes": "Non-psychoactive cannabinoid; may reduce anxiety and pain."
+  },
+  {
+    "id": "berberine",
+    "name": "Berberine",
+    "category": "metabolic",
+    "defaultDosage": "500 mg 2-3x/day",
+    "notes": "Blood sugar support; take with meals. Similar to metformin."
+  },
+  {
+    "id": "agmatine",
+    "name": "Agmatine Sulfate",
+    "category": "nootropic",
+    "defaultDosage": "500-1500 mg",
+    "notes": "Arginine metabolite; mood and neuroprotection. May affect tolerance."
+  },
+  {
+    "id": "bromantane",
+    "name": "Bromantane",
+    "category": "stimulant",
+    "defaultDosage": "50-100 mg",
+    "notes": "Russian nootropic; improves motivation and energy. Prescription in some areas."
+  },
+  {
+    "id": "phenibut",
+    "name": "Phenibut",
+    "category": "anxiolytic",
+    "defaultDosage": "250-500 mg",
+    "notes": "GABAergic; highly addictive. Use sparingly (1-2x/week max)."
+  },
+  {
+    "id": "memantine",
+    "name": "Memantine",
+    "category": "nootropic",
+    "defaultDosage": "5-20 mg",
+    "notes": "NMDA antagonist; prescription. Tolerance prevention."
+  },
+  {
+    "id": "modafinil",
+    "name": "Modafinil",
+    "category": "wakefulness",
+    "defaultDosage": "100-200 mg",
+    "notes": "Prescription wakefulness agent; avoid afternoon use."
+  },
+  {
+    "id": "nicotine",
+    "name": "Nicotine",
+    "category": "stimulant",
+    "defaultDosage": "1-4 mg",
+    "notes": "Highly addictive stimulant; use gum or patches, not smoking."
+  },
+  {
+    "id": "pregabalin",
+    "name": "Pregabalin (Lyrica)",
+    "category": "anxiolytic",
+    "defaultDosage": "75-150 mg",
+    "notes": "Prescription GABAergic; tolerance and dependence risk."
+  },
+  {
+    "id": "racetams",
+    "name": "Piracetam",
+    "category": "nootropic",
+    "defaultDosage": "1600-4800 mg",
+    "notes": "Original racetam; subtle cognitive enhancement. Pair with choline."
+  },
+  {
+    "id": "aniracetam",
+    "name": "Aniracetam",
+    "category": "nootropic",
+    "defaultDosage": "750-1500 mg",
+    "notes": "Fat-soluble racetam; may reduce anxiety and improve creativity."
+  },
+  {
+    "id": "noopept",
+    "name": "Noopept",
+    "category": "nootropic",
+    "defaultDosage": "10-30 mg",
+    "notes": "Potent peptide nootropic; take sublingually or orally."
+  },
+  {
+    "id": "semax",
+    "name": "Semax",
+    "category": "nootropic",
+    "defaultDosage": "0.5-1 mg",
+    "notes": "Peptide; intranasal admin; cognitive enhancement and neuroprotection."
+  },
+  {
+    "id": "selank",
+    "name": "Selank",
+    "category": "anxiolytic",
+    "defaultDosage": "0.25-1 mg",
+    "notes": "Anxiolytic peptide; intranasal admin; reduces anxiety."
+  },
+  {
+    "id": "bpc-157",
+    "name": "BPC-157",
+    "category": "healing",
+    "defaultDosage": "250-500 mcg",
+    "notes": "Healing peptide; research compound. Injectable or oral."
+  },
+  {
+    "id": "nac",
+    "name": "N-Acetyl Cysteine (NAC)",
+    "category": "antioxidant",
+    "defaultDosage": "600-1800 mg",
+    "notes": "Glutathione precursor; antioxidant and mucolytic."
+  },
+  {
+    "id": "sam-e",
+    "name": "SAMe",
+    "category": "mood",
+    "defaultDosage": "400-800 mg",
+    "notes": "Methylation support; mood and joint health. Morning use."
+  },
+  {
+    "id": "st-johns-wort",
+    "name": "St. John's Wort",
+    "category": "mood",
+    "defaultDosage": "300 mg 3x/day",
+    "notes": "Natural antidepressant; many drug interactions. Avoid with SSRIs."
+  },
+  {
+    "id": "kava",
+    "name": "Kava",
+    "category": "anxiolytic",
+    "defaultDosage": "150-300 mg kavalactones",
+    "notes": "Anxiolytic herb; liver toxicity risk with long-term use."
+  },
+  {
+    "id": "valerian-root",
+    "name": "Valerian Root",
+    "category": "sleep",
+    "defaultDosage": "300-600 mg",
+    "notes": "Sleep aid; may cause drowsiness. Take before bed."
+  },
+  {
+    "id": "lemon-balm",
+    "name": "Lemon Balm",
+    "category": "anxiolytic",
+    "defaultDosage": "300-500 mg",
+    "notes": "Calming herb; mild anxiolytic and sleep aid."
+  },
+  {
+    "id": "ginkgo-biloba",
+    "name": "Ginkgo Biloba",
+    "category": "nootropic",
+    "defaultDosage": "120-240 mg",
+    "notes": "Circulation and cognitive support; blood thinner."
+  },
+  {
+    "id": "panax-ginseng",
+    "name": "Panax Ginseng",
+    "category": "adaptogen",
+    "defaultDosage": "200-400 mg",
+    "notes": "Energy and cognitive enhancer; may increase blood pressure."
+  },
+  {
+    "id": "maca-root",
+    "name": "Maca Root",
+    "category": "adaptogen",
+    "defaultDosage": "1500-3000 mg",
+    "notes": "Peruvian root; energy and hormonal balance."
+  },
+  {
+    "id": "tribulus",
+    "name": "Tribulus Terrestris",
+    "category": "testosterone",
+    "defaultDosage": "500-1500 mg",
+    "notes": "May support testosterone; libido enhancement."
+  },
+  {
+    "id": "tongkat-ali",
+    "name": "Tongkat Ali",
+    "category": "testosterone",
+    "defaultDosage": "200-400 mg",
+    "notes": "Herbal testosterone booster; stress reduction."
+  },
+  {
+    "id": "fenugreek",
+    "name": "Fenugreek",
+    "category": "testosterone",
+    "defaultDosage": "500-600 mg",
+    "notes": "May support testosterone and blood sugar."
+  },
+  {
+    "id": "forskolin",
+    "name": "Forskolin",
+    "category": "metabolic",
+    "defaultDosage": "250-500 mg",
+    "notes": "May support fat loss and testosterone."
+  },
+  {
+    "id": "yohimbine",
+    "name": "Yohimbine",
+    "category": "stimulant",
+    "defaultDosage": "5-20 mg",
+    "notes": "Alpha-2 antagonist; fat loss and libido. Can cause anxiety."
+  },
+  {
+    "id": "egcg",
+    "name": "EGCG (Green Tea Extract)",
+    "category": "antioxidant",
+    "defaultDosage": "400-800 mg",
+    "notes": "Antioxidant catechin; metabolic and brain health."
+  },
+  {
+    "id": "resveratrol",
+    "name": "Resveratrol",
+    "category": "longevity",
+    "defaultDosage": "150-500 mg",
+    "notes": "Polyphenol antioxidant; longevity and cardiovascular."
+  },
+  {
+    "id": "quercetin",
+    "name": "Quercetin",
+    "category": "antioxidant",
+    "defaultDosage": "500-1000 mg",
+    "notes": "Flavonoid; anti-inflammatory and immune support."
+  },
+  {
+    "id": "apigenin",
+    "name": "Apigenin",
+    "category": "anxiolytic",
+    "defaultDosage": "50-100 mg",
+    "notes": "Flavonoid from chamomile; calming and sleep support."
+  },
+  {
+    "id": "luteolin",
+    "name": "Luteolin",
+    "category": "antioxidant",
+    "defaultDosage": "100 mg",
+    "notes": "Flavonoid; anti-inflammatory and neuroprotective."
+  },
+  {
+    "id": "sulforaphane",
+    "name": "Sulforaphane",
+    "category": "longevity",
+    "defaultDosage": "30-60 mg",
+    "notes": "From broccoli sprouts; detox and longevity support."
+  },
+  {
+    "id": "spirulina",
+    "name": "Spirulina",
+    "category": "superfood",
+    "defaultDosage": "1-3 g",
+    "notes": "Blue-green algae; nutrient-dense superfood."
+  },
+  {
+    "id": "chlorella",
+    "name": "Chlorella",
+    "category": "superfood",
+    "defaultDosage": "1-3 g",
+    "notes": "Green algae; detox and immune support."
+  },
+  {
+    "id": "collagen",
+    "name": "Collagen Peptides",
+    "category": "protein",
+    "defaultDosage": "10-20 g",
+    "notes": "Protein; supports skin, joints, and gut health."
+  },
+  {
+    "id": "whey-protein",
+    "name": "Whey Protein",
+    "category": "protein",
+    "defaultDosage": "20-30 g",
+    "notes": "Complete protein; muscle building and recovery."
+  },
+  {
+    "id": "beta-alanine",
+    "name": "Beta-Alanine",
+    "category": "ergogenic",
+    "defaultDosage": "2-5 g",
+    "notes": "Increases muscle carnosine; may cause tingling."
+  },
+  {
+    "id": "citrulline",
+    "name": "L-Citrulline",
+    "category": "ergogenic",
+    "defaultDosage": "6-8 g",
+    "notes": "Nitric oxide precursor; pumps and blood flow."
+  },
+  {
+    "id": "arginine",
+    "name": "L-Arginine",
+    "category": "ergogenic",
+    "defaultDosage": "3-6 g",
+    "notes": "Nitric oxide precursor; less effective than citrulline."
+  },
+  {
+    "id": "carnitine",
+    "name": "L-Carnitine",
+    "category": "metabolic",
+    "defaultDosage": "500-2000 mg",
+    "notes": "Fat metabolism; energy production."
+  },
+  {
+    "id": "tyrosine",
+    "name": "L-Tyrosine",
+    "category": "amino-acid",
+    "defaultDosage": "500-2000 mg",
+    "notes": "Dopamine and norepinephrine precursor; stress resilience."
+  },
+  {
+    "id": "tryptophan",
+    "name": "L-Tryptophan",
+    "category": "amino-acid",
+    "defaultDosage": "500-1000 mg",
+    "notes": "Serotonin precursor; mood and sleep. Evening use."
+  },
+  {
+    "id": "ornithine",
+    "name": "L-Ornithine",
+    "category": "amino-acid",
+    "defaultDosage": "400-800 mg",
+    "notes": "May improve sleep quality and reduce fatigue."
+  },
+  {
+    "id": "dmae",
+    "name": "DMAE",
+    "category": "nootropic",
+    "defaultDosage": "100-300 mg",
+    "notes": "Choline precursor; may enhance focus and mood."
+  },
+  {
+    "id": "huperzine-a",
+    "name": "Huperzine A",
+    "category": "nootropic",
+    "defaultDosage": "50-200 mcg",
+    "notes": "Acetylcholinesterase inhibitor; memory enhancement."
+  },
+  {
+    "id": "vinpocetine",
+    "name": "Vinpocetine",
+    "category": "nootropic",
+    "defaultDosage": "5-20 mg",
+    "notes": "Cerebral blood flow enhancer; cognitive support."
+  },
+  {
+    "id": "pqq",
+    "name": "PQQ",
+    "category": "antioxidant",
+    "defaultDosage": "10-20 mg",
+    "notes": "Mitochondrial biogenesis; neuroprotection."
+  },
+  {
+    "id": "pterostilbene",
+    "name": "Pterostilbene",
+    "category": "longevity",
+    "defaultDosage": "50-150 mg",
+    "notes": "Similar to resveratrol; better bioavailability."
+  },
+  {
+    "id": "astaxanthin",
+    "name": "Astaxanthin",
+    "category": "antioxidant",
+    "defaultDosage": "4-12 mg",
+    "notes": "Powerful antioxidant; eye and skin health."
+  },
+  {
+    "id": "lutein",
+    "name": "Lutein",
+    "category": "antioxidant",
+    "defaultDosage": "10-20 mg",
+    "notes": "Carotenoid; eye health and macular protection."
+  },
+  {
+    "id": "zeaxanthin",
+    "name": "Zeaxanthin",
+    "category": "antioxidant",
+    "defaultDosage": "2-4 mg",
+    "notes": "Carotenoid; eye health support."
+  },
+  {
+    "id": "beta-carotene",
+    "name": "Beta-Carotene",
+    "category": "vitamin",
+    "defaultDosage": "15-25 mg",
+    "notes": "Vitamin A precursor; antioxidant."
+  },
+  {
+    "id": "vitamin-c",
+    "name": "Vitamin C",
+    "category": "vitamin",
+    "defaultDosage": "500-2000 mg",
+    "notes": "Essential vitamin; immune and antioxidant support."
+  },
+  {
+    "id": "vitamin-e",
+    "name": "Vitamin E",
+    "category": "vitamin",
+    "defaultDosage": "200-400 IU",
+    "notes": "Fat-soluble antioxidant; heart and skin health."
+  },
+  {
+    "id": "vitamin-k2",
+    "name": "Vitamin K2",
+    "category": "vitamin",
+    "defaultDosage": "100-200 mcg",
+    "notes": "Bone and cardiovascular health; pair with D3."
+  },
+  {
+    "id": "calcium",
+    "name": "Calcium",
+    "category": "mineral",
+    "defaultDosage": "500-1000 mg",
+    "notes": "Essential mineral; bone health. Take with D3 and K2."
+  },
+  {
+    "id": "iron",
+    "name": "Iron",
+    "category": "mineral",
+    "defaultDosage": "18-65 mg",
+    "notes": "Essential mineral; oxygen transport. Test before supplementing."
+  },
+  {
+    "id": "selenium",
+    "name": "Selenium",
+    "category": "mineral",
+    "defaultDosage": "100-200 mcg",
+    "notes": "Antioxidant mineral; thyroid support."
+  },
+  {
+    "id": "iodine",
+    "name": "Iodine",
+    "category": "mineral",
+    "defaultDosage": "150-300 mcg",
+    "notes": "Essential for thyroid hormone production."
+  },
+  {
+    "id": "manganese",
+    "name": "Manganese",
+    "category": "mineral",
+    "defaultDosage": "2-5 mg",
+    "notes": "Trace mineral; bone and metabolic health."
+  },
+  {
+    "id": "copper",
+    "name": "Copper",
+    "category": "mineral",
+    "defaultDosage": "1-2 mg",
+    "notes": "Trace mineral; balance with zinc supplementation."
+  },
+  {
+    "id": "chromium",
+    "name": "Chromium",
+    "category": "mineral",
+    "defaultDosage": "200-400 mcg",
+    "notes": "Blood sugar regulation support."
+  },
+  {
+    "id": "molybdenum",
+    "name": "Molybdenum",
+    "category": "mineral",
+    "defaultDosage": "75-150 mcg",
+    "notes": "Trace mineral; sulfur metabolism."
+  },
+  {
+    "id": "boron",
+    "name": "Boron",
+    "category": "mineral",
+    "defaultDosage": "3-10 mg",
+    "notes": "Trace mineral; bone and hormone support."
+  },
+  {
+    "id": "silica",
+    "name": "Silica",
+    "category": "mineral",
+    "defaultDosage": "10-40 mg",
+    "notes": "Connective tissue and bone health."
+  },
+  {
+    "id": "choline",
+    "name": "Choline Bitartrate",
+    "category": "nootropic",
+    "defaultDosage": "250-500 mg",
+    "notes": "Essential nutrient; brain and liver health."
+  },
+  {
+    "id": "inositol",
+    "name": "Inositol",
+    "category": "mood",
+    "defaultDosage": "500-2000 mg",
+    "notes": "May help with anxiety and PCOS. Evening use."
+  },
+  {
+    "id": "biotin",
+    "name": "Biotin (Vitamin B7)",
+    "category": "vitamin",
+    "defaultDosage": "2500-10000 mcg",
+    "notes": "Hair, skin, and nail support."
+  },
+  {
+    "id": "folate",
+    "name": "Folate (Methylfolate)",
+    "category": "vitamin",
+    "defaultDosage": "400-800 mcg",
+    "notes": "Essential B vitamin; DNA synthesis and methylation."
+  },
+  {
+    "id": "vitamin-b12",
+    "name": "Vitamin B12 (Methylcobalamin)",
+    "category": "vitamin",
+    "defaultDosage": "500-2000 mcg",
+    "notes": "Essential vitamin; energy and nerve health."
+  }
+]
