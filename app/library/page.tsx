@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CompoundSearch } from "@/components/CompoundSearch";
 import { CompoundDetail } from "@/components/CompoundDetail";
+import { CompoundCard } from "@/components/CompoundCard";
 import { ArrowLeft, Filter, Grid, List } from "lucide-react";
 import Link from "next/link";
 import { CompoundDetail as CompoundDetailType } from "@/lib/compound-types";
@@ -101,7 +102,7 @@ export default function LibraryPage() {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-6 space-y-6">
+      <main className="mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-4 sm:space-y-6 pb-20 md:pb-6">
         {/* Search Bar */}
         <div className="max-w-2xl">
           <CompoundSearch
@@ -180,42 +181,13 @@ export default function LibraryPage() {
                 </CardHeader>
                 <CardContent>
                   {viewMode === "grid" ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                       {categoryCompounds.map((compound) => (
-                        <button
+                        <CompoundCard
                           key={compound.id}
+                          compound={compound}
                           onClick={() => handleSelectCompound(compound)}
-                          className="text-left p-4 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition-colors border border-slate-700 hover:border-slate-600"
-                          aria-label={`View details for ${compound.name}`}
-                        >
-                          <div className="font-semibold text-slate-100 mb-1">
-                            {compound.name}
-                          </div>
-                          {compound.aliases.length > 0 && (
-                            <div className="text-xs text-slate-400 mb-2">
-                              {compound.aliases.slice(0, 2).join(", ")}
-                              {compound.aliases.length > 2 && "..."}
-                            </div>
-                          )}
-                          <div className="flex flex-wrap gap-1">
-                            {compound.categoryTags.slice(0, 3).map((tag) => (
-                              <span
-                                key={tag}
-                                className="text-xs px-2 py-0.5 bg-slate-700 text-slate-300 rounded"
-                              >
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                          <div className="mt-2 pt-2 border-t border-slate-700 flex justify-between text-xs">
-                            <span className="text-slate-400">
-                              Evidence: {compound.evidence.strength}
-                            </span>
-                            <span className="text-slate-400">
-                              Efficacy: {compound.efficacyScore}/10
-                            </span>
-                          </div>
-                        </button>
+                        />
                       ))}
                     </div>
                   ) : (
