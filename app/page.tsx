@@ -10,10 +10,47 @@ import { LoggingDrawer } from "@/components/LoggingDrawer";
 import { QuickLogPresets } from "@/components/QuickLogPresets";
 import { TrendsChart } from "@/components/TrendsChart";
 import { ActivityHeatmap } from "@/components/ActivityHeatmap";
+import { StackTimeline } from "@/components/StackTimeline";
+import { GeminiChatWidget, type ActionChipData } from "@/components/GeminiChatWidget";
+import { BioSyncOptimizer } from "@/components/BioSyncOptimizer";
+import { getAllCompounds } from "@/lib/compound-library";
+import type { BioSyncResult } from "@/lib/gemini-bio-sync";
 
 export default function DashboardPage() {
   const { logEntries, compounds } = useStore();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  // Get today's active doses for the timeline and chat widget
+  const todayDoses = useMemo(() => {
+    const today = new Date().toISOString().split("T")[0];
+    const todayLogs = logEntries.filter((log) => log.date === today);
+    return todayLogs.flatMap((log) => log.doseItems);
+  }, [logEntries]);
+
+  // Build library compounds map for timeline
+  const libraryCompoundsMap = useMemo(() => {
+    const allCompounds = getAllCompounds();
+    const map = new Map();
+    allCompounds.forEach((c) => {
+      map.set(c.name.toLowerCase(), c);
+    });
+    return map;
+  }, []);
+
+  // Handle action chip clicks from the chat widget
+  const handleActionChipClick = (action: ActionChipData) => {
+    console.log("Action chip clicked:", action);
+    // TODO: Implement action handling based on action.type
+    // For now, just log it
+  };
+
+  // Handle Bio-Sync schedule application
+  const handleApplySchedule = (result: BioSyncResult) => {
+    console.log("Applying optimized schedule:", result);
+    // TODO: Implement schedule application logic
+    // This would update the log entries with new timestamps
+    alert(`Schedule optimized! ${result.optimizedSchedule.length} compounds rescheduled.\n\n${result.summary}`);
+  };
 
   // Calculate metrics
   const metrics = useMemo(() => {
@@ -125,6 +162,42 @@ export default function DashboardPage() {
         {/* Quick Log Presets */}
         <QuickLogPresets onOpenDrawer={() => setIsDrawerOpen(true)} />
 
+        {/* Neuro-Curve Timeline */}
+        {todayDoses.length > 0 && (
+          <Card className="glass border-slate-800">
+            <CardHeader className="flex flex-row items-center justify-between">
+              <div>
+                <CardTitle className="text-lg">Today&apos;s Neuro-Curve</CardTitle>
+                <p className="text-sm text-slate-400 mt-1">
+                  Aggregate stimulation curve showing compound interactions over time
+                </p>
+              </div>
+              <div className="hidden sm:block">
+                <BioSyncOptimizer
+                  compounds={compounds}
+                  currentDoses={todayDoses}
+                  onApplySchedule={handleApplySchedule}
+                />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <StackTimeline
+                compounds={compounds}
+                doseItems={todayDoses}
+                libraryCompounds={libraryCompoundsMap}
+              />
+              {/* Mobile Bio-Sync Button */}
+              <div className="mt-4 sm:hidden">
+                <BioSyncOptimizer
+                  compounds={compounds}
+                  currentDoses={todayDoses}
+                  onApplySchedule={handleApplySchedule}
+                />
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
         {/* Main Chart */}
         <Card className="glass border-slate-800">
           <CardHeader>
@@ -173,6 +246,13 @@ export default function DashboardPage() {
 
       {/* Logging Drawer */}
       <LoggingDrawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} />
+
+      {/* Gemini Chat Widget (Bio-Coach) */}
+      <GeminiChatWidget
+        compounds={compounds}
+        activeDoses={todayDoses}
+        onActionChipClick={handleActionChipClick}
+      />
     </div>
   );
 }

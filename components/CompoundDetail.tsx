@@ -15,6 +15,7 @@ import {
   TrendingUp,
   Info,
 } from "lucide-react";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from "recharts";
 
 interface CompoundDetailProps {
   compound: CompoundDetailType | null;
@@ -58,6 +59,9 @@ export function CompoundDetail({ compound, open, onOpenChange }: CompoundDetailP
     compound.recreational !== "No" || 
     compound.dependenceTolerance.toLowerCase().includes("high") ||
     compound.dependenceTolerance.toLowerCase().includes("moderate");
+
+  // Generate mini Neuro-Curve data for this single compound
+  const miniCurveData = generateMiniCurve(compound);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -174,6 +178,58 @@ export function CompoundDetail({ compound, open, onOpenChange }: CompoundDetailP
             </div>
           </div>
 
+          {/* Mini Neuro-Curve Visualization */}
+          {miniCurveData.length > 0 && (
+            <div>
+              <h3 className="text-sm font-semibold text-slate-400 mb-2">Effect Curve (Single Dose)</h3>
+              <div className="bg-slate-800/50 rounded-lg p-4">
+                <ResponsiveContainer width="100%" height={150}>
+                  <AreaChart data={miniCurveData}>
+                    <defs>
+                      <linearGradient id="effectGradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.8} />
+                        <stop offset="95%" stopColor="#3b82f6" stopOpacity={0.1} />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+                    <XAxis 
+                      dataKey="label" 
+                      stroke="#64748b" 
+                      tick={{ fill: "#64748b", fontSize: 11 }}
+                      interval={2}
+                    />
+                    <YAxis 
+                      stroke="#64748b" 
+                      tick={{ fill: "#64748b", fontSize: 11 }}
+                      domain={[0, 1]}
+                      ticks={[0, 0.5, 1]}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: "#1e293b",
+                        border: "1px solid #334155",
+                        borderRadius: "8px",
+                        color: "#e2e8f0",
+                      }}
+                      labelStyle={{ color: "#94a3b8" }}
+                      formatter={(value: number) => [(value * 100).toFixed(0) + "%", "Effect"]}
+                    />
+                    <Area
+                      type="monotone"
+                      dataKey="effect"
+                      stroke="#3b82f6"
+                      fill="url(#effectGradient)"
+                      strokeWidth={2}
+                    />
+                  </AreaChart>
+                </ResponsiveContainer>
+                <p className="text-xs text-slate-500 mt-2 text-center">
+                  Theoretical effect intensity over time after a single dose
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* Acute Effect */}
           {compound.acuteEffect && (
             <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3 flex items-start gap-2">
@@ -233,4 +289,55 @@ export function CompoundDetail({ compound, open, onOpenChange }: CompoundDetailP
       </DialogContent>
     </Dialog>
   );
+}
+
+/**
+ * Generate mini Neuro-Curve data for a single compound
+ */
+function generateMiniCurve(compound: CompoundDetailType): Array<{ time: number; label: string; effect: number }> {
+  const onset = compound.onset?.onsetMin || 30; // minutes
+  const peak = compound.onset?.peakMin || 60;
+  const duration = compound.onset?.durationMin || 240;
+
+  // If no timing data, return empty
+  if (onset === 0 && peak === 0 && duration === 0) {
+    return [];
+  }
+
+  const points: Array<{ time: number; label: string; effect: number }> = [];
+  const totalTime = duration + 60; // Add 1 hour after duration
+  const step = totalTime / 20; // 20 data points
+
+  for (let i = 0; i <= 20; i++) {
+    const time = i * step;
+    let effect = 0;
+
+    if (time < onset) {
+      // Onset phase: linear ramp-up
+      effect = (time / onset) * 0.3;
+    } else if (time < peak) {
+      // Rising to peak
+      effect = 0.3 + ((time - onset) / (peak - onset)) * 0.7;
+    } else if (time < duration) {
+      // Decay from peak
+      const decayProgress = (time - peak) / (duration - peak);
+      effect = 1.0 * Math.exp(-2 * decayProgress); // Exponential decay
+    } else {
+      // After duration
+      const timeSinceDuration = time - duration;
+      effect = 0.1 * Math.exp(-timeSinceDuration / 30); // Tail-off
+    }
+
+    const hours = Math.floor(time / 60);
+    const mins = Math.floor(time % 60);
+    const label = hours > 0 ? `${hours}h${mins > 0 ? mins : ''}` : `${mins}m`;
+
+    points.push({
+      time,
+      label,
+      effect: Math.max(0, effect),
+    });
+  }
+
+  return points;
 }
