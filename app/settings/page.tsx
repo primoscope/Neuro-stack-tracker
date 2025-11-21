@@ -25,6 +25,7 @@ import {
 import Link from "next/link";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { seedCompounds } from "@/lib/seed-data";
+import { AddCompoundFromLibrary } from "@/components/AddCompoundFromLibrary";
 
 export default function SettingsPage() {
   const {
@@ -43,6 +44,7 @@ export default function SettingsPage() {
   } = useStore();
 
   const [showCompoundDialog, setShowCompoundDialog] = useState(false);
+  const [showLibraryDialog, setShowLibraryDialog] = useState(false);
   const [showPresetDialog, setShowPresetDialog] = useState(false);
   const [showApiDialog, setShowApiDialog] = useState(false);
 
@@ -191,10 +193,16 @@ export default function SettingsPage() {
                   Manage your supplement and medication inventory
                 </CardDescription>
               </div>
-              <Button onClick={() => setShowCompoundDialog(true)} size="sm">
-                <Plus className="w-4 h-4 mr-2" />
-                Add Compound
-              </Button>
+              <div className="flex gap-2">
+                <Button onClick={() => setShowLibraryDialog(true)} size="sm">
+                  <BookOpen className="w-4 h-4 mr-2" />
+                  From Library
+                </Button>
+                <Button onClick={() => setShowCompoundDialog(true)} size="sm" variant="outline">
+                  <Plus className="w-4 h-4 mr-2" />
+                  Custom
+                </Button>
+              </div>
             </div>
           </CardHeader>
           <CardContent>
@@ -650,6 +658,12 @@ export default function SettingsPage() {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* Add from Library Dialog */}
+      <AddCompoundFromLibrary
+        open={showLibraryDialog}
+        onOpenChange={setShowLibraryDialog}
+      />
     </div>
   );
 }
