@@ -20,12 +20,48 @@ interface CompoundDetailProps {
   compound: CompoundDetailType | null;
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  userStack?: CompoundDetailType[]; // User's current stack for interaction checking
 }
 
-export function CompoundDetail({ compound, open, onOpenChange }: CompoundDetailProps) {
+export function CompoundDetail({ compound, open, onOpenChange, userStack = [] }: CompoundDetailProps) {
   if (!compound) return null;
 
   const timing = formatOnsetPeakDuration(compound);
+
+  // Check for potential interactions with user's stack
+  const stackInteractions = userStack
+    .filter(stackCompound => {
+      // Check if there are overlapping mechanistic tags that might cause issues
+      const overlappingTags = stackCompound.mechanisticTags.filter(tag =>
+        compound.mechanisticTags.includes(tag)
+      );
+      
+      // Flag if both are stimulants, both are sedatives, or other concerning combinations
+      const bothStimulants = 
+        stackCompound.effectType.toLowerCase().includes('stimulant') &&
+        compound.effectType.toLowerCase().includes('stimulant');
+      
+      const bothSedatives = 
+        (stackCompound.effectType.toLowerCase().includes('sleep') ||
+         stackCompound.categoryTags.some(t => t.toLowerCase().includes('gaba'))) &&
+        (compound.effectType.toLowerCase().includes('sleep') ||
+         compound.categoryTags.some(t => t.toLowerCase().includes('gaba')));
+
+      return overlappingTags.length > 2 || bothStimulants || bothSedatives;
+    })
+    .map(sc => ({
+      name: sc.name,
+      concern: sc.effectType.toLowerCase().includes('stimulant') && compound.effectType.toLowerCase().includes('stimulant')
+        ? 'Both are stimulants - may cause excessive CNS stimulation'
+        : sc.effectType.toLowerCase().includes('sleep') && compound.effectType.toLowerCase().includes('sleep')
+        ? 'Both are sedatives - may cause excessive sedation'
+        : 'Similar mechanisms - potential for interaction',
+    }));
+
+  // Calculate safety rating (visual 1-10 scale)
+  const safetyRating = compound.safetyScore;
+  const safetyColor = safetyRating >= 8 ? 'text-green-400' : safetyRating >= 6 ? 'text-yellow-400' : 'text-red-400';
+  const safetyBg = safetyRating >= 8 ? 'bg-green-500' : safetyRating >= 6 ? 'bg-yellow-500' : 'bg-red-500';
 
   // Get badge color based on effect type
   const getEffectTypeColor = (effectType: string) => {
@@ -101,6 +137,47 @@ export function CompoundDetail({ compound, open, onOpenChange }: CompoundDetailP
               </AlertDescription>
             </Alert>
           )}
+
+          {/* Stack Interaction Warnings */}
+          {stackInteractions.length > 0 && (
+            <Alert variant="destructive" className="border-orange-500/50 bg-orange-500/10">
+              <AlertTriangle className="w-4 h-4" />
+              <AlertDescription>
+                <span className="font-semibold">Potential Interactions with Your Stack:</span>
+                <ul className="mt-2 space-y-1">
+                  {stackInteractions.map((interaction, idx) => (
+                    <li key={idx} className="text-sm">
+                      • <span className="font-medium">{interaction.name}</span>: {interaction.concern}
+                    </li>
+                  ))}
+                </ul>
+              </AlertDescription>
+            </Alert>
+          )}
+
+          {/* Safety Score Visual */}
+          <div className="bg-slate-800/50 rounded-lg p-4">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <Shield className="w-5 h-5 text-blue-400" />
+                <h3 className="text-sm font-semibold text-slate-300">Safety Rating</h3>
+              </div>
+              <span className={`text-2xl font-bold ${safetyColor}`}>
+                {safetyRating}/10
+              </span>
+            </div>
+            <div className="w-full bg-slate-700 rounded-full h-3 mb-2">
+              <div
+                className={`${safetyBg} h-3 rounded-full transition-all`}
+                style={{ width: `${safetyRating * 10}%` }}
+              />
+            </div>
+            <p className="text-xs text-slate-400">
+              {safetyRating >= 8 && "Generally considered safe with proper usage"}
+              {safetyRating >= 6 && safetyRating < 8 && "Use with caution and monitor effects"}
+              {safetyRating < 6 && "Higher risk profile - medical supervision recommended"}
+            </p>
+          </div>
 
           {/* Primary Effects */}
           <div>
