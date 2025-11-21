@@ -43,26 +43,28 @@ export default function CompoundSearchWithAI({
 
   // AI search (delayed, only if no local results or query is long)
   useEffect(() => {
-    // Clear previous timeout
+    // Clear previous timeout (debouncing)
     if (aiTimeoutRef.current) {
       clearTimeout(aiTimeoutRef.current);
     }
 
-    // Reset AI results
+    // Reset AI results on new query
     setAiResult(null);
     setAiError('');
+    setIsAiSearching(false); // Cancel any in-progress search UI
 
     // Only trigger AI search if:
     // 1. Query is long enough (>3 chars)
     // 2. No local results found, OR query is very specific (>10 chars)
     if (query.trim().length > 3 && (localResults.length === 0 || query.trim().length > 10)) {
-      // Delay AI search by 1.5 seconds to avoid unnecessary API calls
+      // Delay AI search by 1.5 seconds to avoid unnecessary API calls (debounced)
       aiTimeoutRef.current = setTimeout(() => {
         performAiSearch(query.trim());
       }, 1500);
     }
 
     return () => {
+      // Cleanup: cancel pending AI search on unmount or query change
       if (aiTimeoutRef.current) {
         clearTimeout(aiTimeoutRef.current);
       }
