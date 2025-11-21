@@ -1,0 +1,3132 @@
+[
+  {
+    "id": "methylphenidate",
+    "name": "Methylphenidate",
+    "aliases": [
+      "Ritalin",
+      "Concerta",
+      "Metadate"
+    ],
+    "effectType": "Stimulant",
+    "primaryEffects": "Increases focus and attention; reduces hyperactivity and impulsivity",
+    "mechanism": "Dopamine and norepinephrine reuptake inhibitor",
+    "mechanisticTags": [
+      "ADHD",
+      "Stimulant",
+      "Dopamine",
+      "Norepinephrine"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-4h / 3-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 180,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Moderate tolerance with chronic use",
+    "daytimeNighttime": "Daytime only",
+    "interactions": {
+      "voxra": "Possible increased cardiovascular effects",
+      "ssri": "Generally safe but monitor for serotonin interactions"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved for ADHD with extensive clinical evidence"
+    },
+    "efficacyScore": 8.5,
+    "safetyScore": 7,
+    "categoryTags": [
+      "Stimulant",
+      "ADHD",
+      "Dopamine",
+      "Norepinephrine"
+    ]
+  },
+  {
+    "id": "amphetamine-mixed-salts",
+    "name": "Amphetamine Mixed Salts",
+    "aliases": [
+      "Adderall",
+      "Dextroamphetamine"
+    ],
+    "effectType": "Stimulant",
+    "primaryEffects": "Strong increase in focus and energy; reduces ADHD symptoms",
+    "mechanism": "Increases dopamine and norepinephrine release",
+    "mechanisticTags": [
+      "ADHD",
+      "Stimulant",
+      "Dopamine",
+      "Norepinephrine"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-4h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "Moderate",
+    "dependenceTolerance": "High tolerance and dependence risk",
+    "daytimeNighttime": "Daytime only",
+    "interactions": {
+      "voxra": "Increased risk of hypertension and cardiac effects",
+      "ssri": "Monitor closely - potential serotonin syndrome risk"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved with strong efficacy data for ADHD"
+    },
+    "efficacyScore": 9,
+    "safetyScore": 6.5,
+    "categoryTags": [
+      "Stimulant",
+      "ADHD",
+      "Dopamine",
+      "Norepinephrine"
+    ]
+  },
+  {
+    "id": "lisdexamfetamine",
+    "name": "Lisdexamfetamine",
+    "aliases": [
+      "Vyvanse"
+    ],
+    "effectType": "Stimulant",
+    "primaryEffects": "Smooth and long-lasting focus enhancement; less euphoria than IR amphetamine",
+    "mechanism": "Prodrug converted to dextroamphetamine",
+    "mechanisticTags": [
+      "ADHD",
+      "Stimulant",
+      "Dopamine",
+      "Prodrug"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "60-90m / 3-5h / 10-14h",
+      "onsetMin": 60,
+      "onsetMax": 90,
+      "peakMin": 180,
+      "peakMax": 300,
+      "durationMin": 600,
+      "durationMax": 840
+    },
+    "recreational": "Low",
+    "dependenceTolerance": "Moderate tolerance and dependence risk",
+    "daytimeNighttime": "Daytime only",
+    "interactions": {
+      "voxra": "Increased cardiovascular monitoring needed",
+      "ssri": "Monitor for serotonin syndrome"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved with good safety profile and abuse-deterrent properties"
+    },
+    "efficacyScore": 8.8,
+    "safetyScore": 7.5,
+    "categoryTags": [
+      "Stimulant",
+      "ADHD",
+      "Dopamine",
+      "Prodrug"
+    ]
+  },
+  {
+    "id": "atomoxetine",
+    "name": "Atomoxetine",
+    "aliases": [
+      "Strattera"
+    ],
+    "effectType": "Non-stimulant ADHD",
+    "primaryEffects": "Gradual improvement in attention and impulse control; less immediate than stimulants",
+    "mechanism": "Selective norepinephrine reuptake inhibitor",
+    "mechanisticTags": [
+      "ADHD",
+      "Norepinephrine",
+      "Non-stimulant"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "2-4 weeks for full effect / N/A / 24h"
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Low risk",
+    "daytimeNighttime": "Either; typically taken morning",
+    "interactions": {
+      "voxra": "Generally safe combination",
+      "ssri": "Safe; both affect norepinephrine"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "FDA-approved non-stimulant ADHD treatment; slower onset"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Non-stimulant ADHD",
+      "ADHD",
+      "Norepinephrine",
+      "Non-stimulant",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "guanfacine",
+    "name": "Guanfacine",
+    "aliases": [
+      "Intuniv"
+    ],
+    "effectType": "Non-stimulant ADHD",
+    "primaryEffects": "Improves focus and reduces hyperactivity; calming effect",
+    "mechanism": "Alpha-2A adrenergic agonist",
+    "mechanisticTags": [
+      "ADHD",
+      "Non-stimulant",
+      "Alpha-agonist",
+      "Calming"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-4h / 24h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 1440,
+      "durationMax": 1440
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Low risk",
+    "daytimeNighttime": "Either; bedtime if sedating",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "FDA-approved for ADHD; particularly helpful for hyperactivity"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Non-stimulant ADHD",
+      "ADHD",
+      "Non-stimulant",
+      "Alpha-agonist",
+      "Calming",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "clonidine",
+    "name": "Clonidine",
+    "aliases": [
+      "Kapvay"
+    ],
+    "effectType": "Non-stimulant ADHD",
+    "primaryEffects": "Reduces hyperactivity and impulsivity; promotes calm",
+    "mechanism": "Alpha-2 adrenergic agonist",
+    "mechanisticTags": [
+      "ADHD",
+      "Non-stimulant",
+      "Alpha-agonist",
+      "Sedating"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-4h / 12-24h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 720,
+      "durationMax": 1440
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Low risk",
+    "daytimeNighttime": "Nighttime preferred (sedating)",
+    "interactions": {
+      "voxra": "Monitor blood pressure",
+      "ssri": "Safe combination; monitor blood pressure"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "FDA-approved for ADHD; often used as adjunct"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Non-stimulant ADHD",
+      "ADHD",
+      "Non-stimulant",
+      "Alpha-agonist",
+      "Sedating",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "modafinil",
+    "name": "Modafinil",
+    "aliases": [
+      "Provigil"
+    ],
+    "effectType": "Wakefulness-promoting",
+    "primaryEffects": "Promotes alertness and reduces fatigue; smoother than traditional stimulants",
+    "mechanism": "Dopamine reuptake inhibitor; orexin activation",
+    "mechanisticTags": [
+      "Wakefulness",
+      "Cognitive enhancement",
+      "Dopamine"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-4h / 12-15h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 720,
+      "durationMax": 900
+    },
+    "recreational": "Low",
+    "dependenceTolerance": "Very low tolerance",
+    "daytimeNighttime": "Daytime only",
+    "interactions": {
+      "voxra": "Generally safe; mild additive effect",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved for narcolepsy/sleep disorders; strong evidence for wakefulness"
+    },
+    "efficacyScore": 8.5,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Wakefulness-promoting",
+      "Wakefulness",
+      "Cognitive enhancement",
+      "Dopamine"
+    ]
+  },
+  {
+    "id": "armodafinil",
+    "name": "Armodafinil",
+    "aliases": [
+      "Nuvigil"
+    ],
+    "effectType": "Wakefulness-promoting",
+    "primaryEffects": "Similar to modafinil but longer-lasting; R-enantiomer only",
+    "mechanism": "Dopamine reuptake inhibitor; orexin activation",
+    "mechanisticTags": [
+      "Wakefulness",
+      "Cognitive enhancement",
+      "Dopamine"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "60-120m / 2-4h / 12-15h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 720,
+      "durationMax": 900
+    },
+    "recreational": "Low",
+    "dependenceTolerance": "Very low tolerance",
+    "daytimeNighttime": "Daytime only",
+    "interactions": {
+      "voxra": "Generally safe; mild additive effect",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved; similar profile to modafinil with longer duration"
+    },
+    "efficacyScore": 8.5,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Wakefulness-promoting",
+      "Wakefulness",
+      "Cognitive enhancement",
+      "Dopamine"
+    ]
+  },
+  {
+    "id": "piracetam",
+    "name": "Piracetam",
+    "aliases": [
+      "Nootropil"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "primaryEffects": "Mild cognitive enhancement; improves verbal fluency and memory",
+    "mechanism": "Modulates AMPA receptors; improves neuronal membrane fluidity",
+    "mechanisticTags": [
+      "Racetam",
+      "Cholinergic",
+      "Neuroprotection"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Widely studied in Europe; moderate evidence for cognitive benefits"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Cholinergic",
+      "Neuroprotection",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "aniracetam",
+    "name": "Aniracetam",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "primaryEffects": "Enhances verbal fluency and reduces anxiety; fat-soluble racetam",
+    "mechanism": "AMPA receptor modulation; anxiolytic properties",
+    "mechanisticTags": [
+      "Racetam",
+      "Anxiolytic",
+      "Cholinergic"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "20-30m / 1-2h / 3-5h",
+      "onsetMin": 20,
+      "onsetMax": 30,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 180,
+      "durationMax": 300
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Limited clinical trials; anecdotal support for cognitive and mood benefits"
+    },
+    "efficacyScore": 6,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Anxiolytic",
+      "Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "oxiracetam",
+    "name": "Oxiracetam",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "primaryEffects": "Improves logical thinking and focus; stimulating racetam",
+    "mechanism": "AMPA/NMDA modulation; increases acetylcholine",
+    "mechanisticTags": [
+      "Racetam",
+      "Stimulating",
+      "Cholinergic"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-3h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Limited clinical evidence; user reports suggest cognitive benefits"
+    },
+    "efficacyScore": 6,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Stimulating",
+      "Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "phenylpiracetam",
+    "name": "Phenylpiracetam",
+    "aliases": [
+      "Phenotropil"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "primaryEffects": "Stimulating and cognitive enhancing; physical performance boost",
+    "mechanism": "Increases NMDA receptor density; dopaminergic",
+    "mechanisticTags": [
+      "Racetam",
+      "Stimulant",
+      "Physical performance"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-4h / 5-7h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 300,
+      "durationMax": 420
+    },
+    "recreational": "Mild",
+    "dependenceTolerance": "Tolerance develops quickly",
+    "daytimeNighttime": "Daytime only",
+    "interactions": {
+      "voxra": "Monitor; mild dopaminergic interaction",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Banned by WADA; limited clinical data but strong anecdotal effects"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 7.5,
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Stimulant",
+      "Physical performance",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "noopept",
+    "name": "Noopept",
+    "aliases": [
+      "GVS-111"
+    ],
+    "effectType": "Nootropic (Peptide)",
+    "primaryEffects": "Stronger and faster-acting than piracetam; neuroprotective",
+    "mechanism": "Increases BDNF and NGF; modulates glutamate",
+    "mechanisticTags": [
+      "Peptide",
+      "Neuroprotection",
+      "BDNF",
+      "NGF"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "15-20m / 30m-1h / 3-5h",
+      "onsetMin": 15,
+      "onsetMax": 20,
+      "peakMin": 30,
+      "peakMax": 30,
+      "durationMin": 180,
+      "durationMax": 300
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Mild tolerance possible",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Limited human trials; popular in nootropic community"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Nootropic (Peptide)",
+      "Peptide",
+      "Neuroprotection",
+      "BDNF",
+      "NGF",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "alpha-gpc",
+    "name": "Alpha-GPC",
+    "aliases": [
+      "L-Alpha glycerylphosphorylcholine"
+    ],
+    "effectType": "Cholinergic",
+    "primaryEffects": "Increases acetylcholine; enhances memory and focus",
+    "mechanism": "Choline precursor; increases acetylcholine synthesis",
+    "mechanisticTags": [
+      "Cholinergic",
+      "Choline",
+      "Cognitive enhancement"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Evidence for cognitive enhancement and neuroprotection"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Cholinergic",
+      "Choline",
+      "Cognitive enhancement"
+    ]
+  },
+  {
+    "id": "cdp-choline",
+    "name": "CDP-Choline",
+    "aliases": [
+      "Citicoline"
+    ],
+    "effectType": "Cholinergic",
+    "primaryEffects": "Boosts acetylcholine and dopamine; neuroprotective",
+    "mechanism": "Provides choline and cytidine for acetylcholine synthesis",
+    "mechanisticTags": [
+      "Cholinergic",
+      "Dopamine",
+      "Neuroprotection"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "60-90m / 2-3h / 8-10h",
+      "onsetMin": 60,
+      "onsetMax": 90,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 480,
+      "durationMax": 600
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Strong evidence for cognitive enhancement and stroke recovery"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Cholinergic",
+      "Dopamine",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "l-tyrosine",
+    "name": "L-Tyrosine",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Amino acid",
+    "primaryEffects": "Supports dopamine production; improves focus under stress",
+    "mechanism": "Precursor to dopamine and norepinephrine",
+    "mechanisticTags": [
+      "Dopamine",
+      "Norepinephrine",
+      "Stress resilience"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Generally safe; mild additive effect",
+      "ssri": "Safe; supports catecholamine synthesis"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Moderate evidence for stress resilience and cognitive performance"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Amino acid",
+      "Dopamine",
+      "Norepinephrine",
+      "Stress resilience"
+    ]
+  },
+  {
+    "id": "n-acetyl-l-tyrosine",
+    "name": "N-Acetyl L-Tyrosine",
+    "aliases": [
+      "NALT"
+    ],
+    "effectType": "Amino acid",
+    "primaryEffects": "More bioavailable form of L-tyrosine; cognitive support under stress",
+    "mechanism": "Precursor to dopamine and norepinephrine",
+    "mechanisticTags": [
+      "Dopamine",
+      "Norepinephrine",
+      "Stress resilience"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Generally safe; mild additive effect",
+      "ssri": "Safe; supports catecholamine synthesis"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Similar to L-tyrosine; debated bioavailability advantage"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Amino acid",
+      "Dopamine",
+      "Norepinephrine",
+      "Stress resilience"
+    ]
+  },
+  {
+    "id": "l-theanine",
+    "name": "L-Theanine",
+    "aliases": [
+      "Suntheanine"
+    ],
+    "effectType": "Anxiolytic (Amino acid)",
+    "primaryEffects": "Promotes relaxation without sedation; reduces anxiety",
+    "mechanism": "Increases GABA; alpha wave activity",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABA",
+      "Calming",
+      "Non-sedating"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Strong evidence for anxiety reduction and focus enhancement with caffeine"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Anxiolytic (Amino acid)",
+      "Anxiolytic",
+      "GABA",
+      "Calming",
+      "Non-sedating",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "caffeine",
+    "name": "Caffeine",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Stimulant",
+    "primaryEffects": "Increases alertness and energy; widely used",
+    "mechanism": "Adenosine receptor antagonist",
+    "mechanisticTags": [
+      "Stimulant",
+      "Wakefulness",
+      "Adenosine"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "15-30m / 1-2h / 3-7h",
+      "onsetMin": 15,
+      "onsetMax": 30,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 180,
+      "durationMax": 420
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Moderate tolerance",
+    "daytimeNighttime": "Daytime only",
+    "interactions": {
+      "voxra": "Safe; additive stimulant effect",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "Extensive evidence for alertness and cognitive performance"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Stimulant",
+      "Wakefulness",
+      "Adenosine",
+      "Wakefulness-promoting"
+    ]
+  },
+  {
+    "id": "caffeine---l-theanine",
+    "name": "Caffeine + L-Theanine",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Nootropic stack",
+    "primaryEffects": "Smooth focus and alertness without jitters; synergistic",
+    "mechanism": "Caffeine + GABA modulation",
+    "mechanisticTags": [
+      "Stimulant",
+      "Anxiolytic",
+      "Focus",
+      "Synergistic"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "20-30m / 1-2h / 4-6h",
+      "onsetMin": 20,
+      "onsetMax": 30,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Mild tolerance (caffeine)",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Safe; well-tolerated combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "Strong synergistic evidence; popular and effective stack"
+    },
+    "efficacyScore": 8.5,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Nootropic stack",
+      "Stimulant",
+      "Anxiolytic",
+      "Focus",
+      "Synergistic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "rhodiola-rosea",
+    "name": "Rhodiola Rosea",
+    "aliases": [
+      "Golden root"
+    ],
+    "effectType": "Adaptogen",
+    "primaryEffects": "Reduces fatigue and stress; enhances endurance",
+    "mechanism": "Modulates cortisol; supports serotonin and dopamine",
+    "mechanisticTags": [
+      "Adaptogen",
+      "Stress resilience",
+      "Dopamine",
+      "Serotonin"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 2-4h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Monitor; mild serotonin interaction"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Good evidence for stress reduction and fatigue"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Adaptogen",
+      "Stress resilience",
+      "Dopamine",
+      "Serotonin"
+    ]
+  },
+  {
+    "id": "ashwagandha",
+    "name": "Ashwagandha",
+    "aliases": [
+      "Withania somnifera",
+      "KSM-66"
+    ],
+    "effectType": "Adaptogen",
+    "primaryEffects": "Reduces stress and anxiety; improves sleep quality",
+    "mechanism": "Modulates cortisol; GABAergic effects",
+    "mechanisticTags": [
+      "Adaptogen",
+      "Anxiolytic",
+      "GABA",
+      "Sleep"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 3-4h / 8-12h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 180,
+      "peakMax": 240,
+      "durationMin": 480,
+      "durationMax": 720
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either; bedtime for sleep",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Strong evidence for stress reduction and anxiety"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Adaptogen",
+      "Anxiolytic",
+      "GABA",
+      "Sleep",
+      "Sleep aid",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "bacopa-monnieri",
+    "name": "Bacopa Monnieri",
+    "aliases": [
+      "Brahmi"
+    ],
+    "effectType": "Nootropic (Adaptogen)",
+    "primaryEffects": "Enhances memory and learning; reduces anxiety",
+    "mechanism": "Increases dendritic branching; serotonergic",
+    "mechanisticTags": [
+      "Adaptogen",
+      "Nootropic",
+      "Memory",
+      "Anxiolytic"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "4-12 weeks / N/A / 24h"
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Monitor; serotonergic effects"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Good evidence for memory enhancement over time"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Nootropic (Adaptogen)",
+      "Adaptogen",
+      "Nootropic",
+      "Memory",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "lion-s-mane",
+    "name": "Lion's Mane",
+    "aliases": [
+      "Hericium erinaceus"
+    ],
+    "effectType": "Nootropic (Mushroom)",
+    "primaryEffects": "Supports nerve growth and cognitive function; neuroprotective",
+    "mechanism": "Increases NGF and BDNF",
+    "mechanisticTags": [
+      "Nootropic",
+      "Neuroprotection",
+      "NGF",
+      "BDNF"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "2-4 weeks / N/A / 24h"
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Emerging evidence for cognitive support and nerve health"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Nootropic (Mushroom)",
+      "Nootropic",
+      "Neuroprotection",
+      "NGF",
+      "BDNF"
+    ]
+  },
+  {
+    "id": "phenibut",
+    "name": "Phenibut",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "GABAergic (Anxiolytic)",
+    "primaryEffects": "Powerful anxiolytic and euphoric; social enhancer",
+    "mechanism": "GABA-B agonist",
+    "mechanisticTags": [
+      "GABAergic",
+      "Anxiolytic",
+      "Euphoric",
+      "Social"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "1-2h / 2-4h / 12-24h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 720,
+      "durationMax": 1440
+    },
+    "recreational": "Yes",
+    "dependenceTolerance": "High tolerance and dependence risk",
+    "daytimeNighttime": "Either; often nighttime",
+    "interactions": {
+      "voxra": "Safe; CNS depression risk",
+      "ssri": "Safe; CNS depression possible"
+    },
+    "evidence": {
+      "strength": "E",
+      "summary": "Limited clinical use; high abuse and dependence potential"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 4,
+    "categoryTags": [
+      "GABAergic (Anxiolytic)",
+      "GABAergic",
+      "Anxiolytic",
+      "Euphoric",
+      "Social"
+    ]
+  },
+  {
+    "id": "picamilon",
+    "name": "Picamilon",
+    "aliases": [
+      "Nicotinoyl-GABA"
+    ],
+    "effectType": "GABAergic (Anxiolytic)",
+    "primaryEffects": "Mild anxiolytic; improves cerebral circulation",
+    "mechanism": "GABA crosses blood-brain barrier via niacin",
+    "mechanisticTags": [
+      "GABAergic",
+      "Anxiolytic",
+      "Circulation"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Low tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "E",
+      "summary": "Banned by FDA; limited clinical data"
+    },
+    "efficacyScore": 5.5,
+    "safetyScore": 6,
+    "categoryTags": [
+      "GABAergic (Anxiolytic)",
+      "GABAergic",
+      "Anxiolytic",
+      "Circulation"
+    ]
+  },
+  {
+    "id": "fasoracetam",
+    "name": "Fasoracetam",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "primaryEffects": "Reduces anxiety; improves memory and focus",
+    "mechanism": "GABA-B upregulation; cholinergic",
+    "mechanisticTags": [
+      "Racetam",
+      "Anxiolytic",
+      "GABA-B",
+      "Cholinergic"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "E",
+      "summary": "Very limited clinical data; Phase III trials for ADHD"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 7.5,
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Anxiolytic",
+      "GABA-B",
+      "Cholinergic",
+      "Nootropic",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "bromantane",
+    "name": "Bromantane",
+    "aliases": [
+      "Ladasten"
+    ],
+    "effectType": "Adaptogen (Actoprotector)",
+    "primaryEffects": "Increases energy and reduces fatigue without stimulation; anxiolytic",
+    "mechanism": "Upregulates tyrosine hydroxylase; increases dopamine synthesis",
+    "mechanisticTags": [
+      "Adaptogen",
+      "Dopamine",
+      "Anxiolytic",
+      "Energy"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 3-4h / 8-12h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 180,
+      "peakMax": 240,
+      "durationMin": 480,
+      "durationMax": 720
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Safe; complementary dopaminergic effect",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Used in Russia; limited Western clinical data"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Adaptogen (Actoprotector)",
+      "Adaptogen",
+      "Dopamine",
+      "Anxiolytic",
+      "Energy"
+    ]
+  },
+  {
+    "id": "semax",
+    "name": "Semax",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Nootropic (Peptide)",
+    "primaryEffects": "Enhances cognitive function and stress resilience; neuroprotective",
+    "mechanism": "Increases BDNF; modulates enkephalins",
+    "mechanisticTags": [
+      "Peptide",
+      "Neuroprotection",
+      "BDNF",
+      "Stress resilience"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "10-20m / 30m-1h / 3-5h",
+      "onsetMin": 10,
+      "onsetMax": 20,
+      "peakMin": 30,
+      "peakMax": 30,
+      "durationMin": 180,
+      "durationMax": 300
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Russian pharmaceutical; limited Western trials"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 7.5,
+    "categoryTags": [
+      "Nootropic (Peptide)",
+      "Peptide",
+      "Neuroprotection",
+      "BDNF",
+      "Stress resilience",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "selank",
+    "name": "Selank",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Anxiolytic (Peptide)",
+    "primaryEffects": "Reduces anxiety without sedation; improves stress resilience",
+    "mechanism": "Modulates enkephalins and GABA",
+    "mechanisticTags": [
+      "Peptide",
+      "Anxiolytic",
+      "GABA",
+      "Stress resilience"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "10-20m / 30m-1h / 4-6h",
+      "onsetMin": 10,
+      "onsetMax": 20,
+      "peakMin": 30,
+      "peakMax": 30,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Russian pharmaceutical; limited Western clinical data"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 7.5,
+    "categoryTags": [
+      "Anxiolytic (Peptide)",
+      "Peptide",
+      "Anxiolytic",
+      "GABA",
+      "Stress resilience",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "tianeptine-sodium",
+    "name": "Tianeptine Sodium",
+    "aliases": [
+      "Stablon",
+      "Coaxil"
+    ],
+    "effectType": "Antidepressant (Atypical)",
+    "primaryEffects": "Improves mood and reduces anxiety; unique mechanism",
+    "mechanism": "Atypical action on glutamate and AMPA receptors",
+    "mechanisticTags": [
+      "Antidepressant",
+      "Anxiolytic",
+      "Glutamate"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "1-2h / 2-3h / 2-4h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 120,
+      "durationMax": 240
+    },
+    "recreational": "Mild",
+    "dependenceTolerance": "Moderate dependence at high doses",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Monitor; both affect monoamines",
+      "ssri": "Caution; complex interaction possible"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Approved in some countries; unique mechanism"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 6,
+    "categoryTags": [
+      "Antidepressant (Atypical)",
+      "Antidepressant",
+      "Anxiolytic",
+      "Glutamate"
+    ]
+  },
+  {
+    "id": "tianeptine-sulfate",
+    "name": "Tianeptine Sulfate",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Antidepressant (Atypical)",
+    "primaryEffects": "Longer-lasting version of tianeptine sodium; smoother",
+    "mechanism": "Atypical action on glutamate and AMPA receptors",
+    "mechanisticTags": [
+      "Antidepressant",
+      "Anxiolytic",
+      "Glutamate"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "2-3h / 3-4h / 8-12h",
+      "onsetMin": 120,
+      "onsetMax": 180,
+      "peakMin": 180,
+      "peakMax": 240,
+      "durationMin": 480,
+      "durationMax": 720
+    },
+    "recreational": "Mild",
+    "dependenceTolerance": "Moderate dependence at high doses",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Monitor; both affect monoamines",
+      "ssri": "Caution; complex interaction possible"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Similar to sodium form but extended release"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 6,
+    "categoryTags": [
+      "Antidepressant (Atypical)",
+      "Antidepressant",
+      "Anxiolytic",
+      "Glutamate"
+    ]
+  },
+  {
+    "id": "memantine",
+    "name": "Memantine",
+    "aliases": [
+      "Namenda"
+    ],
+    "effectType": "NMDA antagonist",
+    "primaryEffects": "Neuroprotective; improves focus and memory at low doses",
+    "mechanism": "NMDA receptor antagonist",
+    "mechanisticTags": [
+      "Neuroprotection",
+      "NMDA",
+      "Cognitive enhancement"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "2-4h / 4-6h / 60-80h",
+      "onsetMin": 120,
+      "onsetMax": 240,
+      "peakMin": 240,
+      "peakMax": 360,
+      "durationMin": 3600,
+      "durationMax": 4800
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "FDA-approved for Alzheimer's; off-label cognitive use"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "NMDA antagonist",
+      "Neuroprotection",
+      "NMDA",
+      "Cognitive enhancement"
+    ]
+  },
+  {
+    "id": "agmatine-sulfate",
+    "name": "Agmatine Sulfate",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Neuromodulator",
+    "primaryEffects": "Reduces anxiety and neuropathic pain; mood enhancement",
+    "mechanism": "Modulates NMDA; nitric oxide synthesis",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "NMDA",
+      "Neuroprotection",
+      "Mood"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Limited clinical trials; promising preclinical data"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Neuromodulator",
+      "Anxiolytic",
+      "NMDA",
+      "Neuroprotection",
+      "Mood"
+    ]
+  },
+  {
+    "id": "sarcosine",
+    "name": "Sarcosine",
+    "aliases": [
+      "N-Methylglycine"
+    ],
+    "effectType": "NMDA modulator",
+    "primaryEffects": "Enhances cognition and mood; potential antidepressant",
+    "mechanism": "Glycine transporter-1 inhibitor; increases NMDA activity",
+    "mechanisticTags": [
+      "Cognitive enhancement",
+      "Antidepressant",
+      "NMDA"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 2-3h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Monitor; both affect monoamines"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Moderate evidence for cognitive and mood benefits"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "NMDA modulator",
+      "Cognitive enhancement",
+      "Antidepressant",
+      "NMDA"
+    ]
+  },
+  {
+    "id": "d-serine",
+    "name": "D-Serine",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "NMDA co-agonist",
+    "primaryEffects": "Cognitive enhancement; potential antipsychotic adjunct",
+    "mechanism": "NMDA receptor co-agonist",
+    "mechanisticTags": [
+      "Cognitive enhancement",
+      "NMDA",
+      "Neuroprotection"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Clinical evidence in schizophrenia; limited nootropic data"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 8,
+    "categoryTags": [
+      "NMDA co-agonist",
+      "Cognitive enhancement",
+      "NMDA",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "magnesium-l-threonate",
+    "name": "Magnesium L-Threonate",
+    "aliases": [
+      "Magtein"
+    ],
+    "effectType": "Mineral (Nootropic form)",
+    "primaryEffects": "Improves memory and cognitive function; reduces anxiety",
+    "mechanism": "Crosses blood-brain barrier; NMDA modulation",
+    "mechanisticTags": [
+      "Cognitive enhancement",
+      "Anxiolytic",
+      "NMDA",
+      "Neuroprotection"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-4h / 8-12h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 480,
+      "durationMax": 720
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either; bedtime for sleep",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Patented form with evidence for brain magnesium increase"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Mineral (Nootropic form)",
+      "Cognitive enhancement",
+      "Anxiolytic",
+      "NMDA",
+      "Neuroprotection",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "magnesium-glycinate",
+    "name": "Magnesium Glycinate",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Mineral (Calming)",
+    "primaryEffects": "Promotes relaxation and sleep; reduces muscle tension",
+    "mechanism": "Increases GABA; muscle relaxation",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABA",
+      "Sleep",
+      "Muscle relaxation"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 8-12h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 480,
+      "durationMax": 720
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Nighttime",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Well-absorbed form; good for sleep and anxiety"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Mineral (Calming)",
+      "Anxiolytic",
+      "GABA",
+      "Sleep",
+      "Muscle relaxation",
+      "Sleep aid",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "zinc",
+    "name": "Zinc",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Mineral",
+    "primaryEffects": "Supports cognitive function and mood; immune health",
+    "mechanism": "Modulates NMDA; supports neurotransmitter synthesis",
+    "mechanisticTags": [
+      "Cognitive enhancement",
+      "NMDA",
+      "Mood",
+      "Immune"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-4h / 24h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 1440,
+      "durationMax": 1440
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Essential nutrient; evidence for mood and cognition"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Mineral",
+      "Cognitive enhancement",
+      "NMDA",
+      "Mood",
+      "Immune"
+    ]
+  },
+  {
+    "id": "vitamin-d3",
+    "name": "Vitamin D3",
+    "aliases": [
+      "Cholecalciferol"
+    ],
+    "effectType": "Vitamin",
+    "primaryEffects": "Supports mood and cognitive function; bone health",
+    "mechanism": "Modulates neurotransmitter synthesis; neuroprotection",
+    "mechanisticTags": [
+      "Mood",
+      "Cognitive enhancement",
+      "Neuroprotection"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "Days to weeks / N/A / 24h"
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "Strong evidence for mood and immune health"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Vitamin",
+      "Mood",
+      "Cognitive enhancement",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "omega-3--epa-dha-",
+    "name": "Omega-3 (EPA/DHA)",
+    "aliases": [
+      "Fish oil"
+    ],
+    "effectType": "Essential fatty acid",
+    "primaryEffects": "Supports brain health and reduces inflammation; mood benefits",
+    "mechanism": "Neuronal membrane support; anti-inflammatory",
+    "mechanisticTags": [
+      "Neuroprotection",
+      "Mood",
+      "Anti-inflammatory"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "Weeks / N/A / 24h"
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "Extensive evidence for brain health and mood"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Essential fatty acid",
+      "Neuroprotection",
+      "Mood",
+      "Anti-inflammatory"
+    ]
+  },
+  {
+    "id": "huperzine-a",
+    "name": "Huperzine A",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Cholinesterase inhibitor",
+    "primaryEffects": "Enhances memory and learning; neuroprotective",
+    "mechanism": "Acetylcholinesterase inhibitor; increases acetylcholine",
+    "mechanisticTags": [
+      "Cholinergic",
+      "Memory",
+      "Neuroprotection"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-4h / 10-14h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 600,
+      "durationMax": 840
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Moderate evidence for cognitive enhancement"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Cholinesterase inhibitor",
+      "Cholinergic",
+      "Memory",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "sulbutiamine",
+    "name": "Sulbutiamine",
+    "aliases": [
+      "Arcalion"
+    ],
+    "effectType": "Nootropic (Thiamine derivative)",
+    "primaryEffects": "Increases energy and reduces fatigue; enhances memory",
+    "mechanism": "Increases thiamine in brain; modulates dopamine",
+    "mechanisticTags": [
+      "Energy",
+      "Cognitive enhancement",
+      "Dopamine"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-3h / 5-7h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 300,
+      "durationMax": 420
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Tolerance possible",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Safe; mild additive effect",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Limited clinical data; popular in nootropic community"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 7.5,
+    "categoryTags": [
+      "Nootropic (Thiamine derivative)",
+      "Energy",
+      "Cognitive enhancement",
+      "Dopamine",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "uridine-monophosphate",
+    "name": "Uridine Monophosphate",
+    "aliases": [
+      "UMP"
+    ],
+    "effectType": "Nucleotide",
+    "primaryEffects": "Supports dopamine and memory; synergistic with choline and DHA",
+    "mechanism": "Increases phospholipid synthesis; dopaminergic",
+    "mechanisticTags": [
+      "Dopamine",
+      "Memory",
+      "Neuroprotection"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-4h / 8-12h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 480,
+      "durationMax": 720
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Limited clinical evidence; promising preclinical data"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Nucleotide",
+      "Dopamine",
+      "Memory",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "creatine-monohydrate",
+    "name": "Creatine Monohydrate",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Energy (ATP)",
+    "primaryEffects": "Enhances cognitive function and physical performance",
+    "mechanism": "Increases ATP; cellular energy",
+    "mechanisticTags": [
+      "Energy",
+      "Cognitive enhancement",
+      "Physical performance"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-4h / 24h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 1440,
+      "durationMax": 1440
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "Extensive evidence for physical and cognitive benefits"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Energy (ATP)",
+      "Energy",
+      "Cognitive enhancement",
+      "Physical performance"
+    ]
+  },
+  {
+    "id": "mucuna-pruriens",
+    "name": "Mucuna Pruriens",
+    "aliases": [
+      "Velvet bean"
+    ],
+    "effectType": "Dopamine precursor",
+    "primaryEffects": "Increases dopamine; improves mood and motivation",
+    "mechanism": "Contains L-DOPA; converts to dopamine",
+    "mechanisticTags": [
+      "Dopamine",
+      "Mood",
+      "Motivation"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "Mild",
+    "dependenceTolerance": "Tolerance possible",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Caution; additive dopaminergic effect",
+      "ssri": "Monitor; dopamine-serotonin interaction"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Traditional use; limited modern clinical trials"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 7,
+    "categoryTags": [
+      "Dopamine precursor",
+      "Dopamine",
+      "Mood",
+      "Motivation"
+    ]
+  },
+  {
+    "id": "nicotine",
+    "name": "Nicotine",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Stimulant (Nootropic)",
+    "primaryEffects": "Enhances focus and cognitive performance; highly addictive",
+    "mechanism": "Nicotinic acetylcholine receptor agonist",
+    "mechanisticTags": [
+      "Stimulant",
+      "Cholinergic",
+      "Cognitive enhancement"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "5-10m / 30m-1h / 1-2h",
+      "onsetMin": 5,
+      "onsetMax": 10,
+      "peakMin": 30,
+      "peakMax": 30,
+      "durationMin": 60,
+      "durationMax": 120
+    },
+    "recreational": "Yes",
+    "dependenceTolerance": "High dependence risk",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Safe but additive stimulant effects",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Strong evidence for cognitive enhancement but high addiction risk"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 3,
+    "categoryTags": [
+      "Stimulant (Nootropic)",
+      "Stimulant",
+      "Cholinergic",
+      "Cognitive enhancement",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "pregnenolone",
+    "name": "Pregnenolone",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Neurosteroid",
+    "primaryEffects": "Enhances memory and reduces fatigue; mood support",
+    "mechanism": "Precursor to other neurosteroids; NMDA modulation",
+    "mechanisticTags": [
+      "Neurosteroid",
+      "Memory",
+      "Mood",
+      "NMDA"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-4h / 8-12h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 480,
+      "durationMax": 720
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Limited clinical evidence; promising mechanism"
+    },
+    "efficacyScore": 6,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Neurosteroid",
+      "Memory",
+      "Mood",
+      "NMDA"
+    ]
+  },
+  {
+    "id": "dhea",
+    "name": "DHEA",
+    "aliases": [
+      "Dehydroepiandrosterone"
+    ],
+    "effectType": "Neurosteroid",
+    "primaryEffects": "Enhances mood and energy; anti-aging effects",
+    "mechanism": "Precursor to sex hormones; neuroprotection",
+    "mechanisticTags": [
+      "Neurosteroid",
+      "Mood",
+      "Energy",
+      "Anti-aging"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-4h / 8-12h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 480,
+      "durationMax": 720
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Moderate evidence for mood and aging"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 7.5,
+    "categoryTags": [
+      "Neurosteroid",
+      "Mood",
+      "Energy",
+      "Anti-aging"
+    ]
+  },
+  {
+    "id": "melatonin",
+    "name": "Melatonin",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Sleep aid",
+    "primaryEffects": "Promotes sleep onset and improves sleep quality",
+    "mechanism": "Melatonin receptor agonist",
+    "mechanisticTags": [
+      "Sleep",
+      "Circadian rhythm",
+      "Antioxidant"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "20-30m / 1-2h / 4-6h",
+      "onsetMin": 20,
+      "onsetMax": 30,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Nighttime only",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "Strong evidence for sleep and circadian regulation"
+    },
+    "efficacyScore": 8.5,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Sleep aid",
+      "Sleep",
+      "Circadian rhythm",
+      "Antioxidant"
+    ]
+  },
+  {
+    "id": "5-htp",
+    "name": "5-HTP",
+    "aliases": [
+      "5-Hydroxytryptophan"
+    ],
+    "effectType": "Serotonin precursor",
+    "primaryEffects": "Improves mood and sleep; reduces anxiety",
+    "mechanism": "Converts to serotonin",
+    "mechanisticTags": [
+      "Mood",
+      "Anxiolytic",
+      "Sleep",
+      "Serotonin"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either; nighttime for sleep",
+    "interactions": {
+      "voxra": "Caution; serotonin syndrome risk",
+      "ssri": "Avoid; high serotonin syndrome risk"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Moderate evidence for mood and sleep"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 6,
+    "categoryTags": [
+      "Serotonin precursor",
+      "Mood",
+      "Anxiolytic",
+      "Sleep",
+      "Serotonin",
+      "Sleep aid"
+    ]
+  },
+  {
+    "id": "tryptophan",
+    "name": "Tryptophan",
+    "aliases": [
+      "L-Tryptophan"
+    ],
+    "effectType": "Serotonin precursor",
+    "primaryEffects": "Promotes sleep and mood; less direct than 5-HTP",
+    "mechanism": "Converts to 5-HTP then serotonin",
+    "mechanisticTags": [
+      "Mood",
+      "Sleep",
+      "Serotonin"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-3h / 6-8h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Nighttime",
+    "interactions": {
+      "voxra": "Caution; serotonin syndrome risk",
+      "ssri": "Caution; serotonin syndrome risk"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Evidence for sleep and mood support"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 7,
+    "categoryTags": [
+      "Serotonin precursor",
+      "Mood",
+      "Sleep",
+      "Serotonin",
+      "Sleep aid"
+    ]
+  },
+  {
+    "id": "taurine",
+    "name": "Taurine",
+    "aliases": [
+      "N/A"
+    ],
+    "effectType": "Amino acid (GABAergic)",
+    "primaryEffects": "Promotes relaxation and reduces anxiety; cardiovascular support",
+    "mechanism": "GABA receptor modulation",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABA",
+      "Cardiovascular",
+      "Neuroprotection"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Moderate evidence for anxiety and cardiovascular health"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 9.5,
+    "categoryTags": [
+      "Amino acid (GABAergic)",
+      "Anxiolytic",
+      "GABA",
+      "Cardiovascular",
+      "Neuroprotection",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "gaba",
+    "name": "GABA",
+    "aliases": [
+      "Gamma-Aminobutyric Acid"
+    ],
+    "effectType": "GABAergic",
+    "primaryEffects": "Promotes relaxation; limited brain penetration",
+    "mechanism": "Direct GABA receptor activation (peripheral)",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABA",
+      "Relaxation"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 1-2h / 3-5h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 180,
+      "durationMax": 300
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Questionable brain penetration; peripheral effects"
+    },
+    "efficacyScore": 5,
+    "safetyScore": 9,
+    "categoryTags": [
+      "GABAergic",
+      "Anxiolytic",
+      "GABA",
+      "Relaxation"
+    ]
+  },
+  {
+    "id": "kava-kava",
+    "name": "Kava Kava",
+    "aliases": [
+      "Piper methysticum"
+    ],
+    "effectType": "Anxiolytic (Herbal)",
+    "primaryEffects": "Powerful anxiolytic and muscle relaxant",
+    "mechanism": "GABA-A positive allosteric modulation",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABAergic",
+      "Muscle relaxation"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "Mild",
+    "dependenceTolerance": "Tolerance possible",
+    "daytimeNighttime": "Either; evening preferred",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Traditional use; hepatotoxicity concerns with poor-quality extracts"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 6,
+    "categoryTags": [
+      "Anxiolytic (Herbal)",
+      "Anxiolytic",
+      "GABAergic",
+      "Muscle relaxation",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "valerian-root",
+    "name": "Valerian Root",
+    "aliases": [
+      "Valeriana officinalis"
+    ],
+    "effectType": "Sleep aid (Herbal)",
+    "primaryEffects": "Promotes sleep and reduces anxiety; sedating",
+    "mechanism": "GABA-A modulation; adenosine",
+    "mechanisticTags": [
+      "Sleep",
+      "Anxiolytic",
+      "GABAergic",
+      "Sedating"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Nighttime",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Traditional use; moderate evidence for sleep"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Sleep aid (Herbal)",
+      "Sleep",
+      "Anxiolytic",
+      "GABAergic",
+      "Sedating",
+      "Sleep aid",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "lemon-balm",
+    "name": "Lemon Balm",
+    "aliases": [
+      "Melissa officinalis"
+    ],
+    "effectType": "Anxiolytic (Herbal)",
+    "primaryEffects": "Reduces anxiety and promotes relaxation; cognitive support",
+    "mechanism": "GABA transaminase inhibition; acetylcholine support",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "Cholinergic",
+      "Calming"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Traditional use; moderate evidence for anxiety"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Anxiolytic (Herbal)",
+      "Anxiolytic",
+      "Cholinergic",
+      "Calming",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "passionflower",
+    "name": "Passionflower",
+    "aliases": [
+      "Passiflora incarnata"
+    ],
+    "effectType": "Anxiolytic (Herbal)",
+    "primaryEffects": "Reduces anxiety and improves sleep; sedating",
+    "mechanism": "GABA-A modulation",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABAergic",
+      "Sleep"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Nighttime",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "C",
+      "summary": "Traditional use; moderate evidence for anxiety"
+    },
+    "efficacyScore": 6.5,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Anxiolytic (Herbal)",
+      "Anxiolytic",
+      "GABAergic",
+      "Sleep",
+      "Sleep aid",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "emoxypine-succinate",
+    "name": "Emoxypine Succinate",
+    "aliases": [
+      "Mexidol"
+    ],
+    "effectType": "Antioxidant (Anxiolytic)",
+    "primaryEffects": "Reduces anxiety and oxidative stress; neuroprotective",
+    "mechanism": "Antioxidant; GABA modulation",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "Antioxidant",
+      "Neuroprotection",
+      "GABA"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 2-3h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Russian pharmaceutical; limited Western data"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Antioxidant (Anxiolytic)",
+      "Anxiolytic",
+      "Antioxidant",
+      "Neuroprotection",
+      "GABA",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "mirtazapine",
+    "name": "Mirtazapine",
+    "aliases": [
+      "Remeron"
+    ],
+    "effectType": "Antidepressant (Sedating)",
+    "primaryEffects": "Improves mood and sleep; appetite stimulation",
+    "mechanism": "5-HT2 and 5-HT3 antagonist; H1 antagonist",
+    "mechanisticTags": [
+      "Antidepressant",
+      "Sleep",
+      "Sedating",
+      "Serotonin"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 2-4h / 20-40h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 1200,
+      "durationMax": 2400
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Low tolerance",
+    "daytimeNighttime": "Nighttime",
+    "interactions": {
+      "voxra": "Caution; both affect norepinephrine",
+      "ssri": "Safe; different serotonin mechanisms"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved antidepressant with sedating profile"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Antidepressant (Sedating)",
+      "Antidepressant",
+      "Sleep",
+      "Sedating",
+      "Serotonin",
+      "Sleep aid"
+    ]
+  },
+  {
+    "id": "buspirone",
+    "name": "Buspirone",
+    "aliases": [
+      "Buspar"
+    ],
+    "effectType": "Anxiolytic",
+    "primaryEffects": "Reduces anxiety without sedation; slow onset",
+    "mechanism": "5-HT1A partial agonist",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "Serotonin",
+      "Non-sedating"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2 weeks / N/A / 2-3h"
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe; different serotonin mechanisms"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved anxiolytic; non-addictive"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Anxiolytic",
+      "Serotonin",
+      "Non-sedating"
+    ]
+  },
+  {
+    "id": "hydroxyzine",
+    "name": "Hydroxyzine",
+    "aliases": [
+      "Vistaril",
+      "Atarax"
+    ],
+    "effectType": "Anxiolytic (Antihistamine)",
+    "primaryEffects": "Rapid anxiety relief and sedation",
+    "mechanism": "H1 antihistamine",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "Antihistamine",
+      "Sedating"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "15-30m / 2h / 3-6h",
+      "onsetMin": 15,
+      "onsetMax": 30,
+      "peakMin": 120,
+      "peakMax": 120,
+      "durationMin": 180,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either; PRN use",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved for anxiety; effective PRN option"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Anxiolytic (Antihistamine)",
+      "Anxiolytic",
+      "Antihistamine",
+      "Sedating"
+    ]
+  },
+  {
+    "id": "propranolol",
+    "name": "Propranolol",
+    "aliases": [
+      "Inderal"
+    ],
+    "effectType": "Beta-blocker (Anxiolytic)",
+    "primaryEffects": "Reduces physical anxiety symptoms (tremor palpitations)",
+    "mechanism": "Beta-adrenergic receptor antagonist",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "Beta-blocker",
+      "Performance anxiety"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 4-6h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 240,
+      "durationMax": 360
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "PRN or scheduled",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved for performance anxiety; effective for physical symptoms"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Beta-blocker (Anxiolytic)",
+      "Anxiolytic",
+      "Beta-blocker",
+      "Performance anxiety"
+    ]
+  },
+  {
+    "id": "pregabalin",
+    "name": "Pregabalin",
+    "aliases": [
+      "Lyrica"
+    ],
+    "effectType": "GABAergic (Anxiolytic)",
+    "primaryEffects": "Powerful anxiolytic and pain relief; euphoric at high doses",
+    "mechanism": "Voltage-gated calcium channel modulator",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABAergic",
+      "Pain relief",
+      "Euphoric"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "Yes",
+    "dependenceTolerance": "Moderate dependence risk",
+    "daytimeNighttime": "Either; often evening",
+    "interactions": {
+      "voxra": "Safe; CNS depression risk",
+      "ssri": "Safe; CNS depression possible"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved for anxiety and neuropathic pain"
+    },
+    "efficacyScore": 8.5,
+    "safetyScore": 7,
+    "categoryTags": [
+      "GABAergic (Anxiolytic)",
+      "Anxiolytic",
+      "GABAergic",
+      "Pain relief",
+      "Euphoric"
+    ]
+  },
+  {
+    "id": "gabapentin",
+    "name": "Gabapentin",
+    "aliases": [
+      "Neurontin"
+    ],
+    "effectType": "GABAergic (Anxiolytic)",
+    "primaryEffects": "Reduces anxiety and pain; less potent than pregabalin",
+    "mechanism": "Voltage-gated calcium channel modulator",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABAergic",
+      "Pain relief"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "1-2h / 2-3h / 5-7h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 300,
+      "durationMax": 420
+    },
+    "recreational": "Mild",
+    "dependenceTolerance": "Mild tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe; monitor CNS effects",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "FDA-approved for neuropathic pain; off-label for anxiety"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 8,
+    "categoryTags": [
+      "GABAergic (Anxiolytic)",
+      "Anxiolytic",
+      "GABAergic",
+      "Pain relief"
+    ]
+  },
+  {
+    "id": "silexan",
+    "name": "Silexan",
+    "aliases": [
+      "Lavender oil WS 1265"
+    ],
+    "effectType": "Anxiolytic (Herbal)",
+    "primaryEffects": "Reduces anxiety comparable to benzodiazepines; well-tolerated",
+    "mechanism": "Voltage-gated calcium channel modulation",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "Calming",
+      "Non-sedating"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2h / 2-4h / 12-24h",
+      "onsetMin": 60,
+      "onsetMax": 120,
+      "peakMin": 120,
+      "peakMax": 240,
+      "durationMin": 720,
+      "durationMax": 1440
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Clinical evidence comparable to benzodiazepines without addiction"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 9,
+    "categoryTags": [
+      "Anxiolytic (Herbal)",
+      "Anxiolytic",
+      "Calming",
+      "Non-sedating",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "bupropion",
+    "name": "Bupropion",
+    "aliases": [
+      "Wellbutrin",
+      "Voxra"
+    ],
+    "effectType": "Antidepressant (Stimulating)",
+    "primaryEffects": "Improves mood and energy; aids smoking cessation",
+    "mechanism": "NDRI (norepinephrine-dopamine reuptake inhibitor)",
+    "mechanisticTags": [
+      "Antidepressant",
+      "Stimulating",
+      "Dopamine",
+      "Norepinephrine"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "1-2 weeks / N/A / 21h"
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Low tolerance",
+    "daytimeNighttime": "Daytime",
+    "interactions": {
+      "voxra": "N/A (reference compound)",
+      "ssri": "Safe; bupropion doesn't affect serotonin"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved antidepressant with activating profile"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Antidepressant (Stimulating)",
+      "Antidepressant",
+      "Stimulating",
+      "Dopamine",
+      "Norepinephrine"
+    ]
+  },
+  {
+    "id": "escitalopram",
+    "name": "Escitalopram",
+    "aliases": [
+      "Lexapro"
+    ],
+    "effectType": "SSRI",
+    "primaryEffects": "Improves mood and reduces anxiety over weeks",
+    "mechanism": "Selective serotonin reuptake inhibitor",
+    "mechanisticTags": [
+      "Antidepressant",
+      "Anxiolytic",
+      "SSRI",
+      "Serotonin"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "2-4 weeks / N/A / 27-32h"
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Low tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe; bupropion doesn't affect serotonin",
+      "ssri": "N/A (reference compound)"
+    },
+    "evidence": {
+      "strength": "A",
+      "summary": "FDA-approved SSRI; first-line for depression and anxiety"
+    },
+    "efficacyScore": 8,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "SSRI",
+      "Antidepressant",
+      "Anxiolytic",
+      "Serotonin"
+    ]
+  },
+  {
+    "id": "temgicoluril",
+    "name": "Temgicoluril",
+    "aliases": [
+      "Mebicar",
+      "Adaptol"
+    ],
+    "effectType": "Anxiolytic",
+    "primaryEffects": "Reduces anxiety and stress without sedation; Russian pharmaceutical",
+    "mechanism": "Modulates GABA and monoamines",
+    "mechanisticTags": [
+      "Anxiolytic",
+      "GABA",
+      "Non-sedating",
+      "Stress resilience"
+    ],
+    "acuteEffect": false,
+    "onset": {
+      "raw": "30-60m / 2-3h / 6-8h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 120,
+      "peakMax": 180,
+      "durationMin": 360,
+      "durationMax": 480
+    },
+    "recreational": "No",
+    "dependenceTolerance": "No tolerance",
+    "daytimeNighttime": "Either",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "D",
+      "summary": "Used in Russia; limited Western clinical data"
+    },
+    "efficacyScore": 7,
+    "safetyScore": 8.5,
+    "categoryTags": [
+      "Anxiolytic",
+      "GABA",
+      "Non-sedating",
+      "Stress resilience",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "alimemazine",
+    "name": "Alimemazine",
+    "aliases": [
+      "Trimeprazine",
+      "Repeltin"
+    ],
+    "effectType": "Antihistamine (Sedating)",
+    "primaryEffects": "Strong sedation and anxiety reduction; sleep aid",
+    "mechanism": "H1 antihistamine with anticholinergic effects",
+    "mechanisticTags": [
+      "Sedating",
+      "Anxiolytic",
+      "Antihistamine",
+      "Sleep"
+    ],
+    "acuteEffect": true,
+    "onset": {
+      "raw": "30-60m / 1-2h / 6-10h",
+      "onsetMin": 30,
+      "onsetMax": 60,
+      "peakMin": 60,
+      "peakMax": 120,
+      "durationMin": 360,
+      "durationMax": 600
+    },
+    "recreational": "No",
+    "dependenceTolerance": "Low tolerance",
+    "daytimeNighttime": "Nighttime or PRN",
+    "interactions": {
+      "voxra": "Safe combination",
+      "ssri": "Safe combination"
+    },
+    "evidence": {
+      "strength": "B",
+      "summary": "Approved in some countries for anxiety and sleep"
+    },
+    "efficacyScore": 7.5,
+    "safetyScore": 8,
+    "categoryTags": [
+      "Antihistamine (Sedating)",
+      "Sedating",
+      "Anxiolytic",
+      "Antihistamine",
+      "Sleep",
+      "Sleep aid"
+    ]
+  }
+]

@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { useStore } from "@/store/useStore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Plus, Settings, TrendingUp, Flame, Clock } from "lucide-react";
+import { Plus, Settings, TrendingUp, Flame, Clock, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { LoggingDrawer } from "@/components/LoggingDrawer";
 import { QuickLogPresets } from "@/components/QuickLogPresets";
@@ -64,11 +64,18 @@ export default function DashboardPage() {
             <h1 className="text-2xl font-bold text-blue-500">NeuroStack</h1>
             <p className="text-sm text-slate-400">Bio-Hacker Dashboard</p>
           </div>
-          <Link href="/settings">
-            <Button variant="outline" size="icon">
-              <Settings className="w-5 h-5" />
-            </Button>
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link href="/library">
+              <Button variant="outline" size="icon" title="Compound Library">
+                <BookOpen className="w-5 h-5" />
+              </Button>
+            </Link>
+            <Link href="/settings">
+              <Button variant="outline" size="icon" title="Settings">
+                <Settings className="w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 

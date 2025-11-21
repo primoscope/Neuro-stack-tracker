@@ -20,6 +20,7 @@ import {
   Brain,
   Pill,
   Layers,
+  BookOpen,
 } from "lucide-react";
 import Link from "next/link";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -202,10 +203,18 @@ export default function SettingsPage() {
                 <p className="text-slate-500">
                   No compounds yet. Add your first one to get started!
                 </p>
-                <Button onClick={handleLoadSampleData} variant="outline" size="sm">
-                  <Download className="w-4 h-4 mr-2" />
-                  Load Sample Pharmacy (16 compounds)
-                </Button>
+                <div className="flex gap-2 justify-center">
+                  <Link href="/library">
+                    <Button variant="outline" size="sm">
+                      <BookOpen className="w-4 h-4 mr-2" />
+                      Browse Library (70 compounds)
+                    </Button>
+                  </Link>
+                  <Button onClick={handleLoadSampleData} variant="outline" size="sm">
+                    <Download className="w-4 h-4 mr-2" />
+                    Load Sample (16 compounds)
+                  </Button>
+                </div>
               </div>
             ) : (
               <div className="space-y-3">

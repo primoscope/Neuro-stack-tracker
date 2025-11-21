@@ -1,0 +1,1417 @@
+[
+  {
+    "id": "methylphenidate",
+    "name": "Methylphenidate",
+    "aliases": [
+      "Ritalin",
+      "Concerta",
+      "Metadate"
+    ],
+    "searchTerms": [
+      "methylphenidate",
+      "ritalin",
+      "concerta",
+      "metadate"
+    ],
+    "effectType": "Stimulant",
+    "categoryTags": [
+      "Stimulant",
+      "ADHD",
+      "Dopamine",
+      "Norepinephrine"
+    ]
+  },
+  {
+    "id": "amphetamine-mixed-salts",
+    "name": "Amphetamine Mixed Salts",
+    "aliases": [
+      "Adderall",
+      "Dextroamphetamine"
+    ],
+    "searchTerms": [
+      "amphetamine mixed salts",
+      "amphetamine",
+      "mixed",
+      "salts",
+      "adderall",
+      "dextroamphetamine"
+    ],
+    "effectType": "Stimulant",
+    "categoryTags": [
+      "Stimulant",
+      "ADHD",
+      "Dopamine",
+      "Norepinephrine"
+    ]
+  },
+  {
+    "id": "lisdexamfetamine",
+    "name": "Lisdexamfetamine",
+    "aliases": [
+      "Vyvanse"
+    ],
+    "searchTerms": [
+      "lisdexamfetamine",
+      "vyvanse"
+    ],
+    "effectType": "Stimulant",
+    "categoryTags": [
+      "Stimulant",
+      "ADHD",
+      "Dopamine",
+      "Prodrug"
+    ]
+  },
+  {
+    "id": "atomoxetine",
+    "name": "Atomoxetine",
+    "aliases": [
+      "Strattera"
+    ],
+    "searchTerms": [
+      "atomoxetine",
+      "strattera"
+    ],
+    "effectType": "Non-stimulant ADHD",
+    "categoryTags": [
+      "Non-stimulant ADHD",
+      "ADHD",
+      "Norepinephrine",
+      "Non-stimulant",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "guanfacine",
+    "name": "Guanfacine",
+    "aliases": [
+      "Intuniv"
+    ],
+    "searchTerms": [
+      "guanfacine",
+      "intuniv"
+    ],
+    "effectType": "Non-stimulant ADHD",
+    "categoryTags": [
+      "Non-stimulant ADHD",
+      "ADHD",
+      "Non-stimulant",
+      "Alpha-agonist",
+      "Calming",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "clonidine",
+    "name": "Clonidine",
+    "aliases": [
+      "Kapvay"
+    ],
+    "searchTerms": [
+      "clonidine",
+      "kapvay"
+    ],
+    "effectType": "Non-stimulant ADHD",
+    "categoryTags": [
+      "Non-stimulant ADHD",
+      "ADHD",
+      "Non-stimulant",
+      "Alpha-agonist",
+      "Sedating",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "modafinil",
+    "name": "Modafinil",
+    "aliases": [
+      "Provigil"
+    ],
+    "searchTerms": [
+      "modafinil",
+      "provigil"
+    ],
+    "effectType": "Wakefulness-promoting",
+    "categoryTags": [
+      "Wakefulness-promoting",
+      "Wakefulness",
+      "Cognitive enhancement",
+      "Dopamine"
+    ]
+  },
+  {
+    "id": "armodafinil",
+    "name": "Armodafinil",
+    "aliases": [
+      "Nuvigil"
+    ],
+    "searchTerms": [
+      "armodafinil",
+      "nuvigil"
+    ],
+    "effectType": "Wakefulness-promoting",
+    "categoryTags": [
+      "Wakefulness-promoting",
+      "Wakefulness",
+      "Cognitive enhancement",
+      "Dopamine"
+    ]
+  },
+  {
+    "id": "piracetam",
+    "name": "Piracetam",
+    "aliases": [
+      "Nootropil"
+    ],
+    "searchTerms": [
+      "piracetam",
+      "nootropil"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Cholinergic",
+      "Neuroprotection",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "aniracetam",
+    "name": "Aniracetam",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "aniracetam",
+      "n a"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Anxiolytic",
+      "Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "oxiracetam",
+    "name": "Oxiracetam",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "oxiracetam",
+      "n a"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Stimulating",
+      "Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "phenylpiracetam",
+    "name": "Phenylpiracetam",
+    "aliases": [
+      "Phenotropil"
+    ],
+    "searchTerms": [
+      "phenylpiracetam",
+      "phenotropil"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Stimulant",
+      "Physical performance",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "noopept",
+    "name": "Noopept",
+    "aliases": [
+      "GVS-111"
+    ],
+    "searchTerms": [
+      "noopept",
+      "gvs 111",
+      "gvs",
+      "111"
+    ],
+    "effectType": "Nootropic (Peptide)",
+    "categoryTags": [
+      "Nootropic (Peptide)",
+      "Peptide",
+      "Neuroprotection",
+      "BDNF",
+      "NGF",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "alpha-gpc",
+    "name": "Alpha-GPC",
+    "aliases": [
+      "L-Alpha glycerylphosphorylcholine"
+    ],
+    "searchTerms": [
+      "alpha gpc",
+      "alpha",
+      "gpc",
+      "l alpha glycerylphosphorylcholine",
+      "glycerylphosphorylcholine"
+    ],
+    "effectType": "Cholinergic",
+    "categoryTags": [
+      "Cholinergic",
+      "Choline",
+      "Cognitive enhancement"
+    ]
+  },
+  {
+    "id": "cdp-choline",
+    "name": "CDP-Choline",
+    "aliases": [
+      "Citicoline"
+    ],
+    "searchTerms": [
+      "cdp choline",
+      "cdp",
+      "choline",
+      "citicoline"
+    ],
+    "effectType": "Cholinergic",
+    "categoryTags": [
+      "Cholinergic",
+      "Dopamine",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "l-tyrosine",
+    "name": "L-Tyrosine",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "l tyrosine",
+      "tyrosine",
+      "n a"
+    ],
+    "effectType": "Amino acid",
+    "categoryTags": [
+      "Amino acid",
+      "Dopamine",
+      "Norepinephrine",
+      "Stress resilience"
+    ]
+  },
+  {
+    "id": "n-acetyl-l-tyrosine",
+    "name": "N-Acetyl L-Tyrosine",
+    "aliases": [
+      "NALT"
+    ],
+    "searchTerms": [
+      "n acetyl l tyrosine",
+      "acetyl",
+      "tyrosine",
+      "nalt"
+    ],
+    "effectType": "Amino acid",
+    "categoryTags": [
+      "Amino acid",
+      "Dopamine",
+      "Norepinephrine",
+      "Stress resilience"
+    ]
+  },
+  {
+    "id": "l-theanine",
+    "name": "L-Theanine",
+    "aliases": [
+      "Suntheanine"
+    ],
+    "searchTerms": [
+      "l theanine",
+      "theanine",
+      "suntheanine"
+    ],
+    "effectType": "Anxiolytic (Amino acid)",
+    "categoryTags": [
+      "Anxiolytic (Amino acid)",
+      "Anxiolytic",
+      "GABA",
+      "Calming",
+      "Non-sedating",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "caffeine",
+    "name": "Caffeine",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "caffeine",
+      "n a"
+    ],
+    "effectType": "Stimulant",
+    "categoryTags": [
+      "Stimulant",
+      "Wakefulness",
+      "Adenosine",
+      "Wakefulness-promoting"
+    ]
+  },
+  {
+    "id": "caffeine---l-theanine",
+    "name": "Caffeine + L-Theanine",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "caffeine l theanine",
+      "caffeine",
+      "theanine",
+      "n a"
+    ],
+    "effectType": "Nootropic stack",
+    "categoryTags": [
+      "Nootropic stack",
+      "Stimulant",
+      "Anxiolytic",
+      "Focus",
+      "Synergistic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "rhodiola-rosea",
+    "name": "Rhodiola Rosea",
+    "aliases": [
+      "Golden root"
+    ],
+    "searchTerms": [
+      "rhodiola rosea",
+      "rhodiola",
+      "rosea",
+      "golden root",
+      "golden",
+      "root"
+    ],
+    "effectType": "Adaptogen",
+    "categoryTags": [
+      "Adaptogen",
+      "Stress resilience",
+      "Dopamine",
+      "Serotonin"
+    ]
+  },
+  {
+    "id": "ashwagandha",
+    "name": "Ashwagandha",
+    "aliases": [
+      "Withania somnifera",
+      "KSM-66"
+    ],
+    "searchTerms": [
+      "ashwagandha",
+      "withania somnifera",
+      "withania",
+      "somnifera",
+      "ksm 66",
+      "ksm"
+    ],
+    "effectType": "Adaptogen",
+    "categoryTags": [
+      "Adaptogen",
+      "Anxiolytic",
+      "GABA",
+      "Sleep",
+      "Sleep aid",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "bacopa-monnieri",
+    "name": "Bacopa Monnieri",
+    "aliases": [
+      "Brahmi"
+    ],
+    "searchTerms": [
+      "bacopa monnieri",
+      "bacopa",
+      "monnieri",
+      "brahmi"
+    ],
+    "effectType": "Nootropic (Adaptogen)",
+    "categoryTags": [
+      "Nootropic (Adaptogen)",
+      "Adaptogen",
+      "Nootropic",
+      "Memory",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "lion-s-mane",
+    "name": "Lion's Mane",
+    "aliases": [
+      "Hericium erinaceus"
+    ],
+    "searchTerms": [
+      "lion s mane",
+      "lion",
+      "mane",
+      "hericium erinaceus",
+      "hericium",
+      "erinaceus"
+    ],
+    "effectType": "Nootropic (Mushroom)",
+    "categoryTags": [
+      "Nootropic (Mushroom)",
+      "Nootropic",
+      "Neuroprotection",
+      "NGF",
+      "BDNF"
+    ]
+  },
+  {
+    "id": "phenibut",
+    "name": "Phenibut",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "phenibut",
+      "n a"
+    ],
+    "effectType": "GABAergic (Anxiolytic)",
+    "categoryTags": [
+      "GABAergic (Anxiolytic)",
+      "GABAergic",
+      "Anxiolytic",
+      "Euphoric",
+      "Social"
+    ]
+  },
+  {
+    "id": "picamilon",
+    "name": "Picamilon",
+    "aliases": [
+      "Nicotinoyl-GABA"
+    ],
+    "searchTerms": [
+      "picamilon",
+      "nicotinoyl gaba",
+      "nicotinoyl",
+      "gaba"
+    ],
+    "effectType": "GABAergic (Anxiolytic)",
+    "categoryTags": [
+      "GABAergic (Anxiolytic)",
+      "GABAergic",
+      "Anxiolytic",
+      "Circulation"
+    ]
+  },
+  {
+    "id": "fasoracetam",
+    "name": "Fasoracetam",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "fasoracetam",
+      "n a"
+    ],
+    "effectType": "Nootropic (Racetam)",
+    "categoryTags": [
+      "Nootropic (Racetam)",
+      "Racetam",
+      "Anxiolytic",
+      "GABA-B",
+      "Cholinergic",
+      "Nootropic",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "bromantane",
+    "name": "Bromantane",
+    "aliases": [
+      "Ladasten"
+    ],
+    "searchTerms": [
+      "bromantane",
+      "ladasten"
+    ],
+    "effectType": "Adaptogen (Actoprotector)",
+    "categoryTags": [
+      "Adaptogen (Actoprotector)",
+      "Adaptogen",
+      "Dopamine",
+      "Anxiolytic",
+      "Energy"
+    ]
+  },
+  {
+    "id": "semax",
+    "name": "Semax",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "semax",
+      "n a"
+    ],
+    "effectType": "Nootropic (Peptide)",
+    "categoryTags": [
+      "Nootropic (Peptide)",
+      "Peptide",
+      "Neuroprotection",
+      "BDNF",
+      "Stress resilience",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "selank",
+    "name": "Selank",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "selank",
+      "n a"
+    ],
+    "effectType": "Anxiolytic (Peptide)",
+    "categoryTags": [
+      "Anxiolytic (Peptide)",
+      "Peptide",
+      "Anxiolytic",
+      "GABA",
+      "Stress resilience",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "tianeptine-sodium",
+    "name": "Tianeptine Sodium",
+    "aliases": [
+      "Stablon",
+      "Coaxil"
+    ],
+    "searchTerms": [
+      "tianeptine sodium",
+      "tianeptine",
+      "sodium",
+      "stablon",
+      "coaxil"
+    ],
+    "effectType": "Antidepressant (Atypical)",
+    "categoryTags": [
+      "Antidepressant (Atypical)",
+      "Antidepressant",
+      "Anxiolytic",
+      "Glutamate"
+    ]
+  },
+  {
+    "id": "tianeptine-sulfate",
+    "name": "Tianeptine Sulfate",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "tianeptine sulfate",
+      "tianeptine",
+      "sulfate",
+      "n a"
+    ],
+    "effectType": "Antidepressant (Atypical)",
+    "categoryTags": [
+      "Antidepressant (Atypical)",
+      "Antidepressant",
+      "Anxiolytic",
+      "Glutamate"
+    ]
+  },
+  {
+    "id": "memantine",
+    "name": "Memantine",
+    "aliases": [
+      "Namenda"
+    ],
+    "searchTerms": [
+      "memantine",
+      "namenda"
+    ],
+    "effectType": "NMDA antagonist",
+    "categoryTags": [
+      "NMDA antagonist",
+      "Neuroprotection",
+      "NMDA",
+      "Cognitive enhancement"
+    ]
+  },
+  {
+    "id": "agmatine-sulfate",
+    "name": "Agmatine Sulfate",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "agmatine sulfate",
+      "agmatine",
+      "sulfate",
+      "n a"
+    ],
+    "effectType": "Neuromodulator",
+    "categoryTags": [
+      "Neuromodulator",
+      "Anxiolytic",
+      "NMDA",
+      "Neuroprotection",
+      "Mood"
+    ]
+  },
+  {
+    "id": "sarcosine",
+    "name": "Sarcosine",
+    "aliases": [
+      "N-Methylglycine"
+    ],
+    "searchTerms": [
+      "sarcosine",
+      "n methylglycine",
+      "methylglycine"
+    ],
+    "effectType": "NMDA modulator",
+    "categoryTags": [
+      "NMDA modulator",
+      "Cognitive enhancement",
+      "Antidepressant",
+      "NMDA"
+    ]
+  },
+  {
+    "id": "d-serine",
+    "name": "D-Serine",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "d serine",
+      "serine",
+      "n a"
+    ],
+    "effectType": "NMDA co-agonist",
+    "categoryTags": [
+      "NMDA co-agonist",
+      "Cognitive enhancement",
+      "NMDA",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "magnesium-l-threonate",
+    "name": "Magnesium L-Threonate",
+    "aliases": [
+      "Magtein"
+    ],
+    "searchTerms": [
+      "magnesium l threonate",
+      "magnesium",
+      "threonate",
+      "magtein"
+    ],
+    "effectType": "Mineral (Nootropic form)",
+    "categoryTags": [
+      "Mineral (Nootropic form)",
+      "Cognitive enhancement",
+      "Anxiolytic",
+      "NMDA",
+      "Neuroprotection",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "magnesium-glycinate",
+    "name": "Magnesium Glycinate",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "magnesium glycinate",
+      "magnesium",
+      "glycinate",
+      "n a"
+    ],
+    "effectType": "Mineral (Calming)",
+    "categoryTags": [
+      "Mineral (Calming)",
+      "Anxiolytic",
+      "GABA",
+      "Sleep",
+      "Muscle relaxation",
+      "Sleep aid",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "zinc",
+    "name": "Zinc",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "zinc",
+      "n a"
+    ],
+    "effectType": "Mineral",
+    "categoryTags": [
+      "Mineral",
+      "Cognitive enhancement",
+      "NMDA",
+      "Mood",
+      "Immune"
+    ]
+  },
+  {
+    "id": "vitamin-d3",
+    "name": "Vitamin D3",
+    "aliases": [
+      "Cholecalciferol"
+    ],
+    "searchTerms": [
+      "vitamin d3",
+      "vitamin",
+      "cholecalciferol"
+    ],
+    "effectType": "Vitamin",
+    "categoryTags": [
+      "Vitamin",
+      "Mood",
+      "Cognitive enhancement",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "omega-3--epa-dha-",
+    "name": "Omega-3 (EPA/DHA)",
+    "aliases": [
+      "Fish oil"
+    ],
+    "searchTerms": [
+      "omega 3 epa dha",
+      "omega",
+      "epa",
+      "dha",
+      "fish oil",
+      "fish",
+      "oil"
+    ],
+    "effectType": "Essential fatty acid",
+    "categoryTags": [
+      "Essential fatty acid",
+      "Neuroprotection",
+      "Mood",
+      "Anti-inflammatory"
+    ]
+  },
+  {
+    "id": "huperzine-a",
+    "name": "Huperzine A",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "huperzine a",
+      "huperzine",
+      "n a"
+    ],
+    "effectType": "Cholinesterase inhibitor",
+    "categoryTags": [
+      "Cholinesterase inhibitor",
+      "Cholinergic",
+      "Memory",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "sulbutiamine",
+    "name": "Sulbutiamine",
+    "aliases": [
+      "Arcalion"
+    ],
+    "searchTerms": [
+      "sulbutiamine",
+      "arcalion"
+    ],
+    "effectType": "Nootropic (Thiamine derivative)",
+    "categoryTags": [
+      "Nootropic (Thiamine derivative)",
+      "Energy",
+      "Cognitive enhancement",
+      "Dopamine",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "uridine-monophosphate",
+    "name": "Uridine Monophosphate",
+    "aliases": [
+      "UMP"
+    ],
+    "searchTerms": [
+      "uridine monophosphate",
+      "uridine",
+      "monophosphate",
+      "ump"
+    ],
+    "effectType": "Nucleotide",
+    "categoryTags": [
+      "Nucleotide",
+      "Dopamine",
+      "Memory",
+      "Neuroprotection"
+    ]
+  },
+  {
+    "id": "creatine-monohydrate",
+    "name": "Creatine Monohydrate",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "creatine monohydrate",
+      "creatine",
+      "monohydrate",
+      "n a"
+    ],
+    "effectType": "Energy (ATP)",
+    "categoryTags": [
+      "Energy (ATP)",
+      "Energy",
+      "Cognitive enhancement",
+      "Physical performance"
+    ]
+  },
+  {
+    "id": "mucuna-pruriens",
+    "name": "Mucuna Pruriens",
+    "aliases": [
+      "Velvet bean"
+    ],
+    "searchTerms": [
+      "mucuna pruriens",
+      "mucuna",
+      "pruriens",
+      "velvet bean",
+      "velvet",
+      "bean"
+    ],
+    "effectType": "Dopamine precursor",
+    "categoryTags": [
+      "Dopamine precursor",
+      "Dopamine",
+      "Mood",
+      "Motivation"
+    ]
+  },
+  {
+    "id": "nicotine",
+    "name": "Nicotine",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "nicotine",
+      "n a"
+    ],
+    "effectType": "Stimulant (Nootropic)",
+    "categoryTags": [
+      "Stimulant (Nootropic)",
+      "Stimulant",
+      "Cholinergic",
+      "Cognitive enhancement",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "pregnenolone",
+    "name": "Pregnenolone",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "pregnenolone",
+      "n a"
+    ],
+    "effectType": "Neurosteroid",
+    "categoryTags": [
+      "Neurosteroid",
+      "Memory",
+      "Mood",
+      "NMDA"
+    ]
+  },
+  {
+    "id": "dhea",
+    "name": "DHEA",
+    "aliases": [
+      "Dehydroepiandrosterone"
+    ],
+    "searchTerms": [
+      "dhea",
+      "dehydroepiandrosterone"
+    ],
+    "effectType": "Neurosteroid",
+    "categoryTags": [
+      "Neurosteroid",
+      "Mood",
+      "Energy",
+      "Anti-aging"
+    ]
+  },
+  {
+    "id": "melatonin",
+    "name": "Melatonin",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "melatonin",
+      "n a"
+    ],
+    "effectType": "Sleep aid",
+    "categoryTags": [
+      "Sleep aid",
+      "Sleep",
+      "Circadian rhythm",
+      "Antioxidant"
+    ]
+  },
+  {
+    "id": "5-htp",
+    "name": "5-HTP",
+    "aliases": [
+      "5-Hydroxytryptophan"
+    ],
+    "searchTerms": [
+      "5 htp",
+      "htp",
+      "5 hydroxytryptophan",
+      "hydroxytryptophan"
+    ],
+    "effectType": "Serotonin precursor",
+    "categoryTags": [
+      "Serotonin precursor",
+      "Mood",
+      "Anxiolytic",
+      "Sleep",
+      "Serotonin",
+      "Sleep aid"
+    ]
+  },
+  {
+    "id": "tryptophan",
+    "name": "Tryptophan",
+    "aliases": [
+      "L-Tryptophan"
+    ],
+    "searchTerms": [
+      "tryptophan",
+      "l tryptophan"
+    ],
+    "effectType": "Serotonin precursor",
+    "categoryTags": [
+      "Serotonin precursor",
+      "Mood",
+      "Sleep",
+      "Serotonin",
+      "Sleep aid"
+    ]
+  },
+  {
+    "id": "taurine",
+    "name": "Taurine",
+    "aliases": [
+      "N/A"
+    ],
+    "searchTerms": [
+      "taurine",
+      "n a"
+    ],
+    "effectType": "Amino acid (GABAergic)",
+    "categoryTags": [
+      "Amino acid (GABAergic)",
+      "Anxiolytic",
+      "GABA",
+      "Cardiovascular",
+      "Neuroprotection",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "gaba",
+    "name": "GABA",
+    "aliases": [
+      "Gamma-Aminobutyric Acid"
+    ],
+    "searchTerms": [
+      "gaba",
+      "gamma aminobutyric acid",
+      "gamma",
+      "aminobutyric",
+      "acid"
+    ],
+    "effectType": "GABAergic",
+    "categoryTags": [
+      "GABAergic",
+      "Anxiolytic",
+      "GABA",
+      "Relaxation"
+    ]
+  },
+  {
+    "id": "kava-kava",
+    "name": "Kava Kava",
+    "aliases": [
+      "Piper methysticum"
+    ],
+    "searchTerms": [
+      "kava kava",
+      "kava",
+      "piper methysticum",
+      "piper",
+      "methysticum"
+    ],
+    "effectType": "Anxiolytic (Herbal)",
+    "categoryTags": [
+      "Anxiolytic (Herbal)",
+      "Anxiolytic",
+      "GABAergic",
+      "Muscle relaxation",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "valerian-root",
+    "name": "Valerian Root",
+    "aliases": [
+      "Valeriana officinalis"
+    ],
+    "searchTerms": [
+      "valerian root",
+      "valerian",
+      "root",
+      "valeriana officinalis",
+      "valeriana",
+      "officinalis"
+    ],
+    "effectType": "Sleep aid (Herbal)",
+    "categoryTags": [
+      "Sleep aid (Herbal)",
+      "Sleep",
+      "Anxiolytic",
+      "GABAergic",
+      "Sedating",
+      "Sleep aid",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "lemon-balm",
+    "name": "Lemon Balm",
+    "aliases": [
+      "Melissa officinalis"
+    ],
+    "searchTerms": [
+      "lemon balm",
+      "lemon",
+      "balm",
+      "melissa officinalis",
+      "melissa",
+      "officinalis"
+    ],
+    "effectType": "Anxiolytic (Herbal)",
+    "categoryTags": [
+      "Anxiolytic (Herbal)",
+      "Anxiolytic",
+      "Cholinergic",
+      "Calming",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "passionflower",
+    "name": "Passionflower",
+    "aliases": [
+      "Passiflora incarnata"
+    ],
+    "searchTerms": [
+      "passionflower",
+      "passiflora incarnata",
+      "passiflora",
+      "incarnata"
+    ],
+    "effectType": "Anxiolytic (Herbal)",
+    "categoryTags": [
+      "Anxiolytic (Herbal)",
+      "Anxiolytic",
+      "GABAergic",
+      "Sleep",
+      "Sleep aid",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "emoxypine-succinate",
+    "name": "Emoxypine Succinate",
+    "aliases": [
+      "Mexidol"
+    ],
+    "searchTerms": [
+      "emoxypine succinate",
+      "emoxypine",
+      "succinate",
+      "mexidol"
+    ],
+    "effectType": "Antioxidant (Anxiolytic)",
+    "categoryTags": [
+      "Antioxidant (Anxiolytic)",
+      "Anxiolytic",
+      "Antioxidant",
+      "Neuroprotection",
+      "GABA",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "mirtazapine",
+    "name": "Mirtazapine",
+    "aliases": [
+      "Remeron"
+    ],
+    "searchTerms": [
+      "mirtazapine",
+      "remeron"
+    ],
+    "effectType": "Antidepressant (Sedating)",
+    "categoryTags": [
+      "Antidepressant (Sedating)",
+      "Antidepressant",
+      "Sleep",
+      "Sedating",
+      "Serotonin",
+      "Sleep aid"
+    ]
+  },
+  {
+    "id": "buspirone",
+    "name": "Buspirone",
+    "aliases": [
+      "Buspar"
+    ],
+    "searchTerms": [
+      "buspirone",
+      "buspar"
+    ],
+    "effectType": "Anxiolytic",
+    "categoryTags": [
+      "Anxiolytic",
+      "Serotonin",
+      "Non-sedating"
+    ]
+  },
+  {
+    "id": "hydroxyzine",
+    "name": "Hydroxyzine",
+    "aliases": [
+      "Vistaril",
+      "Atarax"
+    ],
+    "searchTerms": [
+      "hydroxyzine",
+      "vistaril",
+      "atarax"
+    ],
+    "effectType": "Anxiolytic (Antihistamine)",
+    "categoryTags": [
+      "Anxiolytic (Antihistamine)",
+      "Anxiolytic",
+      "Antihistamine",
+      "Sedating"
+    ]
+  },
+  {
+    "id": "propranolol",
+    "name": "Propranolol",
+    "aliases": [
+      "Inderal"
+    ],
+    "searchTerms": [
+      "propranolol",
+      "inderal"
+    ],
+    "effectType": "Beta-blocker (Anxiolytic)",
+    "categoryTags": [
+      "Beta-blocker (Anxiolytic)",
+      "Anxiolytic",
+      "Beta-blocker",
+      "Performance anxiety"
+    ]
+  },
+  {
+    "id": "pregabalin",
+    "name": "Pregabalin",
+    "aliases": [
+      "Lyrica"
+    ],
+    "searchTerms": [
+      "pregabalin",
+      "lyrica"
+    ],
+    "effectType": "GABAergic (Anxiolytic)",
+    "categoryTags": [
+      "GABAergic (Anxiolytic)",
+      "Anxiolytic",
+      "GABAergic",
+      "Pain relief",
+      "Euphoric"
+    ]
+  },
+  {
+    "id": "gabapentin",
+    "name": "Gabapentin",
+    "aliases": [
+      "Neurontin"
+    ],
+    "searchTerms": [
+      "gabapentin",
+      "neurontin"
+    ],
+    "effectType": "GABAergic (Anxiolytic)",
+    "categoryTags": [
+      "GABAergic (Anxiolytic)",
+      "Anxiolytic",
+      "GABAergic",
+      "Pain relief"
+    ]
+  },
+  {
+    "id": "silexan",
+    "name": "Silexan",
+    "aliases": [
+      "Lavender oil WS 1265"
+    ],
+    "searchTerms": [
+      "silexan",
+      "lavender oil ws 1265",
+      "lavender",
+      "oil",
+      "1265"
+    ],
+    "effectType": "Anxiolytic (Herbal)",
+    "categoryTags": [
+      "Anxiolytic (Herbal)",
+      "Anxiolytic",
+      "Calming",
+      "Non-sedating",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "bupropion",
+    "name": "Bupropion",
+    "aliases": [
+      "Wellbutrin",
+      "Voxra"
+    ],
+    "searchTerms": [
+      "bupropion",
+      "wellbutrin",
+      "voxra"
+    ],
+    "effectType": "Antidepressant (Stimulating)",
+    "categoryTags": [
+      "Antidepressant (Stimulating)",
+      "Antidepressant",
+      "Stimulating",
+      "Dopamine",
+      "Norepinephrine"
+    ]
+  },
+  {
+    "id": "escitalopram",
+    "name": "Escitalopram",
+    "aliases": [
+      "Lexapro"
+    ],
+    "searchTerms": [
+      "escitalopram",
+      "lexapro"
+    ],
+    "effectType": "SSRI",
+    "categoryTags": [
+      "SSRI",
+      "Antidepressant",
+      "Anxiolytic",
+      "Serotonin"
+    ]
+  },
+  {
+    "id": "temgicoluril",
+    "name": "Temgicoluril",
+    "aliases": [
+      "Mebicar",
+      "Adaptol"
+    ],
+    "searchTerms": [
+      "temgicoluril",
+      "mebicar",
+      "adaptol"
+    ],
+    "effectType": "Anxiolytic",
+    "categoryTags": [
+      "Anxiolytic",
+      "GABA",
+      "Non-sedating",
+      "Stress resilience",
+      "GABAergic"
+    ]
+  },
+  {
+    "id": "alimemazine",
+    "name": "Alimemazine",
+    "aliases": [
+      "Trimeprazine",
+      "Repeltin"
+    ],
+    "searchTerms": [
+      "alimemazine",
+      "trimeprazine",
+      "repeltin"
+    ],
+    "effectType": "Antihistamine (Sedating)",
+    "categoryTags": [
+      "Antihistamine (Sedating)",
+      "Sedating",
+      "Anxiolytic",
+      "Antihistamine",
+      "Sleep",
+      "Sleep aid"
+    ]
+  }
+]
