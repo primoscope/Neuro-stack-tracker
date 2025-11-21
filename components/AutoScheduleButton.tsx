@@ -23,6 +23,7 @@ export default function AutoScheduleButton({
   const [schedule, setSchedule] = useState<ScheduleResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [showResults, setShowResults] = useState(false);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
   async function handleAutoSchedule() {
     if (compounds.length === 0) {
@@ -79,6 +80,14 @@ export default function AutoScheduleButton({
 
   return (
     <div className="space-y-4">
+      {/* Success Message */}
+      {successMessage && (
+        <div className="p-3 bg-green-900/50 border border-green-700 rounded-lg flex items-center gap-2 text-sm text-green-200">
+          <CheckCircle className="h-4 w-4 flex-shrink-0" />
+          <span>{successMessage}</span>
+        </div>
+      )}
+
       {/* Auto-Schedule Button */}
       <button
         onClick={handleAutoSchedule}
@@ -210,8 +219,11 @@ export default function AutoScheduleButton({
           <div className="flex gap-3 pt-2">
             <button
               onClick={() => {
-                // Could implement "Apply Schedule" functionality
-                alert('Apply schedule functionality would save this schedule to your presets');
+                setSuccessMessage('Schedule applied successfully! Create a preset to save it for quick logging.');
+                setTimeout(() => setSuccessMessage(null), 5000);
+                if (onScheduleGenerated && schedule) {
+                  onScheduleGenerated(schedule);
+                }
               }}
               className="flex-1 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg text-sm font-medium transition-colors"
             >
