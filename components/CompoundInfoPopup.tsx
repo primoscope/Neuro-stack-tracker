@@ -1,8 +1,11 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { X, Clock, Zap, Shield, AlertCircle, Info } from 'lucide-react';
+import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { CompoundDetail } from '@/lib/compound-types';
+import { generatePharmacokineticCurve, formatTime, type PharmacokineticParameters } from '@/lib/pharmacokinetics';
+import { parsePharmacokineticString } from './NeuroCurveVisualization';
 
 interface CompoundInfoPopupProps {
   compound: CompoundDetail;
@@ -152,6 +155,9 @@ export default function CompoundInfoPopup({
                   <p className="text-sm text-blue-300">{compound.daytimeNighttime}</p>
                 </div>
               )}
+              
+              {/* Mini Neuro-Curve */}
+              {compound.onset?.raw && <MiniNeuroCurve pharmacokineticsRaw={compound.onset.raw} compoundName={compound.name} />}
             </div>
 
             {/* Safety & Evidence */}
@@ -266,4 +272,85 @@ function parsePharmacokineticData(raw: string): {
     peak: parts[1] || 'N/A',
     duration: parts[2] || 'N/A',
   };
+}
+
+/**
+ * Mini Neuro-Curve - Compact visualization for single compound
+ */
+function MiniNeuroCurve({ pharmacokineticsRaw, compoundName }: { pharmacokineticsRaw: string; compoundName: string }) {
+  const curveData = useMemo(() => {
+    // Parse the pharmacokinetics string
+    const parsed = parsePharmacokineticString(pharmacokineticsRaw);
+    
+    // Create parameters for curve generation (assume dose at 8 AM for visualization)
+    const params: PharmacokineticParameters = {
+      onsetMinutes: parsed.onsetMinutes,
+      peakMinutes: parsed.peakMinutes,
+      durationMinutes: parsed.durationMinutes,
+      doseTime: 8, // 8 AM for visualization
+    };
+    
+    // Generate full 24-hour curve
+    const curve = generatePharmacokineticCurve(params, 4); // 4 points per hour
+    
+    // Convert to chart data format, showing only the relevant time window
+    const startHour = 8;
+    const endHour = startHour + (parsed.durationMinutes / 60) + 1;
+    
+    return curve
+      .filter(point => point.time >= startHour && point.time <= endHour)
+      .map(point => ({
+        time: formatTime(point.time),
+        concentration: point.concentration,
+      }));
+  }, [pharmacokineticsRaw]);
+  
+  // Custom tooltip
+  const CustomTooltip = ({ active, payload }: any) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="bg-slate-900 border border-slate-700 rounded px-2 py-1 text-xs">
+          <p className="text-white">{payload[0].payload.time}</p>
+          <p className="text-purple-400">
+            Effect: {(payload[0].value * 100).toFixed(0)}%
+          </p>
+        </div>
+      );
+    }
+    return null;
+  };
+  
+  return (
+    <div className="mt-3 pt-3 border-t border-slate-700">
+      <p className="text-xs text-gray-500 mb-2">Effect Curve</p>
+      <ResponsiveContainer width="100%" height={120}>
+        <LineChart data={curveData} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
+          <XAxis 
+            dataKey="time" 
+            stroke="#64748b" 
+            style={{ fontSize: '10px' }}
+            interval="preserveStartEnd"
+          />
+          <YAxis 
+            stroke="#64748b" 
+            style={{ fontSize: '10px' }}
+            domain={[0, 1]}
+            ticks={[0, 0.5, 1]}
+          />
+          <Tooltip content={<CustomTooltip />} />
+          <Line
+            type="monotone"
+            dataKey="concentration"
+            stroke="#a78bfa"
+            strokeWidth={2}
+            dot={false}
+            isAnimationActive={true}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+      <p className="text-xs text-gray-500 mt-1 text-center">
+        Typical effect profile for {compoundName}
+      </p>
+    </div>
+  );
 }
