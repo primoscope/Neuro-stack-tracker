@@ -30,6 +30,7 @@ import GeminiApiSettings from "@/components/GeminiApiSettings";
 import BioCoachConfiguration from "@/components/BioCoachConfiguration";
 import AutoScheduleButton from "@/components/AutoScheduleButton";
 import { parsePharmacokineticString } from "@/components/NeuroCurveVisualization";
+import { StackOptimizer } from "@/components/StackOptimizer";
 
 export default function SettingsPage() {
   const {
@@ -609,14 +610,26 @@ export default function SettingsPage() {
                 })}
               </div>
             </div>
-            <Button
-              onClick={handleAddPreset}
-              className="w-full"
-              disabled={presetForm.selectedCompounds.length === 0}
-            >
-              <Plus className="w-4 h-4 mr-2" />
-              Create Preset
-            </Button>
+            <div className="flex gap-2">
+              <Button
+                onClick={handleAddPreset}
+                className="flex-1"
+                disabled={presetForm.selectedCompounds.length === 0}
+              >
+                <Plus className="w-4 h-4 mr-2" />
+                Create Preset
+              </Button>
+              <StackOptimizer
+                compounds={presetForm.selectedCompounds.map((sc) => {
+                  const compound = compounds.find((c) => c.id === sc.compoundId);
+                  return {
+                    name: compound?.name || "Unknown",
+                    dose: `${sc.dose}${compound?.unit || "mg"}`,
+                  };
+                })}
+                className="flex-1"
+              />
+            </div>
           </div>
         </DialogContent>
       </Dialog>

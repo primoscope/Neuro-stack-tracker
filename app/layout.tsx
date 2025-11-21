@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { AuthGuard } from "@/components/AuthGuard";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
+import { NeuroNavigator } from "@/components/NeuroNavigator";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <AuthGuard>
           {children}
           <MobileBottomNav />
+          <NeuroNavigator />
         </AuthGuard>
       </body>
     </html>

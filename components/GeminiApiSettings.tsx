@@ -6,30 +6,44 @@ import { type GeminiModel } from '@/lib/gemini-search';
 
 const GEMINI_MODELS = [
   {
-    id: 'gemini-exp-1206' as GeminiModel,
-    name: 'Gemini 3.0 (Experimental)',
-    description: 'Most advanced model, best reasoning, multimodal',
+    id: 'gemini-2.5-pro' as GeminiModel,
+    name: 'Gemini 2.5 Pro ⭐',
+    description: 'Most powerful available - excellent reasoning (1M tokens) - FREE TIER',
     icon: Brain,
     recommended: true,
   },
   {
-    id: 'gemini-2.0-flash-exp' as GeminiModel,
-    name: 'Gemini 2.0 Flash',
-    description: 'Fast and capable, best balance',
+    id: 'gemini-3-pro-preview' as GeminiModel,
+    name: 'Gemini 3.0 Pro Preview 🆕',
+    description: 'Latest release (Nov 2025) - Requires paid tier (1M tokens, 64K output)',
+    icon: Sparkles,
+    recommended: false,
+  },
+  {
+    id: 'gemini-2.5-flash' as GeminiModel,
+    name: 'Gemini 2.5 Flash',
+    description: 'Fast and efficient - great balance of speed and quality - FREE TIER',
     icon: Zap,
     recommended: false,
   },
   {
-    id: 'gemini-1.5-pro' as GeminiModel,
-    name: 'Gemini 1.5 Pro',
-    description: 'Detailed analysis, proven reliability',
+    id: 'gemini-2.0-flash-thinking-exp' as GeminiModel,
+    name: 'Gemini 2.5 Flash (Thinking)',
+    description: 'Extended reasoning capabilities - best for complex analysis',
     icon: Brain,
     recommended: false,
   },
   {
-    id: 'gemini-1.5-flash' as GeminiModel,
-    name: 'Gemini 1.5 Flash',
-    description: 'Fast and efficient, good for quick searches',
+    id: 'gemini-2.0-flash' as GeminiModel,
+    name: 'Gemini 2.0 Flash',
+    description: 'Proven stable - reliable for production - FREE TIER',
+    icon: Cpu,
+    recommended: false,
+  },
+  {
+    id: 'gemini-exp-1206' as GeminiModel,
+    name: 'Gemini 2.5 Pro (Exp 1206)',
+    description: 'Previous experimental - still powerful',
     icon: Cpu,
     recommended: false,
   },
@@ -41,7 +55,7 @@ export default function GeminiApiSettings() {
   const [isConfigured, setIsConfigured] = useState(false);
   const [isTesting, setIsTesting] = useState(false);
   const [testResult, setTestResult] = useState<'success' | 'error' | null>(null);
-  const [selectedModel, setSelectedModel] = useState<GeminiModel>('gemini-2.0-flash-exp');
+  const [selectedModel, setSelectedModel] = useState<GeminiModel>('gemini-2.5-pro');
 
   useEffect(() => {
     // Check if API key is already configured in environment
@@ -56,7 +70,7 @@ export default function GeminiApiSettings() {
     if (storedModel) {
       setSelectedModel(storedModel as GeminiModel);
     } else {
-      setSelectedModel('gemini-exp-1206'); // Default to Gemini 3.0
+      setSelectedModel('gemini-2.5-pro'); // Default to Gemini 2.5 Pro (Most powerful on free tier)
     }
   }, []);
 
