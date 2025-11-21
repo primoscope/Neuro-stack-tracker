@@ -144,7 +144,7 @@ export function AddCompoundFromLibrary({ open, onOpenChange }: AddCompoundFromLi
                       <Select
                         id="unit"
                         value={unit}
-                        onChange={(e) => setUnit(e.target.value as any)}
+                        onChange={(e) => setUnit(e.target.value as 'mg' | 'ml' | 'g' | 'pills' | 'mcg' | 'IU')}
                       >
                         <option value="mg">mg</option>
                         <option value="g">g</option>

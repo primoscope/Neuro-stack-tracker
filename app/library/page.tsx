@@ -183,6 +183,7 @@ export default function LibraryPage() {
                           key={compound.id}
                           onClick={() => handleSelectCompound(compound)}
                           className="text-left p-4 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition-colors border border-slate-700 hover:border-slate-600"
+                          aria-label={`View details for ${compound.name}`}
                         >
                           <div className="font-semibold text-slate-100 mb-1">
                             {compound.name}
@@ -221,6 +222,7 @@ export default function LibraryPage() {
                           key={compound.id}
                           onClick={() => handleSelectCompound(compound)}
                           className="w-full text-left p-4 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition-colors border border-slate-700 hover:border-slate-600 flex items-start justify-between"
+                          aria-label={`View details for ${compound.name}`}
                         >
                           <div className="flex-1">
                             <div className="flex items-center gap-2">

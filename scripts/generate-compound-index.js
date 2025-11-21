@@ -67,8 +67,9 @@ function parseOnsetPeakDuration(raw) {
     if (peakMatch) {
       const unit = peakMatch[3];
       const multiplier = unit === 'h' ? 60 : 1;
-      result.peakMin = parseInt(peakMatch[1]) * multiplier;
-      result.peakMax = peakMatch[2] ? parseInt(peakMatch[2]) * multiplier : result.peakMin;
+      const peakMinValue = parseInt(peakMatch[1]) * multiplier;
+      result.peakMin = peakMinValue;
+      result.peakMax = peakMatch[2] ? parseInt(peakMatch[2]) * multiplier : peakMinValue;
     }
   }
   
