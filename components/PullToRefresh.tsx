@@ -64,7 +64,7 @@ export function PullToRefresh({ onRefresh, children }: PullToRefreshProps) {
       element.removeEventListener("touchmove", handleTouchMove);
       element.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [pullDistance, isRefreshing]);
+  }, [pullDistance, isRefreshing, handleTouchStart, handleTouchMove, handleTouchEnd]);
 
   const progress = Math.min(pullDistance / threshold, 1);
   const rotation = progress * 360;
