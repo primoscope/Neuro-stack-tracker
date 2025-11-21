@@ -50,17 +50,12 @@ export async function sendChatMessage(
       parts: [{ text: message }]
     });
 
-    // Make API call
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: conversationHistory,
-          systemInstruction: {
-            parts: [{
-              text: `You are an expert pharmacologist and nootropics specialist helping users optimize their supplement stacks. 
+    // Get custom system prompt from localStorage or use default
+    const customPrompt = typeof window !== 'undefined' 
+      ? localStorage.getItem('bio_coach_system_prompt')
+      : null;
+    
+    const defaultPrompt = `You are an expert pharmacologist and nootropics specialist helping users optimize their supplement stacks. 
               
 Context: ${session.context}
 
@@ -71,7 +66,19 @@ Provide clear, evidence-based advice. Be conversational but professional. Keep r
 - Evidence-based recommendations
 - Practical implementation
 
-Always include medical disclaimers when appropriate.`
+Always include medical disclaimers when appropriate.`;
+
+    // Make API call
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: conversationHistory,
+          systemInstruction: {
+            parts: [{
+              text: customPrompt || defaultPrompt
             }]
           },
           generationConfig: {

@@ -27,6 +27,10 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { seedCompounds } from "@/lib/seed-data";
 import { AddCompoundFromLibrary } from "@/components/AddCompoundFromLibrary";
 import GeminiApiSettings from "@/components/GeminiApiSettings";
+import BioCoachConfiguration from "@/components/BioCoachConfiguration";
+import AutoScheduleButton from "@/components/AutoScheduleButton";
+import { parsePharmacokineticString } from "@/components/NeuroCurveVisualization";
+import { StackOptimizer } from "@/components/StackOptimizer";
 
 export default function SettingsPage() {
   const {
@@ -180,7 +184,7 @@ export default function SettingsPage() {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-6 space-y-6 max-w-4xl">
+      <main className="w-full max-w-4xl mx-auto px-4 py-6 space-y-6">
         {/* Compound Management */}
         <Card className="glass border-slate-800">
           <CardHeader>
@@ -269,7 +273,7 @@ export default function SettingsPage() {
         <Card className="glass border-slate-800">
           <CardHeader>
             <div className="flex items-center justify-between">
-              <div>
+              <div className="flex-1">
                 <CardTitle className="flex items-center gap-2">
                   <Layers className="w-5 h-5 text-emerald-500" />
                   Stack Presets
@@ -278,17 +282,35 @@ export default function SettingsPage() {
                   Create one-tap logging shortcuts for common combinations
                 </CardDescription>
               </div>
-              <Button
-                onClick={() => setShowPresetDialog(true)}
-                size="sm"
-                disabled={compounds.length === 0}
-              >
-                <Plus className="w-4 h-4 mr-2" />
-                New Preset
-              </Button>
+              <div className="flex gap-2">
+                <Button
+                  onClick={() => setShowPresetDialog(true)}
+                  size="sm"
+                  disabled={compounds.length === 0}
+                >
+                  <Plus className="w-4 h-4 mr-2" />
+                  New Preset
+                </Button>
+              </div>
             </div>
           </CardHeader>
           <CardContent>
+            {/* Auto-Schedule Feature */}
+            {compounds.length > 0 && (
+              <div className="mb-6">
+                <AutoScheduleButton
+                  compounds={compounds.filter(c => c.isActive).map(c => ({
+                    name: c.name,
+                    dose: `${c.defaultDose} ${c.unit}`,
+                    effectType: 'Unknown', // Would be enhanced with library data
+                  }))}
+                  onScheduleGenerated={(schedule) => {
+                    console.log('Schedule generated:', schedule);
+                    // Could auto-create presets from schedule
+                  }}
+                />
+              </div>
+            )}
             {stackPresets.length === 0 ? (
               <p className="text-slate-500 text-center py-8">
                 {compounds.length === 0
@@ -331,6 +353,9 @@ export default function SettingsPage() {
 
         {/* AI-Powered Compound Search */}
         <GeminiApiSettings />
+
+        {/* Bio-Coach Persona Configuration */}
+        <BioCoachConfiguration />
 
         {/* Data Management */}
         <Card className="glass border-slate-800">
@@ -585,14 +610,26 @@ export default function SettingsPage() {
                 })}
               </div>
             </div>
-            <Button
-              onClick={handleAddPreset}
-              className="w-full"
-              disabled={presetForm.selectedCompounds.length === 0}
-            >
-              <Plus className="w-4 h-4 mr-2" />
-              Create Preset
-            </Button>
+            <div className="flex gap-2">
+              <Button
+                onClick={handleAddPreset}
+                className="flex-1"
+                disabled={presetForm.selectedCompounds.length === 0}
+              >
+                <Plus className="w-4 h-4 mr-2" />
+                Create Preset
+              </Button>
+              <StackOptimizer
+                compounds={presetForm.selectedCompounds.map((sc) => {
+                  const compound = compounds.find((c) => c.id === sc.compoundId);
+                  return {
+                    name: compound?.name || "Unknown",
+                    dose: `${sc.dose}${compound?.unit || "mg"}`,
+                  };
+                })}
+                className="flex-1"
+              />
+            </div>
           </div>
         </DialogContent>
       </Dialog>

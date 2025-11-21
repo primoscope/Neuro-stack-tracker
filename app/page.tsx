@@ -116,7 +116,7 @@ export default function DashboardPage() {
         </div>
       </header>
 
-      <main className="mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-4 sm:space-y-6 pb-24 md:pb-6">
+      <main className="w-full max-w-7xl mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-4 sm:space-y-6 pb-24 md:pb-6">
         {/* Metrics Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Card className="glass border-slate-800">
