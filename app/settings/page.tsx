@@ -184,7 +184,7 @@ export default function SettingsPage() {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-6 space-y-6 max-w-4xl">
+      <main className="w-full max-w-4xl mx-auto px-4 py-6 space-y-6">
         {/* Compound Management */}
         <Card className="glass border-slate-800">
           <CardHeader>

@@ -1,61 +1,28 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { Sparkles, Check, X, Eye, EyeOff, ExternalLink, Zap, Brain, Cpu } from 'lucide-react';
-import { type GeminiModel } from '@/lib/gemini-search';
+import { Sparkles, Check, X, Eye, EyeOff, ExternalLink, Zap, Brain, Cpu, List } from 'lucide-react';
+import { testGeminiConnection, listGeminiModels } from '@/app/actions/gemini';
+import { AVAILABLE_MODELS } from '@/lib/geminiConfig';
 
-const GEMINI_MODELS = [
-  {
-    id: 'gemini-2.5-pro' as GeminiModel,
-    name: 'Gemini 2.5 Pro ⭐',
-    description: 'Most powerful available - excellent reasoning (1M tokens) - FREE TIER',
-    icon: Brain,
-    recommended: true,
-  },
-  {
-    id: 'gemini-3-pro-preview' as GeminiModel,
-    name: 'Gemini 3.0 Pro Preview 🆕',
-    description: 'Latest release (Nov 2025) - Requires paid tier (1M tokens, 64K output)',
-    icon: Sparkles,
-    recommended: false,
-  },
-  {
-    id: 'gemini-2.5-flash' as GeminiModel,
-    name: 'Gemini 2.5 Flash',
-    description: 'Fast and efficient - great balance of speed and quality - FREE TIER',
-    icon: Zap,
-    recommended: false,
-  },
-  {
-    id: 'gemini-2.0-flash-thinking-exp' as GeminiModel,
-    name: 'Gemini 2.5 Flash (Thinking)',
-    description: 'Extended reasoning capabilities - best for complex analysis',
-    icon: Brain,
-    recommended: false,
-  },
-  {
-    id: 'gemini-2.0-flash' as GeminiModel,
-    name: 'Gemini 2.0 Flash',
-    description: 'Proven stable - reliable for production - FREE TIER',
-    icon: Cpu,
-    recommended: false,
-  },
-  {
-    id: 'gemini-exp-1206' as GeminiModel,
-    name: 'Gemini 2.5 Pro (Exp 1206)',
-    description: 'Previous experimental - still powerful',
-    icon: Cpu,
-    recommended: false,
-  },
-];
+const GEMINI_MODELS = AVAILABLE_MODELS.map(model => ({
+  id: model.id,
+  name: model.name,
+  description: model.description,
+  icon: model.id.includes('flash') ? Zap : model.id.includes('3') ? Sparkles : Brain,
+  recommended: model.recommended,
+}));
 
 export default function GeminiApiSettings() {
   const [apiKey, setApiKey] = useState('');
   const [showKey, setShowKey] = useState(false);
   const [isConfigured, setIsConfigured] = useState(false);
   const [isTesting, setIsTesting] = useState(false);
-  const [testResult, setTestResult] = useState<'success' | 'error' | null>(null);
-  const [selectedModel, setSelectedModel] = useState<GeminiModel>('gemini-2.5-pro');
+  const [isListingModels, setIsListingModels] = useState(false);
+  const [testResult, setTestResult] = useState<{ success: boolean; message?: string; error?: string; code?: string | number } | null>(null);
+  const [modelsResult, setModelsResult] = useState<{ success: boolean; models?: any[]; error?: string; raw?: string } | null>(null);
+  const [showModels, setShowModels] = useState(false);
+  const [selectedModel, setSelectedModel] = useState<string>('gemini-2.5-pro');
 
   useEffect(() => {
     // Check if API key is already configured in environment
@@ -68,7 +35,7 @@ export default function GeminiApiSettings() {
     // Load selected model
     const storedModel = localStorage.getItem('gemini_model');
     if (storedModel) {
-      setSelectedModel(storedModel as GeminiModel);
+      setSelectedModel(storedModel);
     } else {
       setSelectedModel('gemini-2.5-pro'); // Default to Gemini 2.5 Pro (Most powerful on free tier)
     }
@@ -87,7 +54,7 @@ export default function GeminiApiSettings() {
     }
   }
   
-  function handleModelChange(model: GeminiModel) {
+  function handleModelChange(model: string) {
     setSelectedModel(model);
     if (isConfigured) {
       localStorage.setItem('gemini_model', model);
@@ -108,23 +75,41 @@ export default function GeminiApiSettings() {
     setTestResult(null);
 
     try {
-      // Test with a simple query
-      const response = await fetch('/api/compounds/search-gemini', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: 'caffeine' }),
-      });
-
-      if (response.ok) {
-        setTestResult('success');
-      } else {
-        setTestResult('error');
-      }
+      // Call server action to test connection
+      const result = await testGeminiConnection(apiKey.trim());
+      setTestResult(result);
     } catch (error) {
       console.error('Test connection error:', error);
-      setTestResult('error');
+      setTestResult({
+        success: false,
+        error: error instanceof Error ? error.message : 'Unknown error occurred',
+      });
     } finally {
       setIsTesting(false);
+    }
+  }
+
+  async function handleListModels() {
+    if (!apiKey.trim()) return;
+
+    setIsListingModels(true);
+    setModelsResult(null);
+    setShowModels(false);
+
+    try {
+      // Call server action to list models
+      const result = await listGeminiModels(apiKey.trim());
+      setModelsResult(result);
+      setShowModels(true);
+    } catch (error) {
+      console.error('List models error:', error);
+      setModelsResult({
+        success: false,
+        error: error instanceof Error ? error.message : 'Unknown error occurred',
+      });
+      setShowModels(true);
+    } finally {
+      setIsListingModels(false);
     }
   }
 
@@ -216,11 +201,11 @@ export default function GeminiApiSettings() {
           </div>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <button
             onClick={handleSaveKey}
             disabled={!apiKey.trim() || isConfigured}
-            className="px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-700 disabled:text-gray-500 text-white rounded-lg font-medium transition-colors"
+            className="px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-700 disabled:text-gray-500 text-white rounded-lg font-medium transition-colors touch-manipulation min-h-[44px]"
           >
             {isConfigured ? 'Configured' : 'Save Key'}
           </button>
@@ -230,14 +215,23 @@ export default function GeminiApiSettings() {
               <button
                 onClick={handleTestConnection}
                 disabled={isTesting}
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 text-white rounded-lg font-medium transition-colors"
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 text-white rounded-lg font-medium transition-colors touch-manipulation min-h-[44px]"
               >
                 {isTesting ? 'Testing...' : 'Test Connection'}
               </button>
 
               <button
+                onClick={handleListModels}
+                disabled={isListingModels}
+                className="px-4 py-2 bg-green-600 hover:bg-green-700 disabled:bg-gray-700 text-white rounded-lg font-medium transition-colors touch-manipulation min-h-[44px] flex items-center gap-2"
+              >
+                <List className="h-4 w-4" />
+                {isListingModels ? 'Loading...' : 'List Models'}
+              </button>
+
+              <button
                 onClick={handleRemoveKey}
-                className="px-4 py-2 bg-red-600/20 hover:bg-red-600/30 text-red-400 rounded-lg font-medium transition-colors"
+                className="px-4 py-2 bg-red-600/20 hover:bg-red-600/30 text-red-400 rounded-lg font-medium transition-colors touch-manipulation min-h-[44px]"
               >
                 Remove
               </button>
@@ -245,17 +239,53 @@ export default function GeminiApiSettings() {
           )}
         </div>
 
-        {testResult === 'success' && (
+        {testResult && testResult.success && (
           <div className="flex items-center gap-2 text-sm text-green-400 bg-green-900/20 px-3 py-2 rounded">
             <Check className="h-4 w-4" />
-            <span>Connection successful! AI search is ready.</span>
+            <span>{testResult.message || 'Connection successful! AI features are ready.'}</span>
           </div>
         )}
 
-        {testResult === 'error' && (
-          <div className="flex items-center gap-2 text-sm text-red-400 bg-red-900/20 px-3 py-2 rounded">
-            <X className="h-4 w-4" />
-            <span>Connection failed. Please check your API key.</span>
+        {testResult && !testResult.success && (
+          <div className="flex flex-col gap-2 text-sm text-red-400 bg-red-900/20 px-3 py-2 rounded">
+            <div className="flex items-center gap-2">
+              <X className="h-4 w-4" />
+              <span className="font-medium">Connection Failed</span>
+            </div>
+            <p className="text-xs text-red-300">{testResult.error || 'Please check your API key.'}</p>
+            {testResult.code && (
+              <p className="text-xs text-red-300/80">Error code: {testResult.code}</p>
+            )}
+          </div>
+        )}
+
+        {showModels && modelsResult && (
+          <div className="mt-4 p-4 bg-slate-900/50 border border-slate-700 rounded-lg">
+            <div className="flex items-center justify-between mb-3">
+              <h4 className="text-sm font-semibold text-white">Available Models</h4>
+              <button
+                onClick={() => setShowModels(false)}
+                className="text-gray-400 hover:text-white"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            {modelsResult.success && modelsResult.models ? (
+              <div className="max-h-[400px] overflow-y-auto">
+                <pre className="text-xs text-slate-300 whitespace-pre-wrap break-words">
+                  {JSON.stringify(modelsResult.models, null, 2)}
+                </pre>
+              </div>
+            ) : (
+              <div className="text-sm text-red-400">
+                <p className="mb-2">{modelsResult.error || 'Failed to fetch models'}</p>
+                {modelsResult.raw && (
+                  <pre className="text-xs text-slate-400 mt-2 max-h-[200px] overflow-y-auto whitespace-pre-wrap break-words">
+                    {modelsResult.raw}
+                  </pre>
+                )}
+              </div>
+            )}
           </div>
         )}
 
