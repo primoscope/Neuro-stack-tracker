@@ -11,7 +11,7 @@ import { ActivityHeatmap } from "@/components/ActivityHeatmap";
 import StackTimeline from "@/components/StackTimeline";
 import StackOptimizer from "@/components/StackOptimizer";
 import StackInsightsPanel from "@/components/StackInsightsPanel";
-import { getCompoundById } from "@/lib/compound-library";
+import { getCompoundById, normalizeCompoundName } from "@/lib/compound-library";
 
 export default function AnalyticsPage() {
   const { logEntries, stackPresets, compounds: userCompounds } = useStore();
@@ -43,7 +43,7 @@ export default function AnalyticsPage() {
       return recentLog.doseItems.map((item, idx) => {
         const userCompound = userCompounds.find(c => c.id === item.compoundId);
         // Try to find in compound library
-        const libraryCompound = userCompound ? getCompoundById(userCompound.name.toLowerCase().replace(/\s+/g, '-')) : null;
+        const libraryCompound = userCompound ? getCompoundById(normalizeCompoundName(userCompound.name)) : null;
         
         if (libraryCompound) {
           return {
@@ -79,7 +79,7 @@ export default function AnalyticsPage() {
       const preset = stackPresets[0];
       return preset.doseItems.map(item => {
         const compound = userCompounds.find(c => c.id === item.compoundId);
-        const libraryCompound = compound ? getCompoundById(compound.name.toLowerCase().replace(/\s+/g, '-')) : null;
+        const libraryCompound = compound ? getCompoundById(normalizeCompoundName(compound.name)) : null;
         
         return {
           id: item.compoundId,

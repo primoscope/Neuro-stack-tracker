@@ -18,6 +18,11 @@ export interface PharmacokineticProfile {
   doseTime: number; // timestamp when taken
 }
 
+// Default pharmacokinetic values when data is not available
+const DEFAULT_ONSET_MINUTES = 30; // Typical oral drug onset
+const DEFAULT_PEAK_MULTIPLIER = 2; // Peak typically occurs 2x onset time
+const DEFAULT_DURATION_MULTIPLIER = 3; // Duration typically 3x peak time
+
 /**
  * Calculate pharmacokinetic profile for a compound
  * Uses a simplified absorption-distribution-elimination model
@@ -29,10 +34,10 @@ export function calculatePharmacokineticProfile(
 ): PharmacokineticProfile {
   const onset = compound.onset;
   
-  // Use average values or defaults
-  const onsetMin = onset.onsetMin || 30;
-  const peakMin = onset.peakMin || onsetMin * 2;
-  const durationMin = onset.durationMin || peakMin * 3;
+  // Use average values or defaults when specific data not available
+  const onsetMin = onset.onsetMin || DEFAULT_ONSET_MINUTES;
+  const peakMin = onset.peakMin || onsetMin * DEFAULT_PEAK_MULTIPLIER;
+  const durationMin = onset.durationMin || peakMin * DEFAULT_DURATION_MULTIPLIER;
 
   const timePoints: Array<{ time: number; concentration: number }> = [];
   const totalTime = Math.max(durationMin, 1440); // At least 24 hours
@@ -72,17 +77,20 @@ function calculateConcentrationAtTime(
 ): number {
   if (time < 0) return 0;
 
+  // Pharmacokinetic assumption: 20% concentration reached at onset
+  const ONSET_CONCENTRATION_PERCENT = 20;
+
   // Before onset - no absorption yet
   if (time < onset) {
     // Gentle rise during onset phase
-    return (time / onset) * 20; // Reaches 20% at onset
+    return (time / onset) * ONSET_CONCENTRATION_PERCENT;
   }
 
   // Rising phase (onset to peak)
   if (time < peak) {
     const progress = (time - onset) / (peak - onset);
-    // Exponential rise to 100%
-    return 20 + 80 * Math.pow(progress, 0.7);
+    // Exponential rise to 100% (0.7 exponent gives realistic absorption curve)
+    return ONSET_CONCENTRATION_PERCENT + (100 - ONSET_CONCENTRATION_PERCENT) * Math.pow(progress, 0.7);
   }
 
   // Peak to end of duration - exponential decay

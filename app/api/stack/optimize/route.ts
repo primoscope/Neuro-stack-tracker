@@ -130,16 +130,29 @@ Order the compounds chronologically by suggested timing. Be specific about timin
       );
     }
 
-    // Extract JSON from response
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) {
+    // Extract JSON from response - find first complete JSON object
+    let optimizationResult: OptimizedStackResponse;
+    try {
+      // Try to find JSON block with proper braces
+      const jsonMatch = text.match(/\{(?:[^{}]|(?:\{[^{}]*\}))*\}/);
+      if (!jsonMatch) {
+        // Fallback: try to extract from code blocks
+        const codeBlockMatch = text.match(/```json\s*(\{[\s\S]*?\})\s*```/);
+        if (codeBlockMatch) {
+          optimizationResult = JSON.parse(codeBlockMatch[1]);
+        } else {
+          throw new Error('No JSON found in response');
+        }
+      } else {
+        optimizationResult = JSON.parse(jsonMatch[0]);
+      }
+    } catch (parseError) {
+      console.error('Failed to parse optimization response:', parseError);
       return NextResponse.json(
-        { error: 'Could not parse optimization response' },
+        { error: 'Could not parse optimization response', details: text.substring(0, 200) },
         { status: 500 }
       );
     }
-
-    const optimizationResult: OptimizedStackResponse = JSON.parse(jsonMatch[0]);
 
     return NextResponse.json(optimizationResult);
   } catch (error) {
