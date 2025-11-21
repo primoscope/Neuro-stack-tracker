@@ -6,7 +6,14 @@
 
 import { CompoundDetail } from './compound-types';
 
-export type GeminiModel = 'gemini-2.5-pro' | 'gemini-2.5-flash' | 'gemini-2.0-flash-exp' | 'gemini-2.0-flash' | 'gemini-exp-1206';
+export type GeminiModel = 
+  | 'gemini-3-pro-preview'  // Gemini 3.0 Pro Preview (November 2025) - LATEST & MOST ADVANCED
+  | 'gemini-exp-1206'  // Gemini 2.5 Pro Experimental (previous generation)
+  | 'gemini-2.0-flash-thinking-exp'  // Gemini 2.5 Flash with thinking (advanced reasoning)
+  | 'gemini-2.5-pro'  // Gemini 2.5 Pro (stable)
+  | 'gemini-2.5-flash'  // Gemini 2.5 Flash (stable, fast)
+  | 'gemini-2.0-flash'  // Gemini 2.0 Flash (stable, reliable)
+  | 'gemini-2.0-flash-exp';  // Gemini 2.0 Flash Experimental
 
 export interface GeminiSearchOptions {
   query: string;
@@ -33,14 +40,22 @@ export function getSelectedModel(): GeminiModel {
       return stored as GeminiModel;
     }
   }
-  return 'gemini-2.0-flash'; // Default to Gemini 2.0 Flash (stable and fast)
+  return 'gemini-2.5-pro'; // Default to Gemini 2.5 Pro (Most powerful on free tier)
 }
 
 /**
  * Validate if a string is a valid Gemini model
  */
 function isValidModel(model: string): boolean {
-  return ['gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.0-flash-exp', 'gemini-2.0-flash', 'gemini-exp-1206'].includes(model);
+  return [
+    'gemini-3-pro-preview',
+    'gemini-exp-1206',
+    'gemini-2.0-flash-thinking-exp',
+    'gemini-2.5-pro',
+    'gemini-2.5-flash',
+    'gemini-2.0-flash',
+    'gemini-2.0-flash-exp'
+  ].includes(model);
 }
 
 /**

@@ -83,7 +83,7 @@ export function getSelectedModel(): string {
       return stored;
     }
   }
-  return 'gemini-2.0-flash'; // Default to Gemini 2.0 Flash (stable and fast)
+  return 'gemini-2.5-pro'; // Default to Gemini 2.5 Pro (Most powerful on free tier)
 }
 
 /**
@@ -95,6 +95,7 @@ export function isGeminiAvailable(): boolean {
 
 /**
  * Get generation config based on use case
+ * Optimized for Gemini 3.0 Pro Preview (topK: 64, topP: 0.95)
  */
 function getGenerationConfig(
   temperature: number,
@@ -102,8 +103,8 @@ function getGenerationConfig(
 ): GenerationConfig {
   return {
     temperature,
-    topK: 40, // Default recommended by Google
-    topP: 0.95, // Default recommended by Google
+    topK: 64, // Gemini 3.0 recommended value
+    topP: 0.95, // Gemini 3.0 recommended value
     maxOutputTokens: maxTokens,
     candidateCount: 1, // Only generate one response
   };
