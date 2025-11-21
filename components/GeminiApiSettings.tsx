@@ -6,16 +6,23 @@ import { type GeminiModel } from '@/lib/gemini-search';
 
 const GEMINI_MODELS = [
   {
+    id: 'gemini-exp-1206' as GeminiModel,
+    name: 'Gemini 3.0 (Experimental)',
+    description: 'Most advanced model, best reasoning, multimodal',
+    icon: Brain,
+    recommended: true,
+  },
+  {
     id: 'gemini-2.0-flash-exp' as GeminiModel,
     name: 'Gemini 2.0 Flash',
-    description: 'Latest model, fastest responses, best balance',
+    description: 'Fast and capable, best balance',
     icon: Zap,
-    recommended: true,
+    recommended: false,
   },
   {
     id: 'gemini-1.5-pro' as GeminiModel,
     name: 'Gemini 1.5 Pro',
-    description: 'Most capable, detailed analysis, slower',
+    description: 'Detailed analysis, proven reliability',
     icon: Brain,
     recommended: false,
   },
@@ -48,6 +55,8 @@ export default function GeminiApiSettings() {
     const storedModel = localStorage.getItem('gemini_model');
     if (storedModel) {
       setSelectedModel(storedModel as GeminiModel);
+    } else {
+      setSelectedModel('gemini-exp-1206'); // Default to Gemini 3.0
     }
   }, []);
 

@@ -6,7 +6,7 @@
 
 import { CompoundDetail } from './compound-types';
 
-export type GeminiModel = 'gemini-1.5-pro' | 'gemini-1.5-flash' | 'gemini-2.0-flash-exp';
+export type GeminiModel = 'gemini-1.5-pro' | 'gemini-1.5-flash' | 'gemini-2.0-flash-exp' | 'gemini-exp-1206';
 
 export interface GeminiSearchOptions {
   query: string;
@@ -33,14 +33,14 @@ export function getSelectedModel(): GeminiModel {
       return stored as GeminiModel;
     }
   }
-  return 'gemini-2.0-flash-exp'; // Default to latest model
+  return 'gemini-exp-1206'; // Default to Gemini 3.0
 }
 
 /**
  * Validate if a string is a valid Gemini model
  */
 function isValidModel(model: string): boolean {
-  return ['gemini-1.5-pro', 'gemini-1.5-flash', 'gemini-2.0-flash-exp'].includes(model);
+  return ['gemini-1.5-pro', 'gemini-1.5-flash', 'gemini-2.0-flash-exp', 'gemini-exp-1206'].includes(model);
 }
 
 /**
