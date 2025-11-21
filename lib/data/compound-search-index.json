@@ -1,0 +1,3734 @@
+[
+  {
+    "id": "4-fluorophenibut",
+    "name": "4-Fluorophenibut",
+    "aliases": [
+      "4-F-Phenibut, Fluorophenibut, Baflofen"
+    ],
+    "searchTerms": [
+      "4 fluorophenibut",
+      "fluorophenibut",
+      "4 f phenibut fluorophenibut baflofen",
+      "phenibut",
+      "baflofen"
+    ],
+    "effectType": "Anxiolytic/GABAergic",
+    "categoryTags": [
+      "Anxiolytic/GABAergic",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "9-me-bc",
+    "name": "9-Me-BC",
+    "aliases": [
+      "9-Methyl-β-carboline"
+    ],
+    "searchTerms": [
+      "9 me bc",
+      "9 methyl carboline",
+      "methyl",
+      "carboline"
+    ],
+    "effectType": "Nootropic/Dopaminergic/Neuroprotective",
+    "categoryTags": [
+      "Nootropic/Dopaminergic/Neuroprotective",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "agmatine",
+    "name": "Agmatine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "agmatine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - NMDA antagonist",
+    "categoryTags": [
+      "Nootropic - NMDA antagonist",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "agomelatine",
+    "name": "Agomelatine",
+    "aliases": [
+      "Valdoxan"
+    ],
+    "searchTerms": [
+      "agomelatine",
+      "valdoxan"
+    ],
+    "effectType": "Antidepressant - Melatonergic",
+    "categoryTags": [
+      "Antidepressant - Melatonergic",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "alimemazine",
+    "name": "Alimemazine",
+    "aliases": [
+      "Theralen"
+    ],
+    "searchTerms": [
+      "alimemazine",
+      "theralen"
+    ],
+    "effectType": "Anxiolytic - Antihistamine H1 antagonist",
+    "categoryTags": [
+      "Anxiolytic - Antihistamine H1 antagonist",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "alpha-gpc",
+    "name": "Alpha-GPC",
+    "aliases": [
+      "Alpha-glycerylphosphorylcholine, Choline alfoscerate"
+    ],
+    "searchTerms": [
+      "alpha gpc",
+      "alpha",
+      "gpc",
+      "alpha glycerylphosphorylcholine choline alfoscerate",
+      "glycerylphosphorylcholine",
+      "choline",
+      "alfoscerate"
+    ],
+    "effectType": "Nootropic/Choline source",
+    "categoryTags": [
+      "Nootropic/Choline source",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "alprazolam",
+    "name": "Alprazolam",
+    "aliases": [
+      "Xanax"
+    ],
+    "searchTerms": [
+      "alprazolam",
+      "xanax"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "amisulpride",
+    "name": "Amisulpride",
+    "aliases": [
+      "Solian"
+    ],
+    "searchTerms": [
+      "amisulpride",
+      "solian"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "amitriptyline",
+    "name": "Amitriptyline",
+    "aliases": [
+      "Elavil"
+    ],
+    "searchTerms": [
+      "amitriptyline",
+      "elavil"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "amoxapine",
+    "name": "Amoxapine",
+    "aliases": [
+      "Asendin"
+    ],
+    "searchTerms": [
+      "amoxapine",
+      "asendin"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "amphetamine--mixed-salts-",
+    "name": "Amphetamine (mixed salts)",
+    "aliases": [
+      "Adderall"
+    ],
+    "searchTerms": [
+      "amphetamine mixed salts",
+      "amphetamine",
+      "mixed",
+      "salts",
+      "adderall"
+    ],
+    "effectType": "Stimulant/ADHD - Amphetamine",
+    "categoryTags": [
+      "Stimulant/ADHD - Amphetamine",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "aniracetam",
+    "name": "Aniracetam",
+    "aliases": [
+      "Draganon, Sarpul, Ampamet, Memodrin"
+    ],
+    "searchTerms": [
+      "aniracetam",
+      "draganon sarpul ampamet memodrin",
+      "draganon",
+      "sarpul",
+      "ampamet",
+      "memodrin"
+    ],
+    "effectType": "Nootropic/Racetam",
+    "categoryTags": [
+      "Nootropic/Racetam",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "aripiprazole",
+    "name": "Aripiprazole",
+    "aliases": [
+      "Abilify"
+    ],
+    "searchTerms": [
+      "aripiprazole",
+      "abilify"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "armodafinil",
+    "name": "Armodafinil",
+    "aliases": [
+      "Nuvigil"
+    ],
+    "searchTerms": [
+      "armodafinil",
+      "nuvigil"
+    ],
+    "effectType": "Stimulant/ADHD - Eugeroic",
+    "categoryTags": [
+      "Stimulant/ADHD - Eugeroic",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "asenapine",
+    "name": "Asenapine",
+    "aliases": [
+      "Saphris"
+    ],
+    "searchTerms": [
+      "asenapine",
+      "saphris"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "ashwagandha",
+    "name": "Ashwagandha",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "ashwagandha",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Adaptogen",
+    "categoryTags": [
+      "Nootropic - Adaptogen",
+      "Nootropic",
+      "Adaptogen"
+    ]
+  },
+  {
+    "id": "atenolol",
+    "name": "Atenolol",
+    "aliases": [
+      "Tenormin"
+    ],
+    "searchTerms": [
+      "atenolol",
+      "tenormin"
+    ],
+    "effectType": "Anxiolytic - Beta-blocker",
+    "categoryTags": [
+      "Anxiolytic - Beta-blocker",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "aticaprant",
+    "name": "Aticaprant",
+    "aliases": [
+      "JNJ-67953964, LY-2456302"
+    ],
+    "searchTerms": [
+      "aticaprant",
+      "jnj 67953964 ly 2456302",
+      "jnj",
+      "67953964",
+      "2456302"
+    ],
+    "effectType": "Kappa opioid receptor antagonist/Antidepressant",
+    "categoryTags": [
+      "Kappa opioid receptor antagonist/Antidepressant",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "atomoxetine",
+    "name": "Atomoxetine",
+    "aliases": [
+      "Strattera"
+    ],
+    "searchTerms": [
+      "atomoxetine",
+      "strattera"
+    ],
+    "effectType": "Stimulant/ADHD - NRI",
+    "categoryTags": [
+      "Stimulant/ADHD - NRI",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "bacopa-monnieri",
+    "name": "Bacopa Monnieri",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "bacopa monnieri",
+      "bacopa",
+      "monnieri",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Adaptogen",
+    "categoryTags": [
+      "Nootropic - Adaptogen",
+      "Nootropic",
+      "Adaptogen"
+    ]
+  },
+  {
+    "id": "betahistine-mesylate",
+    "name": "Betahistine mesylate",
+    "aliases": [
+      "Serc, Betaserc, Vertigon"
+    ],
+    "searchTerms": [
+      "betahistine mesylate",
+      "betahistine",
+      "mesylate",
+      "serc betaserc vertigon",
+      "serc",
+      "betaserc",
+      "vertigon"
+    ],
+    "effectType": "H1 agonist/H3 antagonist/Antivertigo",
+    "categoryTags": [
+      "H1 agonist/H3 antagonist/Antivertigo"
+    ]
+  },
+  {
+    "id": "brexpiprazole",
+    "name": "Brexpiprazole",
+    "aliases": [
+      "Rexulti"
+    ],
+    "searchTerms": [
+      "brexpiprazole",
+      "rexulti"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "bromantane",
+    "name": "Bromantane",
+    "aliases": [
+      "Ladasten, Bromantan"
+    ],
+    "searchTerms": [
+      "bromantane",
+      "ladasten bromantan",
+      "ladasten",
+      "bromantan"
+    ],
+    "effectType": "Actoprotector/Adaptogen/Anxiolytic stimulant",
+    "categoryTags": [
+      "Actoprotector/Adaptogen/Anxiolytic stimulant",
+      "Stimulant",
+      "Anxiolytic",
+      "Adaptogen"
+    ]
+  },
+  {
+    "id": "bromazepam",
+    "name": "Bromazepam",
+    "aliases": [
+      "Lexotan"
+    ],
+    "searchTerms": [
+      "bromazepam",
+      "lexotan"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "bupropion",
+    "name": "Bupropion",
+    "aliases": [
+      "Wellbutrin/Voxra"
+    ],
+    "searchTerms": [
+      "bupropion",
+      "wellbutrin voxra",
+      "wellbutrin",
+      "voxra"
+    ],
+    "effectType": "Antidepressant - NDRI",
+    "categoryTags": [
+      "Antidepressant - NDRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "buspirone",
+    "name": "Buspirone",
+    "aliases": [
+      "Buspar"
+    ],
+    "searchTerms": [
+      "buspirone",
+      "buspar"
+    ],
+    "effectType": "Anxiolytic - Azapirone",
+    "categoryTags": [
+      "Anxiolytic - Azapirone",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "cdp-choline--citicoline-",
+    "name": "CDP-Choline (Citicoline)",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "cdp choline citicoline",
+      "cdp",
+      "choline",
+      "citicoline",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Cholinergic",
+    "categoryTags": [
+      "Nootropic - Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "cx-717",
+    "name": "CX-717",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "cx 717",
+      "717",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Ampakine",
+    "categoryTags": [
+      "Nootropic - Ampakine",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "caffeine",
+    "name": "Caffeine",
+    "aliases": [
+      "Generic"
+    ],
+    "searchTerms": [
+      "caffeine",
+      "generic"
+    ],
+    "effectType": "Stimulant/ADHD - Xanthine",
+    "categoryTags": [
+      "Stimulant/ADHD - Xanthine",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "cariprazine",
+    "name": "Cariprazine",
+    "aliases": [
+      "Vraylar"
+    ],
+    "searchTerms": [
+      "cariprazine",
+      "vraylar"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "cerebrolysin",
+    "name": "Cerebrolysin",
+    "aliases": [
+      "Neurotrophic peptide mixture, Porcine brain peptides"
+    ],
+    "searchTerms": [
+      "cerebrolysin",
+      "neurotrophic peptide mixture porcine brain peptides",
+      "neurotrophic",
+      "peptide",
+      "mixture",
+      "porcine",
+      "brain",
+      "peptides"
+    ],
+    "effectType": "Neurotrophic/Neuroprotectant/Peptide mixture",
+    "categoryTags": [
+      "Neurotrophic/Neuroprotectant/Peptide mixture"
+    ]
+  },
+  {
+    "id": "chlordiazepoxide",
+    "name": "Chlordiazepoxide",
+    "aliases": [
+      "Librium"
+    ],
+    "searchTerms": [
+      "chlordiazepoxide",
+      "librium"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "chlorpromazine",
+    "name": "Chlorpromazine",
+    "aliases": [
+      "Thorazine"
+    ],
+    "searchTerms": [
+      "chlorpromazine",
+      "thorazine"
+    ],
+    "effectType": "Antipsychotic - First Generation",
+    "categoryTags": [
+      "Antipsychotic - First Generation"
+    ]
+  },
+  {
+    "id": "choline-bitartrate",
+    "name": "Choline Bitartrate",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "choline bitartrate",
+      "choline",
+      "bitartrate",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Cholinergic",
+    "categoryTags": [
+      "Nootropic - Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "citalopram",
+    "name": "Citalopram",
+    "aliases": [
+      "Celexa"
+    ],
+    "searchTerms": [
+      "citalopram",
+      "celexa"
+    ],
+    "effectType": "Antidepressant - SSRI",
+    "categoryTags": [
+      "Antidepressant - SSRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "citicoline",
+    "name": "Citicoline",
+    "aliases": [
+      "CDP-Choline, Cytidine diphosphate-choline"
+    ],
+    "searchTerms": [
+      "citicoline",
+      "cdp choline cytidine diphosphate choline",
+      "cdp",
+      "choline",
+      "cytidine",
+      "diphosphate"
+    ],
+    "effectType": "Nootropic/Choline source",
+    "categoryTags": [
+      "Nootropic/Choline source",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "clobazam",
+    "name": "Clobazam",
+    "aliases": [
+      "Frisium"
+    ],
+    "searchTerms": [
+      "clobazam",
+      "frisium"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "clomipramine",
+    "name": "Clomipramine",
+    "aliases": [
+      "Anafranil"
+    ],
+    "searchTerms": [
+      "clomipramine",
+      "anafranil"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "clonazepam",
+    "name": "Clonazepam",
+    "aliases": [
+      "Klonopin"
+    ],
+    "searchTerms": [
+      "clonazepam",
+      "klonopin"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "clonidine",
+    "name": "Clonidine",
+    "aliases": [
+      "Kapvay"
+    ],
+    "searchTerms": [
+      "clonidine",
+      "kapvay"
+    ],
+    "effectType": "Stimulant/ADHD - Alpha-2 agonist",
+    "categoryTags": [
+      "Stimulant/ADHD - Alpha-2 agonist",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "clorazepate",
+    "name": "Clorazepate",
+    "aliases": [
+      "Tranxene"
+    ],
+    "searchTerms": [
+      "clorazepate",
+      "tranxene"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "clozapine",
+    "name": "Clozapine",
+    "aliases": [
+      "Clozaril"
+    ],
+    "searchTerms": [
+      "clozapine",
+      "clozaril"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "coq10",
+    "name": "CoQ10",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "coq10",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Mitochondrial",
+    "categoryTags": [
+      "Nootropic - Mitochondrial",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "coluracetam",
+    "name": "Coluracetam",
+    "aliases": [
+      "BCI-540, MKC-231"
+    ],
+    "searchTerms": [
+      "coluracetam",
+      "bci 540 mkc 231",
+      "bci",
+      "540",
+      "mkc",
+      "231"
+    ],
+    "effectType": "Nootropic/Racetam",
+    "categoryTags": [
+      "Nootropic/Racetam",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "creatine",
+    "name": "Creatine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "creatine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Metabolic",
+    "categoryTags": [
+      "Nootropic - Metabolic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "curcumin",
+    "name": "Curcumin",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "curcumin",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Polyphenol",
+    "categoryTags": [
+      "Nootropic - Polyphenol",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "d-serine",
+    "name": "D-Serine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "d serine",
+      "serine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - NMDA co-agonist",
+    "categoryTags": [
+      "Nootropic - NMDA co-agonist",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "desipramine",
+    "name": "Desipramine",
+    "aliases": [
+      "Norpramin"
+    ],
+    "searchTerms": [
+      "desipramine",
+      "norpramin"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "desvenlafaxine",
+    "name": "Desvenlafaxine",
+    "aliases": [
+      "Pristiq"
+    ],
+    "searchTerms": [
+      "desvenlafaxine",
+      "pristiq"
+    ],
+    "effectType": "Antidepressant - SNRI",
+    "categoryTags": [
+      "Antidepressant - SNRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "dexmethylphenidate",
+    "name": "Dexmethylphenidate",
+    "aliases": [
+      "Focalin"
+    ],
+    "searchTerms": [
+      "dexmethylphenidate",
+      "focalin"
+    ],
+    "effectType": "Stimulant/ADHD - Methylphenidate",
+    "categoryTags": [
+      "Stimulant/ADHD - Methylphenidate",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "dextroamphetamine",
+    "name": "Dextroamphetamine",
+    "aliases": [
+      "Dexedrine"
+    ],
+    "searchTerms": [
+      "dextroamphetamine",
+      "dexedrine"
+    ],
+    "effectType": "Stimulant/ADHD - Amphetamine",
+    "categoryTags": [
+      "Stimulant/ADHD - Amphetamine",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "dextromethorphan-bupropion",
+    "name": "Dextromethorphan/Bupropion",
+    "aliases": [
+      "Auvelity"
+    ],
+    "searchTerms": [
+      "dextromethorphan bupropion",
+      "dextromethorphan",
+      "bupropion",
+      "auvelity"
+    ],
+    "effectType": "Antidepressant - SNDRI",
+    "categoryTags": [
+      "Antidepressant - SNDRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "diazepam",
+    "name": "Diazepam",
+    "aliases": [
+      "Valium"
+    ],
+    "searchTerms": [
+      "diazepam",
+      "valium"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "didesoxymodafinil",
+    "name": "Didesoxymodafinil",
+    "aliases": [
+      "N,N-Dimethylmodafinil, Desoxy-modafinil"
+    ],
+    "searchTerms": [
+      "didesoxymodafinil",
+      "n n dimethylmodafinil desoxy modafinil",
+      "dimethylmodafinil",
+      "desoxy",
+      "modafinil"
+    ],
+    "effectType": "Wakefulness-promoting agent/Nootropic",
+    "categoryTags": [
+      "Wakefulness-promoting agent/Nootropic",
+      "Wakefulness-promoting",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "dihexa",
+    "name": "Dihexa",
+    "aliases": [
+      "PNB-0408, N-hexanoic-Tyr-Ile-(6) aminohexanoic amide"
+    ],
+    "searchTerms": [
+      "dihexa",
+      "pnb 0408 n hexanoic tyr ile 6 aminohexanoic amide",
+      "pnb",
+      "0408",
+      "hexanoic",
+      "tyr",
+      "ile",
+      "aminohexanoic",
+      "amide"
+    ],
+    "effectType": "Neurogenic peptide/HGF mimetic/Nootropic",
+    "categoryTags": [
+      "Neurogenic peptide/HGF mimetic/Nootropic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "donepezil",
+    "name": "Donepezil",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "donepezil",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Cholinergic",
+    "categoryTags": [
+      "Nootropic - Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "doxepin",
+    "name": "Doxepin",
+    "aliases": [
+      "Sinequan"
+    ],
+    "searchTerms": [
+      "doxepin",
+      "sinequan"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "duloxetine",
+    "name": "Duloxetine",
+    "aliases": [
+      "Cymbalta"
+    ],
+    "searchTerms": [
+      "duloxetine",
+      "cymbalta"
+    ],
+    "effectType": "Antidepressant - SNRI",
+    "categoryTags": [
+      "Antidepressant - SNRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "egcg",
+    "name": "EGCG",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "egcg",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Polyphenol",
+    "categoryTags": [
+      "Nootropic - Polyphenol",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "edaravone",
+    "name": "Edaravone",
+    "aliases": [
+      "Radicava, Radicut, MCI-186"
+    ],
+    "searchTerms": [
+      "edaravone",
+      "radicava radicut mci 186",
+      "radicava",
+      "radicut",
+      "mci",
+      "186"
+    ],
+    "effectType": "Free radical scavenger/Neuroprotectant/ALS treatment",
+    "categoryTags": [
+      "Free radical scavenger/Neuroprotectant/ALS treatment"
+    ]
+  },
+  {
+    "id": "emoxypine",
+    "name": "Emoxypine",
+    "aliases": [
+      "Mexidol"
+    ],
+    "searchTerms": [
+      "emoxypine",
+      "mexidol"
+    ],
+    "effectType": "Anxiolytic - Antioxidant",
+    "categoryTags": [
+      "Anxiolytic - Antioxidant",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "emoxypine--succinate-",
+    "name": "Emoxypine (succinate)",
+    "aliases": [
+      "Mexidol, Ethylmethylhydroxypyridine succinate, 3-hydroxypyridine succinate"
+    ],
+    "searchTerms": [
+      "emoxypine succinate",
+      "emoxypine",
+      "succinate",
+      "mexidol ethylmethylhydroxypyridine succinate 3 hydroxypyridine succinate",
+      "mexidol",
+      "ethylmethylhydroxypyridine",
+      "hydroxypyridine"
+    ],
+    "effectType": "Antioxidant/Membrane protector/Anxiolytic/Nootropic",
+    "categoryTags": [
+      "Antioxidant/Membrane protector/Anxiolytic/Nootropic",
+      "Anxiolytic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "ephedrine",
+    "name": "Ephedrine",
+    "aliases": [
+      "Generic"
+    ],
+    "searchTerms": [
+      "ephedrine",
+      "generic"
+    ],
+    "effectType": "Stimulant/ADHD - Sympathomimetic",
+    "categoryTags": [
+      "Stimulant/ADHD - Sympathomimetic",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "escitalopram",
+    "name": "Escitalopram",
+    "aliases": [
+      "Lexapro"
+    ],
+    "searchTerms": [
+      "escitalopram",
+      "lexapro"
+    ],
+    "effectType": "Antidepressant - SSRI",
+    "categoryTags": [
+      "Antidepressant - SSRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "esketamine",
+    "name": "Esketamine",
+    "aliases": [
+      "Spravato"
+    ],
+    "searchTerms": [
+      "esketamine",
+      "spravato"
+    ],
+    "effectType": "Antidepressant - NMDA antagonist",
+    "categoryTags": [
+      "Antidepressant - NMDA antagonist",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "etifoxine",
+    "name": "Etifoxine",
+    "aliases": [
+      "Stresam"
+    ],
+    "searchTerms": [
+      "etifoxine",
+      "stresam"
+    ],
+    "effectType": "Anxiolytic - Neurosteroid",
+    "categoryTags": [
+      "Anxiolytic - Neurosteroid",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "eutropoflavin",
+    "name": "Eutropoflavin",
+    "aliases": [
+      "4'-DMA-7,8-DHF, 4'-Dimethylamino-7,8-dihydroxyflavone"
+    ],
+    "searchTerms": [
+      "eutropoflavin",
+      "4 dma 7 8 dhf 4 dimethylamino 7 8 dihydroxyflavone",
+      "dma",
+      "dhf",
+      "dimethylamino",
+      "dihydroxyflavone"
+    ],
+    "effectType": "TrkB agonist/BDNF mimetic/Nootropic/Antidepressant",
+    "categoryTags": [
+      "TrkB agonist/BDNF mimetic/Nootropic/Antidepressant",
+      "Antidepressant",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "fasedienol",
+    "name": "Fasedienol",
+    "aliases": [
+      "PH94B, Aloradine, 4-androstadienol, 4,16-androstadien-3β-ol"
+    ],
+    "searchTerms": [
+      "fasedienol",
+      "ph94b aloradine 4 androstadienol 4 16 androstadien 3 ol",
+      "ph94b",
+      "aloradine",
+      "androstadienol",
+      "androstadien"
+    ],
+    "effectType": "Pherine/Anxiolytic nasal spray",
+    "categoryTags": [
+      "Pherine/Anxiolytic nasal spray",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "fasoracetam",
+    "name": "Fasoracetam",
+    "aliases": [
+      "NS-105, LAM-105"
+    ],
+    "searchTerms": [
+      "fasoracetam",
+      "ns 105 lam 105",
+      "105",
+      "lam"
+    ],
+    "effectType": "Nootropic/Racetam",
+    "categoryTags": [
+      "Nootropic/Racetam",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "flmodafinil",
+    "name": "Flmodafinil",
+    "aliases": [
+      "CRL-40940, NLS-4, Bisfluoromodafinil, Lauflumide"
+    ],
+    "searchTerms": [
+      "flmodafinil",
+      "crl 40940 nls 4 bisfluoromodafinil lauflumide",
+      "crl",
+      "40940",
+      "nls",
+      "bisfluoromodafinil",
+      "lauflumide"
+    ],
+    "effectType": "Wakefulness-promoting agent/Nootropic",
+    "categoryTags": [
+      "Wakefulness-promoting agent/Nootropic",
+      "Wakefulness-promoting",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "fluoxetine",
+    "name": "Fluoxetine",
+    "aliases": [
+      "Prozac"
+    ],
+    "searchTerms": [
+      "fluoxetine",
+      "prozac"
+    ],
+    "effectType": "Antidepressant - SSRI",
+    "categoryTags": [
+      "Antidepressant - SSRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "fluphenazine",
+    "name": "Fluphenazine",
+    "aliases": [
+      "Prolixin"
+    ],
+    "searchTerms": [
+      "fluphenazine",
+      "prolixin"
+    ],
+    "effectType": "Antipsychotic - First Generation",
+    "categoryTags": [
+      "Antipsychotic - First Generation"
+    ]
+  },
+  {
+    "id": "flurazepam",
+    "name": "Flurazepam",
+    "aliases": [
+      "Dalmane"
+    ],
+    "searchTerms": [
+      "flurazepam",
+      "dalmane"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "fluvoxamine",
+    "name": "Fluvoxamine",
+    "aliases": [
+      "Luvox"
+    ],
+    "searchTerms": [
+      "fluvoxamine",
+      "luvox"
+    ],
+    "effectType": "Antidepressant - SSRI",
+    "categoryTags": [
+      "Antidepressant - SSRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "gts-21",
+    "name": "GTS-21",
+    "aliases": [
+      "DMXBA, 3-(2,4-dimethoxybenzylidene)-anabaseine"
+    ],
+    "searchTerms": [
+      "gts 21",
+      "gts",
+      "dmxba 3 2 4 dimethoxybenzylidene anabaseine",
+      "dmxba",
+      "dimethoxybenzylidene",
+      "anabaseine"
+    ],
+    "effectType": "Alpha-7 nicotinic agonist/Nootropic/Neuroprotectant",
+    "categoryTags": [
+      "Alpha-7 nicotinic agonist/Nootropic/Neuroprotectant",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "gabapentin",
+    "name": "Gabapentin",
+    "aliases": [
+      "Neurontin"
+    ],
+    "searchTerms": [
+      "gabapentin",
+      "neurontin"
+    ],
+    "effectType": "Anxiolytic - Gabapentinoid",
+    "categoryTags": [
+      "Anxiolytic - Gabapentinoid",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "galantamine",
+    "name": "Galantamine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "galantamine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Cholinergic",
+    "categoryTags": [
+      "Nootropic - Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "galantamine-hbr",
+    "name": "Galantamine HBr",
+    "aliases": [
+      "Razadyne, Reminyl, Nivalin"
+    ],
+    "searchTerms": [
+      "galantamine hbr",
+      "galantamine",
+      "hbr",
+      "razadyne reminyl nivalin",
+      "razadyne",
+      "reminyl",
+      "nivalin"
+    ],
+    "effectType": "Nootropic/Acetylcholinesterase inhibitor",
+    "categoryTags": [
+      "Nootropic/Acetylcholinesterase inhibitor",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "gepirone",
+    "name": "Gepirone",
+    "aliases": [
+      "Ariza"
+    ],
+    "searchTerms": [
+      "gepirone",
+      "ariza"
+    ],
+    "effectType": "Anxiolytic - Azapirone",
+    "categoryTags": [
+      "Anxiolytic - Azapirone",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "ginkgo-biloba",
+    "name": "Ginkgo Biloba",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "ginkgo biloba",
+      "ginkgo",
+      "biloba",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Herbal",
+    "categoryTags": [
+      "Nootropic - Herbal",
+      "Nootropic",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "guanfacine",
+    "name": "Guanfacine",
+    "aliases": [
+      "Intuniv"
+    ],
+    "searchTerms": [
+      "guanfacine",
+      "intuniv"
+    ],
+    "effectType": "Stimulant/ADHD - Alpha-2A agonist",
+    "categoryTags": [
+      "Stimulant/ADHD - Alpha-2A agonist",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "guanfacine-hcl",
+    "name": "Guanfacine HCl",
+    "aliases": [
+      "Intuniv, Tenex"
+    ],
+    "searchTerms": [
+      "guanfacine hcl",
+      "guanfacine",
+      "hcl",
+      "intuniv tenex",
+      "intuniv",
+      "tenex"
+    ],
+    "effectType": "Nootropic/Alpha-2A agonist",
+    "categoryTags": [
+      "Nootropic/Alpha-2A agonist",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "haloperidol",
+    "name": "Haloperidol",
+    "aliases": [
+      "Haldol"
+    ],
+    "searchTerms": [
+      "haloperidol",
+      "haldol"
+    ],
+    "effectType": "Antipsychotic - First Generation",
+    "categoryTags": [
+      "Antipsychotic - First Generation"
+    ]
+  },
+  {
+    "id": "homotaurine",
+    "name": "Homotaurine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "homotaurine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - GABA analog",
+    "categoryTags": [
+      "Nootropic - GABA analog",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "huperzine-a",
+    "name": "Huperzine A",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "huperzine a",
+      "huperzine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Cholinergic",
+    "categoryTags": [
+      "Nootropic - Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "huperzine-a",
+    "name": "Huperzine-A",
+    "aliases": [
+      "Hup-A, Chinese club moss extract"
+    ],
+    "searchTerms": [
+      "huperzine a",
+      "huperzine",
+      "hup a chinese club moss extract",
+      "hup",
+      "chinese",
+      "club",
+      "moss",
+      "extract"
+    ],
+    "effectType": "Nootropic/Acetylcholinesterase inhibitor",
+    "categoryTags": [
+      "Nootropic/Acetylcholinesterase inhibitor",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "hydroxyzine",
+    "name": "Hydroxyzine",
+    "aliases": [
+      "Vistaril/Atarax"
+    ],
+    "searchTerms": [
+      "hydroxyzine",
+      "vistaril atarax",
+      "vistaril",
+      "atarax"
+    ],
+    "effectType": "Anxiolytic - Antihistamine H1 antagonist",
+    "categoryTags": [
+      "Anxiolytic - Antihistamine H1 antagonist",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "isrib",
+    "name": "ISRIB",
+    "aliases": [
+      "Integrated Stress Response Inhibitor, Trans-ISRIB"
+    ],
+    "searchTerms": [
+      "isrib",
+      "integrated stress response inhibitor trans isrib",
+      "integrated",
+      "stress",
+      "response",
+      "inhibitor",
+      "trans"
+    ],
+    "effectType": "Nootropic/ISR inhibitor/Cognitive enhancer",
+    "categoryTags": [
+      "Nootropic/ISR inhibitor/Cognitive enhancer",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "idebenone",
+    "name": "Idebenone",
+    "aliases": [
+      "Raxone, Sovrima"
+    ],
+    "searchTerms": [
+      "idebenone",
+      "raxone sovrima",
+      "raxone",
+      "sovrima"
+    ],
+    "effectType": "Antioxidant/Mitochondrial enhancer/CoQ10 analog",
+    "categoryTags": [
+      "Antioxidant/Mitochondrial enhancer/CoQ10 analog"
+    ]
+  },
+  {
+    "id": "iloperidone",
+    "name": "Iloperidone",
+    "aliases": [
+      "Fanapt"
+    ],
+    "searchTerms": [
+      "iloperidone",
+      "fanapt"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "imipramine",
+    "name": "Imipramine",
+    "aliases": [
+      "Tofranil"
+    ],
+    "searchTerms": [
+      "imipramine",
+      "tofranil"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "isocarboxazid",
+    "name": "Isocarboxazid",
+    "aliases": [
+      "Marplan"
+    ],
+    "searchTerms": [
+      "isocarboxazid",
+      "marplan"
+    ],
+    "effectType": "Antidepressant - MAOI",
+    "categoryTags": [
+      "Antidepressant - MAOI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "ketanserin",
+    "name": "Ketanserin",
+    "aliases": [
+      "Sufrexal, Ketensin"
+    ],
+    "searchTerms": [
+      "ketanserin",
+      "sufrexal ketensin",
+      "sufrexal",
+      "ketensin"
+    ],
+    "effectType": "5-HT2A antagonist/Antihypertensive/Anxiolytic",
+    "categoryTags": [
+      "5-HT2A antagonist/Antihypertensive/Anxiolytic",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "l-tyrosine",
+    "name": "L-Tyrosine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "l tyrosine",
+      "tyrosine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Amino acid",
+    "categoryTags": [
+      "Nootropic - Amino acid",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "levetiracetam",
+    "name": "Levetiracetam",
+    "aliases": [
+      "Keppra, Elepsia"
+    ],
+    "searchTerms": [
+      "levetiracetam",
+      "keppra elepsia",
+      "keppra",
+      "elepsia"
+    ],
+    "effectType": "Anticonvulsant/Antiepileptic",
+    "categoryTags": [
+      "Anticonvulsant/Antiepileptic"
+    ]
+  },
+  {
+    "id": "levodopa",
+    "name": "Levodopa",
+    "aliases": [
+      "L-DOPA, Sinemet (with carbidopa), Madopar (with benserazide)"
+    ],
+    "searchTerms": [
+      "levodopa",
+      "l dopa sinemet with carbidopa madopar with benserazide",
+      "dopa",
+      "sinemet",
+      "with",
+      "carbidopa",
+      "madopar",
+      "benserazide"
+    ],
+    "effectType": "Dopamine precursor/Antiparkinsonian",
+    "categoryTags": [
+      "Dopamine precursor/Antiparkinsonian"
+    ]
+  },
+  {
+    "id": "levomilnacipran",
+    "name": "Levomilnacipran",
+    "aliases": [
+      "Fetzima"
+    ],
+    "searchTerms": [
+      "levomilnacipran",
+      "fetzima"
+    ],
+    "effectType": "Antidepressant - SNRI",
+    "categoryTags": [
+      "Antidepressant - SNRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "lion-s-mane",
+    "name": "Lion's Mane",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "lion s mane",
+      "lion",
+      "mane",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Mushroom",
+    "categoryTags": [
+      "Nootropic - Mushroom",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "lisdexamfetamine",
+    "name": "Lisdexamfetamine",
+    "aliases": [
+      "Vyvanse"
+    ],
+    "searchTerms": [
+      "lisdexamfetamine",
+      "vyvanse"
+    ],
+    "effectType": "Stimulant/ADHD - Prodrug amphetamine",
+    "categoryTags": [
+      "Stimulant/ADHD - Prodrug amphetamine",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "lithium-orotate",
+    "name": "Lithium Orotate",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "lithium orotate",
+      "lithium",
+      "orotate",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Mineral",
+    "categoryTags": [
+      "Nootropic - Mineral",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "lorazepam",
+    "name": "Lorazepam",
+    "aliases": [
+      "Ativan"
+    ],
+    "searchTerms": [
+      "lorazepam",
+      "ativan"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "loxapine",
+    "name": "Loxapine",
+    "aliases": [
+      "Loxitane"
+    ],
+    "searchTerms": [
+      "loxapine",
+      "loxitane"
+    ],
+    "effectType": "Antipsychotic - First Generation",
+    "categoryTags": [
+      "Antipsychotic - First Generation"
+    ]
+  },
+  {
+    "id": "lumateperone",
+    "name": "Lumateperone",
+    "aliases": [
+      "Caplyta"
+    ],
+    "searchTerms": [
+      "lumateperone",
+      "caplyta"
+    ],
+    "effectType": "Antipsychotic - Third Generation",
+    "categoryTags": [
+      "Antipsychotic - Third Generation"
+    ]
+  },
+  {
+    "id": "lurasidone",
+    "name": "Lurasidone",
+    "aliases": [
+      "Latuda"
+    ],
+    "searchTerms": [
+      "lurasidone",
+      "latuda"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "magnesium-l-threonate",
+    "name": "Magnesium L-Threonate",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "magnesium l threonate",
+      "magnesium",
+      "threonate",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Mineral",
+    "categoryTags": [
+      "Nootropic - Mineral",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "maprotiline",
+    "name": "Maprotiline",
+    "aliases": [
+      "Ludiomil"
+    ],
+    "searchTerms": [
+      "maprotiline",
+      "ludiomil"
+    ],
+    "effectType": "Antidepressant - TeCA",
+    "categoryTags": [
+      "Antidepressant - TeCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "memantine",
+    "name": "Memantine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "memantine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - NMDA modulator",
+    "categoryTags": [
+      "Nootropic - NMDA modulator",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "memantine-hcl",
+    "name": "Memantine HCl",
+    "aliases": [
+      "Namenda, Ebixa, Axura"
+    ],
+    "searchTerms": [
+      "memantine hcl",
+      "memantine",
+      "hcl",
+      "namenda ebixa axura",
+      "namenda",
+      "ebixa",
+      "axura"
+    ],
+    "effectType": "NMDA antagonist/Anti-Alzheimer medication/Nootropic",
+    "categoryTags": [
+      "NMDA antagonist/Anti-Alzheimer medication/Nootropic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "methamphetamine",
+    "name": "Methamphetamine",
+    "aliases": [
+      "Desoxyn"
+    ],
+    "searchTerms": [
+      "methamphetamine",
+      "desoxyn"
+    ],
+    "effectType": "Stimulant/ADHD - Amphetamine",
+    "categoryTags": [
+      "Stimulant/ADHD - Amphetamine",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "methylene-blue",
+    "name": "Methylene Blue",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "methylene blue",
+      "methylene",
+      "blue",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Mitochondrial",
+    "categoryTags": [
+      "Nootropic - Mitochondrial",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "methylphenidate",
+    "name": "Methylphenidate",
+    "aliases": [
+      "Ritalin/Concerta"
+    ],
+    "searchTerms": [
+      "methylphenidate",
+      "ritalin concerta",
+      "ritalin",
+      "concerta"
+    ],
+    "effectType": "Stimulant/ADHD - Methylphenidate",
+    "categoryTags": [
+      "Stimulant/ADHD - Methylphenidate",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "mianserin",
+    "name": "Mianserin",
+    "aliases": [
+      "Tolvon"
+    ],
+    "searchTerms": [
+      "mianserin",
+      "tolvon"
+    ],
+    "effectType": "Antidepressant - TeCA/NaSSA",
+    "categoryTags": [
+      "Antidepressant - TeCA/NaSSA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "midazolam",
+    "name": "Midazolam",
+    "aliases": [
+      "Versed"
+    ],
+    "searchTerms": [
+      "midazolam",
+      "versed"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "milnacipran",
+    "name": "Milnacipran",
+    "aliases": [
+      "Savella"
+    ],
+    "searchTerms": [
+      "milnacipran",
+      "savella"
+    ],
+    "effectType": "Antidepressant - SNRI",
+    "categoryTags": [
+      "Antidepressant - SNRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "mirtazapine",
+    "name": "Mirtazapine",
+    "aliases": [
+      "Remeron"
+    ],
+    "searchTerms": [
+      "mirtazapine",
+      "remeron"
+    ],
+    "effectType": "Antidepressant - TeCA/NaSSA",
+    "categoryTags": [
+      "Antidepressant - TeCA/NaSSA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "moclobemide",
+    "name": "Moclobemide",
+    "aliases": [
+      "Manerix"
+    ],
+    "searchTerms": [
+      "moclobemide",
+      "manerix"
+    ],
+    "effectType": "Antidepressant - MAOI (reversible)",
+    "categoryTags": [
+      "Antidepressant - MAOI (reversible)",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "modafinil",
+    "name": "Modafinil",
+    "aliases": [
+      "Provigil, Alertec"
+    ],
+    "searchTerms": [
+      "modafinil",
+      "provigil alertec",
+      "provigil",
+      "alertec"
+    ],
+    "effectType": "Wakefulness-promoting agent/Nootropic",
+    "categoryTags": [
+      "Wakefulness-promoting agent/Nootropic",
+      "Wakefulness-promoting",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "mucuna-pruriens",
+    "name": "Mucuna Pruriens",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "mucuna pruriens",
+      "mucuna",
+      "pruriens",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Herbal dopaminergic",
+    "categoryTags": [
+      "Nootropic - Herbal dopaminergic",
+      "Nootropic",
+      "Herbal"
+    ]
+  },
+  {
+    "id": "n-acetyl-l-tyrosine",
+    "name": "N-Acetyl-L-Tyrosine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "n acetyl l tyrosine",
+      "acetyl",
+      "tyrosine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Amino acid",
+    "categoryTags": [
+      "Nootropic - Amino acid",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "nac--n-acetylcysteine-",
+    "name": "NAC (N-Acetylcysteine)",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "nac n acetylcysteine",
+      "nac",
+      "acetylcysteine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Antioxidant",
+    "categoryTags": [
+      "Nootropic - Antioxidant",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "nacet",
+    "name": "NACET",
+    "aliases": [
+      "N-Acetyl-L-Cysteine Ethyl Ester, NAC ethyl ester"
+    ],
+    "searchTerms": [
+      "nacet",
+      "n acetyl l cysteine ethyl ester nac ethyl ester",
+      "acetyl",
+      "cysteine",
+      "ethyl",
+      "ester",
+      "nac"
+    ],
+    "effectType": "Antioxidant/Glutathione precursor",
+    "categoryTags": [
+      "Antioxidant/Glutathione precursor"
+    ]
+  },
+  {
+    "id": "nad-",
+    "name": "NAD+",
+    "aliases": [
+      "Nicotinamide adenine dinucleotide, NAD plus"
+    ],
+    "searchTerms": [
+      "nad",
+      "nicotinamide adenine dinucleotide nad plus",
+      "nicotinamide",
+      "adenine",
+      "dinucleotide",
+      "plus"
+    ],
+    "effectType": "Coenzyme/Anti-aging molecule/Cellular energy regulator",
+    "categoryTags": [
+      "Coenzyme/Anti-aging molecule/Cellular energy regulator"
+    ]
+  },
+  {
+    "id": "nmn",
+    "name": "NMN",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "nmn",
+      "multiple"
+    ],
+    "effectType": "Nootropic - NAD+ precursor",
+    "categoryTags": [
+      "Nootropic - NAD+ precursor",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "nsi-189",
+    "name": "NSI-189",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "nsi 189",
+      "nsi",
+      "189",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Neurogenic compound",
+    "categoryTags": [
+      "Nootropic - Neurogenic compound",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "nefazodone",
+    "name": "Nefazodone",
+    "aliases": [
+      "Serzone"
+    ],
+    "searchTerms": [
+      "nefazodone",
+      "serzone"
+    ],
+    "effectType": "Antidepressant - SARI",
+    "categoryTags": [
+      "Antidepressant - SARI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "nefiracetam",
+    "name": "Nefiracetam",
+    "aliases": [
+      "DM-9384, NS-105"
+    ],
+    "searchTerms": [
+      "nefiracetam",
+      "dm 9384 ns 105",
+      "9384",
+      "105"
+    ],
+    "effectType": "Nootropic/Racetam",
+    "categoryTags": [
+      "Nootropic/Racetam",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "nicotinamide-riboside",
+    "name": "Nicotinamide Riboside",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "nicotinamide riboside",
+      "nicotinamide",
+      "riboside",
+      "multiple"
+    ],
+    "effectType": "Nootropic - NAD+ precursor",
+    "categoryTags": [
+      "Nootropic - NAD+ precursor",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "nicotinamide-mononucleotide",
+    "name": "Nicotinamide mononucleotide",
+    "aliases": [
+      "NMN, β-Nicotinamide mononucleotide"
+    ],
+    "searchTerms": [
+      "nicotinamide mononucleotide",
+      "nicotinamide",
+      "mononucleotide",
+      "nmn nicotinamide mononucleotide",
+      "nmn"
+    ],
+    "effectType": "NAD+ precursor/Anti-aging supplement",
+    "categoryTags": [
+      "NAD+ precursor/Anti-aging supplement"
+    ]
+  },
+  {
+    "id": "nicotine",
+    "name": "Nicotine",
+    "aliases": [
+      "Generic"
+    ],
+    "searchTerms": [
+      "nicotine",
+      "generic"
+    ],
+    "effectType": "Stimulant/ADHD - Cholinergic",
+    "categoryTags": [
+      "Stimulant/ADHD - Cholinergic",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "nitrazepam",
+    "name": "Nitrazepam",
+    "aliases": [
+      "Mogadon"
+    ],
+    "searchTerms": [
+      "nitrazepam",
+      "mogadon"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "nooglutyl",
+    "name": "Nooglutyl",
+    "aliases": [
+      "N-5-Hydroxynicotinoyl-L-Glutamic acid"
+    ],
+    "searchTerms": [
+      "nooglutyl",
+      "n 5 hydroxynicotinoyl l glutamic acid",
+      "hydroxynicotinoyl",
+      "glutamic",
+      "acid"
+    ],
+    "effectType": "Nootropic/AMPA modulator",
+    "categoryTags": [
+      "Nootropic/AMPA modulator",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "noopept",
+    "name": "Noopept",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "noopept",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Peptide",
+    "categoryTags": [
+      "Nootropic - Peptide",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "nortriptyline",
+    "name": "Nortriptyline",
+    "aliases": [
+      "Pamelor"
+    ],
+    "searchTerms": [
+      "nortriptyline",
+      "pamelor"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "olanzapine",
+    "name": "Olanzapine",
+    "aliases": [
+      "Zyprexa"
+    ],
+    "searchTerms": [
+      "olanzapine",
+      "zyprexa"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "opicapone",
+    "name": "Opicapone",
+    "aliases": [
+      "Ongentys, BIA 9-1067"
+    ],
+    "searchTerms": [
+      "opicapone",
+      "ongentys bia 9 1067",
+      "ongentys",
+      "bia",
+      "1067"
+    ],
+    "effectType": "COMT inhibitor/Antiparkinsonian",
+    "categoryTags": [
+      "COMT inhibitor/Antiparkinsonian"
+    ]
+  },
+  {
+    "id": "oroxylin-a",
+    "name": "Oroxylin A",
+    "aliases": [
+      "Oroxylin-A, 5,7-dihydroxy-6-methoxyflavone"
+    ],
+    "searchTerms": [
+      "oroxylin a",
+      "oroxylin",
+      "oroxylin a 5 7 dihydroxy 6 methoxyflavone",
+      "dihydroxy",
+      "methoxyflavone"
+    ],
+    "effectType": "Nootropic/Anxiolytic/Antidepressant",
+    "categoryTags": [
+      "Nootropic/Anxiolytic/Antidepressant",
+      "Anxiolytic",
+      "Antidepressant",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "oxazepam",
+    "name": "Oxazepam",
+    "aliases": [
+      "Serax"
+    ],
+    "searchTerms": [
+      "oxazepam",
+      "serax"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "oxiracetam",
+    "name": "Oxiracetam",
+    "aliases": [
+      "Neuractiv, Neuromet"
+    ],
+    "searchTerms": [
+      "oxiracetam",
+      "neuractiv neuromet",
+      "neuractiv",
+      "neuromet"
+    ],
+    "effectType": "Nootropic/Racetam",
+    "categoryTags": [
+      "Nootropic/Racetam",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "p21--adamax-",
+    "name": "P21 (Adamax)",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "p21 adamax",
+      "p21",
+      "adamax",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Peptide",
+    "categoryTags": [
+      "Nootropic - Peptide",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "pqq",
+    "name": "PQQ",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "pqq",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Mitochondrial",
+    "categoryTags": [
+      "Nootropic - Mitochondrial",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "prl-8-53",
+    "name": "PRL-8-53",
+    "aliases": [
+      "Methyl 3-(2-(benzyl(methyl)amino)ethyl)benzoate"
+    ],
+    "searchTerms": [
+      "prl 8 53",
+      "prl",
+      "methyl 3 2 benzyl methyl amino ethyl benzoate",
+      "methyl",
+      "benzyl",
+      "amino",
+      "ethyl",
+      "benzoate"
+    ],
+    "effectType": "Nootropic/Memory enhancer",
+    "categoryTags": [
+      "Nootropic/Memory enhancer",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "paliperidone",
+    "name": "Paliperidone",
+    "aliases": [
+      "Invega"
+    ],
+    "searchTerms": [
+      "paliperidone",
+      "invega"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "panax-ginseng",
+    "name": "Panax Ginseng",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "panax ginseng",
+      "panax",
+      "ginseng",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Adaptogen",
+    "categoryTags": [
+      "Nootropic - Adaptogen",
+      "Nootropic",
+      "Adaptogen"
+    ]
+  },
+  {
+    "id": "paroxetine",
+    "name": "Paroxetine",
+    "aliases": [
+      "Paxil"
+    ],
+    "searchTerms": [
+      "paroxetine",
+      "paxil"
+    ],
+    "effectType": "Antidepressant - SSRI",
+    "categoryTags": [
+      "Antidepressant - SSRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "perphenazine",
+    "name": "Perphenazine",
+    "aliases": [
+      "Trilafon"
+    ],
+    "searchTerms": [
+      "perphenazine",
+      "trilafon"
+    ],
+    "effectType": "Antipsychotic - First Generation",
+    "categoryTags": [
+      "Antipsychotic - First Generation"
+    ]
+  },
+  {
+    "id": "phenelzine",
+    "name": "Phenelzine",
+    "aliases": [
+      "Nardil"
+    ],
+    "searchTerms": [
+      "phenelzine",
+      "nardil"
+    ],
+    "effectType": "Antidepressant - MAOI",
+    "categoryTags": [
+      "Antidepressant - MAOI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "phenibut",
+    "name": "Phenibut",
+    "aliases": [
+      "Noofen"
+    ],
+    "searchTerms": [
+      "phenibut",
+      "noofen"
+    ],
+    "effectType": "Anxiolytic - GABA-B agonist",
+    "categoryTags": [
+      "Anxiolytic - GABA-B agonist",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "phenibut-faa",
+    "name": "Phenibut FAA",
+    "aliases": [
+      "Phenibut free amino acid, Beta-phenyl-GABA FAA"
+    ],
+    "searchTerms": [
+      "phenibut faa",
+      "phenibut",
+      "faa",
+      "phenibut free amino acid beta phenyl gaba faa",
+      "free",
+      "amino",
+      "acid",
+      "beta",
+      "phenyl",
+      "gaba"
+    ],
+    "effectType": "Anxiolytic/Nootropic/GABAergic",
+    "categoryTags": [
+      "Anxiolytic/Nootropic/GABAergic",
+      "Anxiolytic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "phenibut-hcl",
+    "name": "Phenibut HCl",
+    "aliases": [
+      "Phenibut hydrochloride, Beta-phenyl-GABA HCl, Noofen"
+    ],
+    "searchTerms": [
+      "phenibut hcl",
+      "phenibut",
+      "hcl",
+      "phenibut hydrochloride beta phenyl gaba hcl noofen",
+      "hydrochloride",
+      "beta",
+      "phenyl",
+      "gaba",
+      "noofen"
+    ],
+    "effectType": "Anxiolytic/Nootropic/GABAergic",
+    "categoryTags": [
+      "Anxiolytic/Nootropic/GABAergic",
+      "Anxiolytic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "phenylpiracetam",
+    "name": "Phenylpiracetam",
+    "aliases": [
+      "Carphedon"
+    ],
+    "searchTerms": [
+      "phenylpiracetam",
+      "carphedon"
+    ],
+    "effectType": "Stimulant/ADHD - Racetam",
+    "categoryTags": [
+      "Stimulant/ADHD - Racetam",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "phenylpiracetam-hydrazide",
+    "name": "Phenylpiracetam hydrazide",
+    "aliases": [
+      "Fonturacetam hydrazide, Carphedon hydrazide"
+    ],
+    "searchTerms": [
+      "phenylpiracetam hydrazide",
+      "phenylpiracetam",
+      "hydrazide",
+      "fonturacetam hydrazide carphedon hydrazide",
+      "fonturacetam",
+      "carphedon"
+    ],
+    "effectType": "Nootropic/Racetam derivative",
+    "categoryTags": [
+      "Nootropic/Racetam derivative",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "pimavanserin",
+    "name": "Pimavanserin",
+    "aliases": [
+      "Nuplazid"
+    ],
+    "searchTerms": [
+      "pimavanserin",
+      "nuplazid"
+    ],
+    "effectType": "Antipsychotic - Third Generation",
+    "categoryTags": [
+      "Antipsychotic - Third Generation"
+    ]
+  },
+  {
+    "id": "pimozide",
+    "name": "Pimozide",
+    "aliases": [
+      "Orap"
+    ],
+    "searchTerms": [
+      "pimozide",
+      "orap"
+    ],
+    "effectType": "Antipsychotic - First Generation",
+    "categoryTags": [
+      "Antipsychotic - First Generation"
+    ]
+  },
+  {
+    "id": "piracetam",
+    "name": "Piracetam",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "piracetam",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Racetam",
+    "categoryTags": [
+      "Nootropic - Racetam",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "pitolisant",
+    "name": "Pitolisant",
+    "aliases": [
+      "Wakix"
+    ],
+    "searchTerms": [
+      "pitolisant",
+      "wakix"
+    ],
+    "effectType": "Stimulant/ADHD - H3 inverse agonist",
+    "categoryTags": [
+      "Stimulant/ADHD - H3 inverse agonist",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "pitolisant-hcl",
+    "name": "Pitolisant HCl",
+    "aliases": [
+      "Wakix, Tiprolisant"
+    ],
+    "searchTerms": [
+      "pitolisant hcl",
+      "pitolisant",
+      "hcl",
+      "wakix tiprolisant",
+      "wakix",
+      "tiprolisant"
+    ],
+    "effectType": "Wakefulness-promoting agent/H3 antagonist",
+    "categoryTags": [
+      "Wakefulness-promoting agent/H3 antagonist",
+      "Wakefulness-promoting"
+    ]
+  },
+  {
+    "id": "ponazuril",
+    "name": "Ponazuril",
+    "aliases": [
+      "Toltrazuril sulfone, Marquis"
+    ],
+    "searchTerms": [
+      "ponazuril",
+      "toltrazuril sulfone marquis",
+      "toltrazuril",
+      "sulfone",
+      "marquis"
+    ],
+    "effectType": "Antiprotozoal/Triazine anticoccidial",
+    "categoryTags": [
+      "Antiprotozoal/Triazine anticoccidial"
+    ]
+  },
+  {
+    "id": "pramiracetam",
+    "name": "Pramiracetam",
+    "aliases": [
+      "Pramistar, Remen, Neupramir"
+    ],
+    "searchTerms": [
+      "pramiracetam",
+      "pramistar remen neupramir",
+      "pramistar",
+      "remen",
+      "neupramir"
+    ],
+    "effectType": "Nootropic/Racetam",
+    "categoryTags": [
+      "Nootropic/Racetam",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "pregabalin",
+    "name": "Pregabalin",
+    "aliases": [
+      "Lyrica"
+    ],
+    "searchTerms": [
+      "pregabalin",
+      "lyrica"
+    ],
+    "effectType": "Anxiolytic - Gabapentinoid",
+    "categoryTags": [
+      "Anxiolytic - Gabapentinoid",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "propranolol",
+    "name": "Propranolol",
+    "aliases": [
+      "Inderal"
+    ],
+    "searchTerms": [
+      "propranolol",
+      "inderal"
+    ],
+    "effectType": "Anxiolytic - Beta-blocker",
+    "categoryTags": [
+      "Anxiolytic - Beta-blocker",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "protriptyline",
+    "name": "Protriptyline",
+    "aliases": [
+      "Vivactil"
+    ],
+    "searchTerms": [
+      "protriptyline",
+      "vivactil"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "pterostilbene",
+    "name": "Pterostilbene",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "pterostilbene",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Polyphenol",
+    "categoryTags": [
+      "Nootropic - Polyphenol",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "quercetin",
+    "name": "Quercetin",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "quercetin",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Polyphenol",
+    "categoryTags": [
+      "Nootropic - Polyphenol",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "quetiapine",
+    "name": "Quetiapine",
+    "aliases": [
+      "Seroquel"
+    ],
+    "searchTerms": [
+      "quetiapine",
+      "seroquel"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "rapamycin--soon-",
+    "name": "Rapamycin (Soon)",
+    "aliases": [
+      "Sirolimus, Rapamune"
+    ],
+    "searchTerms": [
+      "rapamycin soon",
+      "rapamycin",
+      "soon",
+      "sirolimus rapamune",
+      "sirolimus",
+      "rapamune"
+    ],
+    "effectType": "mTOR inhibitor/Anti-aging/Immunosuppressant/Longevity drug",
+    "categoryTags": [
+      "mTOR inhibitor/Anti-aging/Immunosuppressant/Longevity drug"
+    ]
+  },
+  {
+    "id": "rapastinel",
+    "name": "Rapastinel",
+    "aliases": [
+      "GLYX-13, BV-102"
+    ],
+    "searchTerms": [
+      "rapastinel",
+      "glyx 13 bv 102",
+      "glyx",
+      "102"
+    ],
+    "effectType": "Antidepressant/NMDA modulator/Nootropic",
+    "categoryTags": [
+      "Antidepressant/NMDA modulator/Nootropic",
+      "Antidepressant",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "resveratrol",
+    "name": "Resveratrol",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "resveratrol",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Polyphenol",
+    "categoryTags": [
+      "Nootropic - Polyphenol",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "resveratrol-trans",
+    "name": "Resveratrol trans",
+    "aliases": [
+      "trans-Resveratrol, 3,5,4'-trihydroxy-trans-stilbene"
+    ],
+    "searchTerms": [
+      "resveratrol trans",
+      "resveratrol",
+      "trans",
+      "trans resveratrol 3 5 4 trihydroxy trans stilbene",
+      "trihydroxy",
+      "stilbene"
+    ],
+    "effectType": "Polyphenol/Sirtuin activator/Anti-aging/Antioxidant",
+    "categoryTags": [
+      "Polyphenol/Sirtuin activator/Anti-aging/Antioxidant"
+    ]
+  },
+  {
+    "id": "rhodiola-rosea",
+    "name": "Rhodiola Rosea",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "rhodiola rosea",
+      "rhodiola",
+      "rosea",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Adaptogen",
+    "categoryTags": [
+      "Nootropic - Adaptogen",
+      "Nootropic",
+      "Adaptogen"
+    ]
+  },
+  {
+    "id": "risperidone",
+    "name": "Risperidone",
+    "aliases": [
+      "Risperdal"
+    ],
+    "searchTerms": [
+      "risperidone",
+      "risperdal"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "rivastigmine",
+    "name": "Rivastigmine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "rivastigmine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Cholinergic",
+    "categoryTags": [
+      "Nootropic - Cholinergic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "safinamide-mesylate",
+    "name": "Safinamide mesylate",
+    "aliases": [
+      "Xadago, Onstryv"
+    ],
+    "searchTerms": [
+      "safinamide mesylate",
+      "safinamide",
+      "mesylate",
+      "xadago onstryv",
+      "xadago",
+      "onstryv"
+    ],
+    "effectType": "MAO-B inhibitor/Antiglutamatergic/Antiparkinsonian",
+    "categoryTags": [
+      "MAO-B inhibitor/Antiglutamatergic/Antiparkinsonian"
+    ]
+  },
+  {
+    "id": "sarcosine",
+    "name": "Sarcosine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "sarcosine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - NMDA modulator",
+    "categoryTags": [
+      "Nootropic - NMDA modulator",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "scyllo-inositol--soon-",
+    "name": "Scyllo-Inositol (Soon)",
+    "aliases": [
+      "Scyllo-inositol, Cyclohexane-1,2,3,4,5,6-hexol (all-equatorial)"
+    ],
+    "searchTerms": [
+      "scyllo inositol soon",
+      "scyllo",
+      "inositol",
+      "soon",
+      "scyllo inositol cyclohexane 1 2 3 4 5 6 hexol all equatorial",
+      "cyclohexane",
+      "hexol",
+      "all",
+      "equatorial"
+    ],
+    "effectType": "Anti-amyloid/Alzheimer investigational treatment",
+    "categoryTags": [
+      "Anti-amyloid/Alzheimer investigational treatment"
+    ]
+  },
+  {
+    "id": "selank",
+    "name": "Selank",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "selank",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Peptide",
+    "categoryTags": [
+      "Nootropic - Peptide",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "selegiline",
+    "name": "Selegiline",
+    "aliases": [
+      "Emsam"
+    ],
+    "searchTerms": [
+      "selegiline",
+      "emsam"
+    ],
+    "effectType": "Antidepressant - MAOI (selective)",
+    "categoryTags": [
+      "Antidepressant - MAOI (selective)",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "semax",
+    "name": "Semax",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "semax",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Peptide",
+    "categoryTags": [
+      "Nootropic - Peptide",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "sertindole",
+    "name": "Sertindole",
+    "aliases": [
+      "Serdolect"
+    ],
+    "searchTerms": [
+      "sertindole",
+      "serdolect"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "sertraline",
+    "name": "Sertraline",
+    "aliases": [
+      "Zoloft"
+    ],
+    "searchTerms": [
+      "sertraline",
+      "zoloft"
+    ],
+    "effectType": "Antidepressant - SSRI",
+    "categoryTags": [
+      "Antidepressant - SSRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "solriamfetol",
+    "name": "Solriamfetol",
+    "aliases": [
+      "Sunosi"
+    ],
+    "searchTerms": [
+      "solriamfetol",
+      "sunosi"
+    ],
+    "effectType": "Stimulant/ADHD - DNRI",
+    "categoryTags": [
+      "Stimulant/ADHD - DNRI",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "sulbutiamine",
+    "name": "Sulbutiamine",
+    "aliases": [
+      "Arcalion, Enerion"
+    ],
+    "searchTerms": [
+      "sulbutiamine",
+      "arcalion enerion",
+      "arcalion",
+      "enerion"
+    ],
+    "effectType": "Nootropic/Thiamine derivative",
+    "categoryTags": [
+      "Nootropic/Thiamine derivative",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "sunifiram",
+    "name": "Sunifiram",
+    "aliases": [
+      "DM-235"
+    ],
+    "searchTerms": [
+      "sunifiram",
+      "dm 235",
+      "235"
+    ],
+    "effectType": "Nootropic/Ampakine-like",
+    "categoryTags": [
+      "Nootropic/Ampakine-like",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "tak-653",
+    "name": "TAK-653",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "tak 653",
+      "tak",
+      "653",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Ampakine",
+    "categoryTags": [
+      "Nootropic - Ampakine",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "tak-653--osavampator-",
+    "name": "TAK-653 (Osavampator)",
+    "aliases": [
+      "Osavampator, NBI-1065845"
+    ],
+    "searchTerms": [
+      "tak 653 osavampator",
+      "tak",
+      "653",
+      "osavampator",
+      "osavampator nbi 1065845",
+      "nbi",
+      "1065845"
+    ],
+    "effectType": "Antidepressant/AMPA modulator/Nootropic",
+    "categoryTags": [
+      "Antidepressant/AMPA modulator/Nootropic",
+      "Antidepressant",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "tadalafil",
+    "name": "Tadalafil",
+    "aliases": [
+      "Cialis, Adcirca"
+    ],
+    "searchTerms": [
+      "tadalafil",
+      "cialis adcirca",
+      "cialis",
+      "adcirca"
+    ],
+    "effectType": "PDE5 inhibitor/Vasodilator/Potential cognitive enhancer",
+    "categoryTags": [
+      "PDE5 inhibitor/Vasodilator/Potential cognitive enhancer",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "tandospirone",
+    "name": "Tandospirone",
+    "aliases": [
+      "Sediel"
+    ],
+    "searchTerms": [
+      "tandospirone",
+      "sediel"
+    ],
+    "effectType": "Anxiolytic - Azapirone",
+    "categoryTags": [
+      "Anxiolytic - Azapirone",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "temazepam",
+    "name": "Temazepam",
+    "aliases": [
+      "Restoril"
+    ],
+    "searchTerms": [
+      "temazepam",
+      "restoril"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "temgicoluril",
+    "name": "Temgicoluril",
+    "aliases": [
+      "Tetramethylglycoluril, Adaptol, Mebicar"
+    ],
+    "searchTerms": [
+      "temgicoluril",
+      "tetramethylglycoluril adaptol mebicar",
+      "tetramethylglycoluril",
+      "adaptol",
+      "mebicar"
+    ],
+    "effectType": "Anxiolytic/Modulator/Nootropic",
+    "categoryTags": [
+      "Anxiolytic/Modulator/Nootropic",
+      "Anxiolytic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "tesofensine",
+    "name": "Tesofensine",
+    "aliases": [
+      "TE, NS-2330"
+    ],
+    "searchTerms": [
+      "tesofensine",
+      "te ns 2330",
+      "2330"
+    ],
+    "effectType": "Stimulant/Appetite suppressant",
+    "categoryTags": [
+      "Stimulant/Appetite suppressant",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "theacrine",
+    "name": "Theacrine",
+    "aliases": [
+      "TeaCrine, 1,3,7,9-Tetramethyluric acid"
+    ],
+    "searchTerms": [
+      "theacrine",
+      "teacrine 1 3 7 9 tetramethyluric acid",
+      "teacrine",
+      "tetramethyluric",
+      "acid"
+    ],
+    "effectType": "Nootropic/Stimulant",
+    "categoryTags": [
+      "Nootropic/Stimulant",
+      "Stimulant",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "thioridazine",
+    "name": "Thioridazine",
+    "aliases": [
+      "Mellaril"
+    ],
+    "searchTerms": [
+      "thioridazine",
+      "mellaril"
+    ],
+    "effectType": "Antipsychotic - First Generation",
+    "categoryTags": [
+      "Antipsychotic - First Generation"
+    ]
+  },
+  {
+    "id": "tianeptine",
+    "name": "Tianeptine",
+    "aliases": [
+      "Stablon/Coaxil"
+    ],
+    "searchTerms": [
+      "tianeptine",
+      "stablon coaxil",
+      "stablon",
+      "coaxil"
+    ],
+    "effectType": "Antidepressant - Atypical",
+    "categoryTags": [
+      "Antidepressant - Atypical",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "tianeptine-sulfate",
+    "name": "Tianeptine sulfate",
+    "aliases": [
+      "Stablon, Coaxil (as sodium salt)"
+    ],
+    "searchTerms": [
+      "tianeptine sulfate",
+      "tianeptine",
+      "sulfate",
+      "stablon coaxil as sodium salt",
+      "stablon",
+      "coaxil",
+      "sodium",
+      "salt"
+    ],
+    "effectType": "Antidepressant/Atypical tricyclic/Opioid",
+    "categoryTags": [
+      "Antidepressant/Atypical tricyclic/Opioid",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "toltrazuril",
+    "name": "Toltrazuril",
+    "aliases": [
+      "Baycox"
+    ],
+    "searchTerms": [
+      "toltrazuril",
+      "baycox"
+    ],
+    "effectType": "Antiprotozoal/Triazine anticoccidial/Coccidiocide",
+    "categoryTags": [
+      "Antiprotozoal/Triazine anticoccidial/Coccidiocide"
+    ]
+  },
+  {
+    "id": "tranylcypromine",
+    "name": "Tranylcypromine",
+    "aliases": [
+      "Parnate"
+    ],
+    "searchTerms": [
+      "tranylcypromine",
+      "parnate"
+    ],
+    "effectType": "Antidepressant - MAOI",
+    "categoryTags": [
+      "Antidepressant - MAOI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "trazodone",
+    "name": "Trazodone",
+    "aliases": [
+      "Desyrel"
+    ],
+    "searchTerms": [
+      "trazodone",
+      "desyrel"
+    ],
+    "effectType": "Antidepressant - SARI",
+    "categoryTags": [
+      "Antidepressant - SARI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "triazolam",
+    "name": "Triazolam",
+    "aliases": [
+      "Halcion"
+    ],
+    "searchTerms": [
+      "triazolam",
+      "halcion"
+    ],
+    "effectType": "Anxiolytic - Benzodiazepine",
+    "categoryTags": [
+      "Anxiolytic - Benzodiazepine",
+      "Anxiolytic"
+    ]
+  },
+  {
+    "id": "trifluoperazine",
+    "name": "Trifluoperazine",
+    "aliases": [
+      "Stelazine"
+    ],
+    "searchTerms": [
+      "trifluoperazine",
+      "stelazine"
+    ],
+    "effectType": "Antipsychotic - First Generation",
+    "categoryTags": [
+      "Antipsychotic - First Generation"
+    ]
+  },
+  {
+    "id": "trimipramine",
+    "name": "Trimipramine",
+    "aliases": [
+      "Surmontil"
+    ],
+    "searchTerms": [
+      "trimipramine",
+      "surmontil"
+    ],
+    "effectType": "Antidepressant - TCA",
+    "categoryTags": [
+      "Antidepressant - TCA",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "tropisetron-hcl",
+    "name": "Tropisetron HCl",
+    "aliases": [
+      "Navoban, ICS 205-930"
+    ],
+    "searchTerms": [
+      "tropisetron hcl",
+      "tropisetron",
+      "hcl",
+      "navoban ics 205 930",
+      "navoban",
+      "ics",
+      "205",
+      "930"
+    ],
+    "effectType": "5-HT3 antagonist/Alpha-7 nicotinic agonist/Antiemetic/Nootropic",
+    "categoryTags": [
+      "5-HT3 antagonist/Alpha-7 nicotinic agonist/Antiemetic/Nootropic",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "tropoflavin--7-8-dhf-",
+    "name": "Tropoflavin (7,8-DHF)",
+    "aliases": [
+      "7,8-Dihydroxyflavone, 7,8-DHF"
+    ],
+    "searchTerms": [
+      "tropoflavin 7 8 dhf",
+      "tropoflavin",
+      "dhf",
+      "7 8 dihydroxyflavone 7 8 dhf",
+      "dihydroxyflavone"
+    ],
+    "effectType": "Nootropic/BDNF mimetic/Neuroprotective",
+    "categoryTags": [
+      "Nootropic/BDNF mimetic/Neuroprotective",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "unifiram",
+    "name": "Unifiram",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "unifiram",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Ampakine",
+    "categoryTags": [
+      "Nootropic - Ampakine",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "uridine",
+    "name": "Uridine",
+    "aliases": [
+      "Multiple"
+    ],
+    "searchTerms": [
+      "uridine",
+      "multiple"
+    ],
+    "effectType": "Nootropic - Nucleotide",
+    "categoryTags": [
+      "Nootropic - Nucleotide",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "vardenafil-hcl",
+    "name": "Vardenafil HCl",
+    "aliases": [
+      "Levitra, Staxyn"
+    ],
+    "searchTerms": [
+      "vardenafil hcl",
+      "vardenafil",
+      "hcl",
+      "levitra staxyn",
+      "levitra",
+      "staxyn"
+    ],
+    "effectType": "PDE5 inhibitor/Vasodilator/Investigational cognitive enhancer",
+    "categoryTags": [
+      "PDE5 inhibitor/Vasodilator/Investigational cognitive enhancer",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "venlafaxine",
+    "name": "Venlafaxine",
+    "aliases": [
+      "Effexor"
+    ],
+    "searchTerms": [
+      "venlafaxine",
+      "effexor"
+    ],
+    "effectType": "Antidepressant - SNRI",
+    "categoryTags": [
+      "Antidepressant - SNRI",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "vilazodone",
+    "name": "Vilazodone",
+    "aliases": [
+      "Viibryd"
+    ],
+    "searchTerms": [
+      "vilazodone",
+      "viibryd"
+    ],
+    "effectType": "Antidepressant - SMS",
+    "categoryTags": [
+      "Antidepressant - SMS",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "vinpocetine",
+    "name": "Vinpocetine",
+    "aliases": [
+      "Cavinton, Intelectol"
+    ],
+    "searchTerms": [
+      "vinpocetine",
+      "cavinton intelectol",
+      "cavinton",
+      "intelectol"
+    ],
+    "effectType": "Nootropic/Cerebral vasodilator",
+    "categoryTags": [
+      "Nootropic/Cerebral vasodilator",
+      "Nootropic"
+    ]
+  },
+  {
+    "id": "vorinostat",
+    "name": "Vorinostat",
+    "aliases": [
+      "SAHA, Suberoylanilide hydroxamic acid, Zolinza"
+    ],
+    "searchTerms": [
+      "vorinostat",
+      "saha suberoylanilide hydroxamic acid zolinza",
+      "saha",
+      "suberoylanilide",
+      "hydroxamic",
+      "acid",
+      "zolinza"
+    ],
+    "effectType": "HDAC inhibitor/Antineoplastic/Neurotrophic",
+    "categoryTags": [
+      "HDAC inhibitor/Antineoplastic/Neurotrophic"
+    ]
+  },
+  {
+    "id": "vortioxetine",
+    "name": "Vortioxetine",
+    "aliases": [
+      "Trintellix"
+    ],
+    "searchTerms": [
+      "vortioxetine",
+      "trintellix"
+    ],
+    "effectType": "Antidepressant - SMS",
+    "categoryTags": [
+      "Antidepressant - SMS",
+      "Antidepressant"
+    ]
+  },
+  {
+    "id": "yohimbine",
+    "name": "Yohimbine",
+    "aliases": [
+      "Generic"
+    ],
+    "searchTerms": [
+      "yohimbine",
+      "generic"
+    ],
+    "effectType": "Stimulant/ADHD - Alpha-2 antagonist",
+    "categoryTags": [
+      "Stimulant/ADHD - Alpha-2 antagonist",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "yohimbine-hcl",
+    "name": "Yohimbine HCl",
+    "aliases": [
+      "Yohimbine hydrochloride, Yocon, Aphrodyne"
+    ],
+    "searchTerms": [
+      "yohimbine hcl",
+      "yohimbine",
+      "hcl",
+      "yohimbine hydrochloride yocon aphrodyne",
+      "hydrochloride",
+      "yocon",
+      "aphrodyne"
+    ],
+    "effectType": "Stimulant/Alpha-2 antagonist/Fat burner",
+    "categoryTags": [
+      "Stimulant/Alpha-2 antagonist/Fat burner",
+      "Stimulant"
+    ]
+  },
+  {
+    "id": "ziprasidone",
+    "name": "Ziprasidone",
+    "aliases": [
+      "Geodon"
+    ],
+    "searchTerms": [
+      "ziprasidone",
+      "geodon"
+    ],
+    "effectType": "Antipsychotic - Second Generation",
+    "categoryTags": [
+      "Antipsychotic - Second Generation"
+    ]
+  },
+  {
+    "id": "lithium-orotate",
+    "name": "Lithium orotate",
+    "aliases": [
+      "Lithium 2,6-dioxo-1,2,3,6-tetrahydropyrimidine-4-carboxylate"
+    ],
+    "searchTerms": [
+      "lithium orotate",
+      "lithium",
+      "orotate",
+      "lithium 2 6 dioxo 1 2 3 6 tetrahydropyrimidine 4 carboxylate",
+      "dioxo",
+      "tetrahydropyrimidine",
+      "carboxylate"
+    ],
+    "effectType": "Mood stabilizer/Neuroprotectant",
+    "categoryTags": [
+      "Mood stabilizer/Neuroprotectant",
+      "GSK-3 (inhibitor), BDNF (upregulator), Neuroprotective"
+    ]
+  },
+  {
+    "id": "magnesium-l-threonate",
+    "name": "Magnesium L-threonate",
+    "aliases": [
+      "MgT, Magtein, Magnesium L-3-threonate"
+    ],
+    "searchTerms": [
+      "magnesium l threonate",
+      "magnesium",
+      "threonate",
+      "mgt magtein magnesium l 3 threonate",
+      "mgt",
+      "magtein"
+    ],
+    "effectType": "Nootropic/Neuroprotective magnesium",
+    "categoryTags": [
+      "Nootropic/Neuroprotective magnesium",
+      "NMDA (modulator), BDNF (upregulator), Synaptic Plasticity (enhancer)",
+      "Nootropic",
+      "NMDA"
+    ]
+  },
+  {
+    "id": "methylene-blue",
+    "name": "Methylene blue",
+    "aliases": [
+      "MB, methylthioninium chloride"
+    ],
+    "searchTerms": [
+      "methylene blue",
+      "methylene",
+      "blue",
+      "mb methylthioninium chloride",
+      "methylthioninium",
+      "chloride"
+    ],
+    "effectType": "Nootropic/Mitochondrial enhancer",
+    "categoryTags": [
+      "Nootropic/Mitochondrial enhancer",
+      "MAO-A (inhibitor), AChE (inhibitor), Mitochondrial Enhancer",
+      "Nootropic"
+    ]
+  }
+]

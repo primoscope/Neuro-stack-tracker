@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { useStore } from "@/store/useStore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Plus, Settings, TrendingUp, Flame, Clock } from "lucide-react";
+import { Plus, Settings, TrendingUp, Flame, Clock, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { LoggingDrawer } from "@/components/LoggingDrawer";
 import { QuickLogPresets } from "@/components/QuickLogPresets";
@@ -64,15 +64,22 @@ export default function DashboardPage() {
             <h1 className="text-2xl font-bold text-blue-500">NeuroStack</h1>
             <p className="text-sm text-slate-400">Bio-Hacker Dashboard</p>
           </div>
-          <Link href="/settings">
-            <Button variant="outline" size="icon">
-              <Settings className="w-5 h-5" />
-            </Button>
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link href="/library">
+              <Button variant="outline" size="icon" title="Compound Library">
+                <BookOpen className="w-5 h-5" />
+              </Button>
+            </Link>
+            <Link href="/settings">
+              <Button variant="outline" size="icon" title="Settings">
+                <Settings className="w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-6 space-y-6 pb-24">
+      <main className="mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-4 sm:space-y-6 pb-24 md:pb-6">
         {/* Metrics Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Card className="glass border-slate-800">

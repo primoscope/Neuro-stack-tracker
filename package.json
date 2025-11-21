@@ -4,9 +4,11 @@
   "description": "NeuroStack - Offline-First Medication Tracking App",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-compound-index.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-compounds": "node scripts/generate-compound-index.js"
   },
   "keywords": [
     "neurostack",

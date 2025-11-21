@@ -20,10 +20,13 @@ import {
   Brain,
   Pill,
   Layers,
+  BookOpen,
 } from "lucide-react";
 import Link from "next/link";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { seedCompounds } from "@/lib/seed-data";
+import { AddCompoundFromLibrary } from "@/components/AddCompoundFromLibrary";
+import GeminiApiSettings from "@/components/GeminiApiSettings";
 
 export default function SettingsPage() {
   const {
@@ -42,6 +45,7 @@ export default function SettingsPage() {
   } = useStore();
 
   const [showCompoundDialog, setShowCompoundDialog] = useState(false);
+  const [showLibraryDialog, setShowLibraryDialog] = useState(false);
   const [showPresetDialog, setShowPresetDialog] = useState(false);
   const [showApiDialog, setShowApiDialog] = useState(false);
 
@@ -190,10 +194,16 @@ export default function SettingsPage() {
                   Manage your supplement and medication inventory
                 </CardDescription>
               </div>
-              <Button onClick={() => setShowCompoundDialog(true)} size="sm">
-                <Plus className="w-4 h-4 mr-2" />
-                Add Compound
-              </Button>
+              <div className="flex gap-2">
+                <Button onClick={() => setShowLibraryDialog(true)} size="sm">
+                  <BookOpen className="w-4 h-4 mr-2" />
+                  From Library
+                </Button>
+                <Button onClick={() => setShowCompoundDialog(true)} size="sm" variant="outline">
+                  <Plus className="w-4 h-4 mr-2" />
+                  Custom
+                </Button>
+              </div>
             </div>
           </CardHeader>
           <CardContent>
@@ -202,10 +212,18 @@ export default function SettingsPage() {
                 <p className="text-slate-500">
                   No compounds yet. Add your first one to get started!
                 </p>
-                <Button onClick={handleLoadSampleData} variant="outline" size="sm">
-                  <Download className="w-4 h-4 mr-2" />
-                  Load Sample Pharmacy (16 compounds)
-                </Button>
+                <div className="flex gap-2 justify-center">
+                  <Link href="/library">
+                    <Button variant="outline" size="sm">
+                      <BookOpen className="w-4 h-4 mr-2" />
+                      Browse Library (70 compounds)
+                    </Button>
+                  </Link>
+                  <Button onClick={handleLoadSampleData} variant="outline" size="sm">
+                    <Download className="w-4 h-4 mr-2" />
+                    Load Sample (16 compounds)
+                  </Button>
+                </div>
               </div>
             ) : (
               <div className="space-y-3">
@@ -311,33 +329,8 @@ export default function SettingsPage() {
           </CardContent>
         </Card>
 
-        {/* AI Analysis */}
-        <Card className="glass border-slate-800">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Brain className="w-5 h-5 text-purple-500" />
-              AI Analysis (Gemini)
-            </CardTitle>
-            <CardDescription className="mt-1">
-              Configure your Google Gemini API key for trend analysis
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div>
-                <Label>API Key Status</Label>
-                <p className="text-sm text-slate-400 mt-1">
-                  {settings.geminiApiKey
-                    ? "✓ API key configured"
-                    : "No API key set"}
-                </p>
-              </div>
-              <Button onClick={() => setShowApiDialog(true)} variant="outline">
-                {settings.geminiApiKey ? "Update API Key" : "Set API Key"}
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        {/* AI-Powered Compound Search */}
+        <GeminiApiSettings />
 
         {/* Data Management */}
         <Card className="glass border-slate-800">
@@ -641,6 +634,12 @@ export default function SettingsPage() {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* Add from Library Dialog */}
+      <AddCompoundFromLibrary
+        open={showLibraryDialog}
+        onOpenChange={setShowLibraryDialog}
+      />
     </div>
   );
 }
