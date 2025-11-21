@@ -27,6 +27,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { seedCompounds } from "@/lib/seed-data";
 import { AddCompoundFromLibrary } from "@/components/AddCompoundFromLibrary";
 import GeminiApiSettings from "@/components/GeminiApiSettings";
+import BioCoachConfiguration from "@/components/BioCoachConfiguration";
 import AutoScheduleButton from "@/components/AutoScheduleButton";
 import { parsePharmacokineticString } from "@/components/NeuroCurveVisualization";
 
@@ -351,6 +352,9 @@ export default function SettingsPage() {
 
         {/* AI-Powered Compound Search */}
         <GeminiApiSettings />
+
+        {/* Bio-Coach Persona Configuration */}
+        <BioCoachConfiguration />
 
         {/* Data Management */}
         <Card className="glass border-slate-800">
