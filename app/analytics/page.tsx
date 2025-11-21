@@ -8,9 +8,12 @@ import { ArrowLeft, TrendingUp, Activity, Calendar } from "lucide-react";
 import Link from "next/link";
 import { TrendsChart } from "@/components/TrendsChart";
 import { ActivityHeatmap } from "@/components/ActivityHeatmap";
+import NeuroCurveVisualization, { parsePharmacokineticString } from "@/components/NeuroCurveVisualization";
+import SmartActionChatWidget from "@/components/SmartActionChatWidget";
 
 export default function AnalyticsPage() {
-  const { logEntries } = useStore();
+  const { logEntries, compounds, stackPresets } = useStore();
+  const [showNeuroCurve, setShowNeuroCurve] = useState(false);
 
   const stats = useMemo(() => {
     const totalLogs = logEntries.length;
@@ -26,6 +29,55 @@ export default function AnalyticsPage() {
 
     return { totalLogs, uniqueDays, avgAnxiety, avgFunctionality };
   }, [logEntries]);
+
+  // Prepare data for Neuro-Curve visualization from today's stack
+  const neuroCurveData = useMemo(() => {
+    // Get today's logs
+    const today = new Date().toISOString().split('T')[0];
+    const todayLogs = logEntries.filter(log => log.date === today);
+    
+    if (todayLogs.length === 0) return [];
+
+    // Aggregate compounds from today's logs
+    const compoundDoses = new Map();
+    todayLogs.forEach(log => {
+      log.doseItems.forEach(item => {
+        const compound = compounds.find(c => c.id === item.compoundId);
+        if (compound) {
+          const doseTime = new Date(item.timestamp).getHours();
+          compoundDoses.set(compound.id, {
+            name: compound.name,
+            color: compound.colorHex,
+            doseTime,
+          });
+        }
+      });
+    });
+
+    // For demo purposes, using estimated pharmacokinetics
+    // In production, would fetch from compound library
+    return Array.from(compoundDoses.values()).map((data, idx) => ({
+      name: data.name,
+      color: data.color,
+      onsetMinutes: 30,
+      peakMinutes: 120,
+      durationMinutes: 360,
+      doseTime: data.doseTime,
+    }));
+  }, [logEntries, compounds]);
+
+  // Prepare stack data for chat context
+  const stackDataForChat = useMemo(() => {
+    const recentCompounds = compounds.filter(c => c.isActive).map(c => ({
+      name: c.name,
+      dose: `${c.defaultDose} ${c.unit}`,
+    }));
+
+    return {
+      compounds: recentCompounds,
+      goals: ['Optimize cognitive performance', 'Reduce anxiety', 'Improve focus'],
+    };
+  }, [compounds]);
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
@@ -131,7 +183,56 @@ export default function AnalyticsPage() {
             )}
           </CardContent>
         </Card>
+
+        {/* Neuro-Curve Visualization */}
+        {neuroCurveData.length > 0 && (
+          <Card className="glass border-slate-800">
+            <CardHeader>
+              <CardTitle className="text-base sm:text-lg">Today's Neuro-Curve (24-Hour Timeline)</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <NeuroCurveVisualization compounds={neuroCurveData} />
+            </CardContent>
+          </Card>
+        )}
+
+        {/* AI Insights Section */}
+        {compounds.length > 0 && (
+          <Card className="glass border-slate-800">
+            <CardHeader>
+              <CardTitle className="text-base sm:text-lg">AI Stack Insights</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <p className="text-sm text-gray-400">
+                  Get personalized recommendations and schedule optimization for your stack.
+                </p>
+                <Button
+                  onClick={() => setShowNeuroCurve(!showNeuroCurve)}
+                  className="w-full sm:w-auto"
+                  variant="outline"
+                >
+                  {showNeuroCurve ? 'Hide Chat' : 'Open Bio-Coach AI'}
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        )}
       </main>
+
+      {/* Smart Action Chat Widget */}
+      {showNeuroCurve && (
+        <SmartActionChatWidget
+          context="User is viewing analytics and wants insights about their stack performance"
+          stackData={stackDataForChat}
+          onAction={(action, data) => {
+            console.log('Action triggered:', action, data);
+            // Handle actions like schedule optimization
+          }}
+          position="bottom-right"
+          minimizable={true}
+        />
+      )}
     </div>
   );
 }
