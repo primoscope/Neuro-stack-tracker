@@ -3,7 +3,7 @@ export interface Compound {
   id: string;
   name: string;
   defaultDose: number;
-  unit: 'mg' | 'ml' | 'g' | 'pills' | 'mcg';
+  unit: 'mg' | 'ml' | 'g' | 'pills' | 'mcg' | 'IU';
   colorHex: string;
   isActive: boolean;
   createdAt: number;

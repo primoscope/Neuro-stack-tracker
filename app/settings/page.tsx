@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { seedCompounds } from "@/lib/seed-data";
 
 export default function SettingsPage() {
   const {
@@ -144,6 +145,18 @@ export default function SettingsPage() {
     updateCompound(compoundId, { isActive });
   };
 
+  const handleLoadSampleData = () => {
+    if (!confirm('This will add pre-configured compounds to your pharmacy. Continue?')) {
+      return;
+    }
+    
+    seedCompounds.forEach(compound => {
+      addCompound(compound);
+    });
+    
+    alert(`Successfully added ${seedCompounds.length} compounds to your pharmacy!`);
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
       {/* Header */}
@@ -185,9 +198,15 @@ export default function SettingsPage() {
           </CardHeader>
           <CardContent>
             {compounds.length === 0 ? (
-              <p className="text-slate-500 text-center py-8">
-                No compounds yet. Add your first one to get started!
-              </p>
+              <div className="text-center py-8 space-y-4">
+                <p className="text-slate-500">
+                  No compounds yet. Add your first one to get started!
+                </p>
+                <Button onClick={handleLoadSampleData} variant="outline" size="sm">
+                  <Download className="w-4 h-4 mr-2" />
+                  Load Sample Pharmacy (16 compounds)
+                </Button>
+              </div>
             ) : (
               <div className="space-y-3">
                 {compounds.map((compound) => (
@@ -431,6 +450,7 @@ export default function SettingsPage() {
                   <option value="g">g</option>
                   <option value="ml">ml</option>
                   <option value="mcg">mcg</option>
+                  <option value="IU">IU</option>
                   <option value="pills">pills</option>
                 </Select>
               </div>
