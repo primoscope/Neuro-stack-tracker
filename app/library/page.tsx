@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CompoundSearch } from "@/components/CompoundSearch";
+import CompoundSearchWithAI from "@/components/CompoundSearchWithAI";
 import { CompoundDetail } from "@/components/CompoundDetail";
 import { CompoundCard } from "@/components/CompoundCard";
 import { ArrowLeft, Filter, Grid, List } from "lucide-react";
@@ -103,11 +104,11 @@ export default function LibraryPage() {
       </header>
 
       <main className="mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-4 sm:space-y-6 pb-20 md:pb-6">
-        {/* Search Bar */}
+        {/* Search Bar with AI */}
         <div className="max-w-2xl">
-          <CompoundSearch
-            onSelectCompound={handleSelectCompound}
-            placeholder="Search by name, alias, or brand name..."
+          <CompoundSearchWithAI
+            onSelect={handleSelectCompound}
+            placeholder="Search compounds or ask AI..."
           />
         </div>
 

@@ -26,6 +26,7 @@ import Link from "next/link";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { seedCompounds } from "@/lib/seed-data";
 import { AddCompoundFromLibrary } from "@/components/AddCompoundFromLibrary";
+import GeminiApiSettings from "@/components/GeminiApiSettings";
 
 export default function SettingsPage() {
   const {
@@ -328,33 +329,8 @@ export default function SettingsPage() {
           </CardContent>
         </Card>
 
-        {/* AI Analysis */}
-        <Card className="glass border-slate-800">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Brain className="w-5 h-5 text-purple-500" />
-              AI Analysis (Gemini)
-            </CardTitle>
-            <CardDescription className="mt-1">
-              Configure your Google Gemini API key for trend analysis
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div>
-                <Label>API Key Status</Label>
-                <p className="text-sm text-slate-400 mt-1">
-                  {settings.geminiApiKey
-                    ? "✓ API key configured"
-                    : "No API key set"}
-                </p>
-              </div>
-              <Button onClick={() => setShowApiDialog(true)} variant="outline">
-                {settings.geminiApiKey ? "Update API Key" : "Set API Key"}
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        {/* AI-Powered Compound Search */}
+        <GeminiApiSettings />
 
         {/* Data Management */}
         <Card className="glass border-slate-800">
